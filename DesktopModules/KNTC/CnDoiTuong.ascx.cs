@@ -23,7 +23,7 @@ namespace KNTC
     public partial class CnDoiTuong : DotNetNuke.Entities.Modules.UserModuleBase
     {
         // thiss is command
-	// thiss is command
+    // thiss is command
         #region Properties
         int vDOITUONG_ID;
         int vPageSize = 10;//ClassParameter.vPageSize;
