@@ -1384,14 +1384,6 @@ html .nav-sidebar .nav-link > .right,
 html .nav-sidebar .nav-link > p > .right {
     top: 1rem;
 }
-.card-header.sticky {
-    top: 52px !important;
-}
-
-td.sticky {
-    top: 145px !important;
-}
-
 .app-name .nav-link img {
     top: -2px;
     position: absolute;

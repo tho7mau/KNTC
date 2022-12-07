@@ -183,12 +183,14 @@ namespace KNTC
                 }
                 CommonController objCommonController = new CommonController();
                 string vSearchOption = textSearchContent_HiddenField.Text;
+
                 if (vSearchOption == "")
                 {
                     vSearchOption = "|DOITUONG.DOITUONG_ID,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DOITUONG.DOITUONG_DIACHI,normal,,";
                 }
                 DataSet ds = objCommonController.GetPage(PortalId, ModuleId, "DoiTuong_GetPage", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
                 List<TIEPDAN_DOITUONG> vTIEPDANs = vTiepDanController.getList(vContentSearch);
+
                 int TotalRow = 0;
                 if (ds.Tables[0].Rows.Count > 0)
                 {

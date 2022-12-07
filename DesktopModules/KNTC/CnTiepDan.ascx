@@ -30,6 +30,7 @@
     function hideModal() {
         // alert("aaaa");
         $('#modal-default').modal('hide');
+        $('#modal-default-doituong').modal('hide');
     }
 
 
@@ -270,7 +271,7 @@
     </ProgressTemplate>
 </asp:UpdateProgress>--%>
 <div class="float-right OptionSearch OptionSearchSave" style="display: none;"></div>
-<div class="modal fade" id="modal-default" data-backdrop="static">
+<div class="modal fade" id="modal-default-doituong" data-backdrop="static">
     <div class="modal-dialog" style="width: 90%; max-width: 90%;">
         <div class="modal-content">
             <div class="modal-header">
@@ -280,37 +281,39 @@
                 </button>
             </div>
             <div class="modal-body">
-                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
+
+                <!-- Text search -->
+                                            
+
+                <asp:UpdatePanel runat="server" ID="updatePN">
                     <ContentTemplate>
                         <section class="content ">
                             <div class="container-fluid">
                                 <div class="card card-table-master">
-                                    <div class="card-header sticky sticky-popup" style="top: 0px !important">
-                                        <%-- <h3 class="card-title">Danh sách tiếp dân</h3>--%>
+                                    <div class="card-header sticky">
                                         <asp:Panel runat="server" DefaultButton="buttonSearch" CssClass="card-filter card-filter-full">
                                             <%--<div class="card-filter">--%>
                                             <!-- Text search -->
-                                            <div class="form-group row">
-
-                                                <div class="col-lg-4">
-                                                    <asp:DropDownList ID="BS_drlTinhThanhPho" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
-                                                    </asp:DropDownList>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <asp:DropDownList ID="BS_drlQuanHuyen" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
-                                                    </asp:DropDownList>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <asp:DropDownList ID="BS_drlXa" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
-                                                    </asp:DropDownList>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="input-group input-group tool-right">
-
-                                                    <asp:Literal runat="server" ID="Literal_OptionSearch">
-                                                    <div class="float-right OptionSearch OptionSearchDisplay"  data-save="false"></div>
-                                                    </asp:Literal>
+                                            <!-- Text search -->
+                                                            <div class="form-group row">
+                                                                <div class="col-lg-4">
+                                                                    <asp:DropDownList ID="BS_drlTinhThanhPho" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
+                                                                    </asp:DropDownList>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <asp:DropDownList ID="BS_drlQuanHuyen" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
+                                                                    </asp:DropDownList>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <asp:DropDownList ID="BS_drlXa" runat="server" CssClass="form-control select2bs4" OnSelectedIndexChanged="BS_drlDIAPHUONG_SelectedIndexChanged" AutoPostBack="true" ClientIDMode="AutoID">
+                                                                    </asp:DropDownList>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="input-group input-group tool-right">
+                                                                    <asp:Literal runat="server" ID="Literal_OptionSearch">
+                                                                        <div class="float-right OptionSearch OptionSearchDisplay"  data-save="false"></div>
+                                                                     </asp:Literal>
                                                     <asp:TextBox runat="server" ID="textSearchContent_HiddenField" CssClass="form-control float-right textSearchContent_HiddenField" placeholder="Nhập từ khóa tìm kiếm" Style="min-width: 100px;"></asp:TextBox>
                                                     <asp:TextBox runat="server" ID="textSearchContent" CssClass="form-control float-right" placeholder="Nhập từ khóa tìm kiếm" Style="min-width: 100px;"></asp:TextBox>
 
@@ -320,12 +323,11 @@
                                                         </button>
                                                     </div>
                                                     <div class="input-group-append ">
+
                                                         <asp:LinkButton ID="buttonSearch" runat="server" CssClass="btn btn-default btn-flat" OnClick="btnSearch_Click"> <i class="fas fa-search"></i></asp:LinkButton>
-                                                        <%----%>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <%--</div>--%>
+                                          </div>
                                         </asp:Panel>
                                         <div class="card-tools">
                                             <div class="tool-right">
@@ -338,55 +340,43 @@
                                                                         <i class="icofont-filter"></i>Bộ lọc
                                                                     </button>
                                                                     <div class="dropdown-menu dropdown-menu-right" role="menu" style="">
-                                                                        <div runat="server" id="FilterTiepDan">
-                                                                            <a href="#" class="dropdown-item" data-option="TIEPDAN.TIEPDAN_STT" data-type="normal" data-title="Số thứ tự"><i class="icofont-check"></i>Số thứ tự tiếp dân</a>
-                                                                            <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_HOTEN" data-type="normal"><i class="icofont-check"></i>Họ tên</a>
-                                                                            <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_DIACHI_DAYDU" data-type="normal"><i class="icofont-check"></i>Địa chỉ</a>
-                                                                            <a href="#" class="dropdown-item" data-option="TIEPDAN.TIEPDAN_NOIDUNG" data-type="normal"><i class="icofont-check"></i>Nội dung tiếp dân</a>
-                                                                            <div class="dropdown-divider"></div>
-                                                                            <a href="#" class="dropdown-item" data-option="TIEPDAN.TIEPDAN_THOGIAN" data-type="datetime"><i class="icofont-check"></i>Thời gian</a>
-                                                                            <div class="datetime-content" data-option="TIEPDAN.TIEPDAN_THOGIAN"></div>
-                                                                            <a href="#" class="dropdown-item" data-option="TIEPDAN.NGAYTAO" data-type="datetime"><i class="icofont-check"></i>Ngày tạo</a>
-                                                                            <div class="datetime-content" data-option="TIEPDAN.NGAYTAO"></div>
-                                                                        </div>
-                                                                        <div runat="server" id="FilterDonThu">
-                                                                            <a href="#" class="dropdown-item" data-option="DONTHU.DONTHU_STT" data-type="normal" data-title="Số thứ tự đơn thư"><i class="icofont-check"></i>Số thứ tự đơn thư</a>
-                                                                            <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_HOTEN" data-type="normal"><i class="icofont-check"></i>Họ tên</a>
-                                                                            <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_DIACHI_DAYDU" data-type="normal"><i class="icofont-check"></i>Địa chỉ</a>
-                                                                            <a href="#" class="dropdown-item" data-option="DONTHU.DONTHU_NOIDUNG" data-type="normal"><i class="icofont-check"></i>Nội dung đơn thư</a>
-                                                                            <div class="dropdown-divider"></div>
-                                                                            <a href="#" class="dropdown-item" data-option="DONTHU.NGUONDON_NGAYDEDON" data-type="datetime"><i class="icofont-check"></i>Ngày đề đơn</a>
-                                                                            <div class="datetime-content" data-option="DONTHU.NGUONDON_NGAYDEDON"></div>
-                                                                            <a href="#" class="dropdown-item" data-option="DONTHU.NGAYTAO" data-type="datetime"><i class="icofont-check"></i>Ngày tạo</a>
-                                                                            <div class="datetime-content" data-option="DONTHU.NGAYTAO"></div>
-                                                                        </div>
+
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.DOITUONG_ID" data-type="normal" data-title="Mã đối tượng"><i class="icofont-check"></i>Mã đối tượng</a>
+                                                                        <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_HOTEN" data-type="normal"><i class="icofont-check"></i>Họ tên</a>
+                                                                        <a href="#" class="dropdown-item" data-option="CANHAN.CANHAN_DIACHI_DAYDU" data-type="normal"><i class="icofont-check"></i>Địa chỉ người đại diện</a>
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.DOITUONG_DIACHI" data-type="normal"><i class="icofont-check"></i>Địa chỉ cơ quan tổ chức</a>
+                                                                        <div class="dropdown-divider"></div>
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.NGAYTAO" data-type="datetime"><i class="icofont-check"></i>Thời gian</a>
+                                                                        <div class="datetime-content" data-option="DOITUONG.NGAYTAO"></div>
+                                                        
                                                                     </div>
                                                                 </li>
 
-                                                                <%-- <li class="nav-item dropdown dropdown-filter">
+                                                                <li class="nav-item dropdown dropdown-filter">
                                                                     <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                                         <i class="icofont-checked"></i>Trạng thái
                                                                     </button>
                                                                     <div class="dropdown-menu dropdown-menu-right" role="menu" style="">
-                                                                        <a href="#" id="codon" class="dropdown-item" data-option="TIEPDAN.DONTHU_ID" data-type="equal" data-value="is not null"><i class="icofont-check"></i>Có đơn</a>
-                                                                        <a href="#" id="khongdon" class="dropdown-item" data-option="TIEPDAN.DONTHU_ID" data-type="equal" data-value="is null"><i class="icofont-check"></i>Không đơn</a>
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.DOITUONG_LOAI" data-type="equal" data-value="=1"><i class="icofont-check"></i>Cá nhân</a>
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.DOITUONG_LOAI" data-type="equal" data-value="=2"><i class="icofont-check"></i>Nhóm đông người</a>
+                                                                        <a href="#" class="dropdown-item" data-option="DOITUONG.DOITUONG_LOAI" data-type="equal" data-value="=3"><i class="icofont-check"></i>Cơ quan, tổ chức</a>
                                                                     </div>
-                                                                </li>--%>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </nav>
                                                 </div>
-                                                <div class="card-list-type">
+                                                <div class="card-list-type">     
                                                     <div id="divShowBtnXoa" style="display: none;">
-                                                        <asp:LinkButton ID="btnChonDoiTuong" Visible="true" runat="server" OnClick="btnChonDoiTuong_Click" CommandArgument="ChonDoiTuong" CausesValidation="false" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-checked"></i> Chọn</asp:LinkButton>
-                                                        <asp:LinkButton ID="btnLayThongTinDoiTuong" Visible="true" CausesValidation="true" runat="server" OnClick="btnChonDoiTuong_Click" CommandArgument="LayThongTinDoiTuong" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-copy"></i> Lấy thông tin</asp:LinkButton>
+                                                        <asp:LinkButton ID="btnChonDoiTuong" Visible="true" runat="server" OnClick="btnChonDoiTuong_Click"  CommandArgument="ChonDoiTuong" CausesValidation="false" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-checked"></i> Chọn</asp:LinkButton>
+                                                        <asp:LinkButton ID="btnLayThongTinDoiTuong" Visible="false" CausesValidation="true" runat="server" OnClick="btnChonDoiTuong_Click" CommandArgument="LayThongTinDoiTuong" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-copy"></i> Lấy thông tin</asp:LinkButton>
                                                     </div>
                                                     <button class="btn  btn-flat btn-md btn-outline-danger tool-left" causesvalidation="false" data-dismiss="modal"><i class="icofont-close-line-circled"></i>Đóng</button>
                                                     <%--<div class="btn-group">
                                                         <button type="button" class="btn btn-default btn-sm btn-flat"><i class="fa fa-th-large" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-default btn-sm btn-flat active "><i class="fa fa-list" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-default btn-sm btn-flat"><i class="fa fa-th" aria-hidden="true"></i></button>
-                                                    </div>--%>
+                                                    </div>--%>                        
                                                 </div>
 
 
@@ -395,24 +385,23 @@
                                                         <span class="pagination-title">
                                                             <asp:TextBox runat="server" ID="txtRecordStartEnd" AutoPostBack="true" OnTextChanged="txtRecordStartEnd_TextChanged" CssClass="form-control float-left text-right form-control-sm" Width="50" placeholder=""></asp:TextBox>
                                                             /
-                                            <asp:Label runat="server" ID="lblTotalRecords" Text="" />
+                                                            <asp:Label runat="server" ID="lblTotalRecords" Text="" />
                                                         </span>
                                                         <asp:LinkButton ID="LinkButtonPrevious" runat="server" CssClass="btn btn-default btn-sm btn-flat" OnClick="LinkButtonPrevious_Click">&lt;</asp:LinkButton>
                                                         <asp:LinkButton ID="LinkButtonLast" runat="server" CssClass="btn btn-default btn-sm btn-flat" OnClick="LinkButtonLast_Click">&gt;</asp:LinkButton>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!--<div class="tool-right">
-                                            </div>-->
-                                            <div class="tool-left">
-                                            </div>
+                                            </div>   
                                         </div>
+                                    </div>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body p-0">
+                                        <!--style="height: 500px;"-->
                                         <div class="table-content p-0">
-                                            <asp:DataGrid runat="server" ID="dgDanhSach" AutoGenerateColumns="False" BorderWidth="0"
+                                            <asp:DataGrid DataKeyField="DOITUONG_ID" runat="server" ID="dgDanhSach" AutoGenerateColumns="False" BorderWidth="0"
                                                 AllowSorting="True" OnSortCommand="dgDanhSach_SortCommand" OnItemDataBound="dgDanhSach_ItemDataBound" CssClass="table vertical-align-middle">
+                                                <%--text-nowrap--%>
                                                 <HeaderStyle CssClass="table-header" />
                                                 <Columns>
                                                     <asp:TemplateColumn Visible="true" HeaderStyle-CssClass="">
@@ -426,123 +415,53 @@
                                                             <asp:CheckBox ID="chkRow" runat="server" onclick="handle_checked_one_row(this,'divShowBtnXoa');" />
                                                         </ItemTemplate>
                                                     </asp:TemplateColumn>
-
-                                                    <asp:TemplateColumn HeaderText="TIEPDAN_ID" HeaderStyle-HorizontalAlign="Center" Visible="false" HeaderStyle-CssClass="">
+                                                    <asp:BoundColumn HeaderText="DOITUONG_ID" DataField="DOITUONG_ID" Visible="false" HeaderStyle-CssClass="sticky">
+                                                        <ItemStyle HorizontalAlign="Left" />
+                                                        <HeaderStyle />
+                                                    </asp:BoundColumn>
+                                                    <asp:TemplateColumn HeaderText="Mã đối tượng" HeaderStyle-HorizontalAlign="Center" SortExpression="DOITUONG_ID" HeaderStyle-CssClass="sticky" HeaderStyle-Width="7%">
                                                         <ItemStyle HorizontalAlign="Center" />
                                                         <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_ID")!=null?Eval("TIEPDAN_ID").ToString():"" %>
+                                                           <%# DataBinder.Eval(Container, "DataItem.DOITUONG_ID") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="DONTHU_ID" HeaderStyle-HorizontalAlign="Center" Visible="false" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("DONTHU_ID")!=null?Eval("DONTHU_ID").ToString():"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="STT" HeaderStyle-HorizontalAlign="Center" SortExpression="TIEPDAN_STT" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            <a title="Cập nhật thông tin tiếp dân" href='<%# Eval("TIEPDAN_ID")!=null?Eval("TIEPDAN_ID").ToString():"" %>' oncontextmenu="return false" runat="server"><%# Eval("TIEPDAN_STT")!=null?Eval("TIEPDAN_STT").ToString():"" %> </a>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="STT" HeaderStyle-HorizontalAlign="Center" SortExpression="DONTHU_STT" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            <a title="Cập nhật thông tin tiếp dân" href='<%# Eval("DONTHU_ID")!=null?Eval("DONTHU_ID").ToString():"" %>' oncontextmenu="return false" runat="server"><%# Eval("DONTHU_STT")!=null?Eval("DONTHU_STT").ToString():"" %> </a>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Họ tên" HeaderStyle-HorizontalAlign="Left" HeaderStyle-CssClass="" ItemStyle-Width="25%">
+                                                    <asp:TemplateColumn HeaderText="Họ tên" HeaderStyle-HorizontalAlign="Left" HeaderStyle-CssClass="sticky" ItemStyle-Width="20%">
                                                         <ItemStyle HorizontalAlign="Left" />
                                                         <ItemTemplate>
-                                                            <%#getThongTinDoiTuong(int.Parse(Eval("DOITUONG_ID").ToString())) %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Loại đối tượng" HeaderStyle-HorizontalAlign="Left" SortExpression="DOITUONG_LOAI" HeaderStyle-CssClass="" HeaderStyle-Width="10%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%#  Eval("DOITUONG_LOAI").ToString()=="1"?"Cá Nhân":(Eval("DOITUONG_LOAI").ToString()=="2"?"Nhóm đông người":Eval("DOITUONG_TEN").ToString()) %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Loại tiếp dân" HeaderStyle-HorizontalAlign="Center" HeaderStyle-CssClass="" HeaderStyle-Width="10%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_LOAI")!=null?GetLoaiDonThu(Eval("TIEPDAN_LOAI").ToString()) :"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Loại đơn thư" HeaderStyle-HorizontalAlign="Center" HeaderStyle-CssClass="" HeaderStyle-Width="10%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("LOAIDONTHU_ID")!=null?GetLoaiDonThu(Eval("LOAIDONTHU_ID").ToString()) :"" %> <%--(!=null?int.Parse(Eval("LOAIDONTHU_ID").ToString()):0))--%>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Nội dung" HeaderStyle-HorizontalAlign="Left" SortExpression="TIEPDAN_NOIDUNG" HeaderStyle-CssClass="" HeaderStyle-Width="20%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_NOIDUNG")!=null?Eval("TIEPDAN_NOIDUNG").ToString():"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Nội dung" HeaderStyle-HorizontalAlign="Left" SortExpression="DONTHU_NOIDUNG" HeaderStyle-CssClass="" HeaderStyle-Width="20%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("DONTHU_NOIDUNG")!=null?Eval("DONTHU_NOIDUNG").ToString():"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Kết quả tiếp dân" HeaderStyle-HorizontalAlign="Left" SortExpression="TIEPDAN_KETQUA" HeaderStyle-CssClass="" HeaderStyle-Width="20%">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_KETQUA")!=null?Eval("TIEPDAN_KETQUA").ToString():"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Lần tiếp " HeaderStyle-HorizontalAlign="Left" SortExpression="TIEPDAN_KETQUA" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Left" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_LANTIEP")!=null?Eval("TIEPDAN_LANTIEP").ToString():"" %>
+                                                                                
+                                                                <%# getThongTinDoiTuong(int.Parse(Eval("DOITUONG_ID").ToString())) %>
                                                         </ItemTemplate>
                                                     </asp:TemplateColumn>
 
-                                                    <%--<asp:TemplateColumn HeaderText="CB nhập đơn/CB xử lý" HeaderStyle-HorizontalAlign="Center"  HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Cơ quan GQ tiếp/ Người nhận GQ tiếp" HeaderStyle-HorizontalAlign="Center"  HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>--%>
-                                                    <asp:TemplateColumn HeaderText="Hướng xử lý" HeaderStyle-HorizontalAlign="Left" HeaderStyle-CssClass="">
+                                                    <asp:TemplateColumn HeaderText="Loại đối tượng" HeaderStyle-HorizontalAlign="Left" SortExpression="DOITUONG_LOAI" HeaderStyle-CssClass="sticky" HeaderStyle-Width="10%">
                                                         <ItemStyle HorizontalAlign="Left" />
                                                         <ItemTemplate>
-                                                            <%# Eval("HUONGXULY_TEN")!=null?Eval("HUONGXULY_TEN").ToString():"" %>
+                                                           <%#Eval("DOITUONG_LOAI").ToString()=="1"?"Cá Nhân":(Eval("DOITUONG_LOAI").ToString()=="2"?"Nhóm đông người":Eval("DOITUONG_TEN").ToString()) %>
+                                                              <%#Eval("DOITUONG_LOAI").ToString()=="3"?("<p>"+Eval("DOITUONG_DIACHI").ToString()+"<p/>"):"" %>
                                                         </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Số hiệu văn bản đi" HeaderStyle-HorizontalAlign="Left" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Left" />
+                                                    </asp:TemplateColumn>                              
+                                                    <asp:TemplateColumn HeaderText="Số người" HeaderStyle-HorizontalAlign="Right" SortExpression="DOITUONG_SONGUOI" HeaderStyle-CssClass="sticky" HeaderStyle-Width="10%">
+                                                        <ItemStyle HorizontalAlign="Right" />
                                                         <ItemTemplate>
-                                                            <%# Eval("HUONGXULY_SOHIEUVB_DI")!=null?Eval("HUONGXULY_SOHIEUVB_DI").ToString():"" %>
+                                                            <%# DataBinder.Eval(Container, "DataItem.DOITUONG_SONGUOI") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Thời gian tiếp" HeaderStyle-HorizontalAlign="Center" SortExpression="TIEPDAN_THOGIAN" HeaderStyle-CssClass="">
+                                                    <asp:TemplateColumn HeaderText="Thời gian tạo" HeaderStyle-HorizontalAlign="Center" SortExpression="NGAYTAO" HeaderStyle-CssClass="sticky" HeaderStyle-Width="10%">
                                                         <ItemStyle HorizontalAlign="Center" />
                                                         <ItemTemplate>
-                                                            <%# Eval("TIEPDAN_THOGIAN")!=null?Eval("TIEPDAN_THOGIAN").ToString():"" %>
+                                                            <%# DataBinder.Eval(Container, "DataItem.NGAYTAO") %>
                                                         </ItemTemplate>
-                                                    </asp:TemplateColumn>
-                                                    <asp:TemplateColumn HeaderText="Ngày đề đơn" HeaderStyle-HorizontalAlign="Center" SortExpression="NGUONDON_NGAYDEDON" HeaderStyle-CssClass="">
-                                                        <ItemStyle HorizontalAlign="Center" />
-                                                        <ItemTemplate>
-                                                            <%# Eval("NGUONDON_NGAYDEDON")!=null?Eval("NGUONDON_NGAYDEDON_FOTMAT").ToString():"" %>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateColumn>
+                                                    </asp:TemplateColumn>                    
                                                 </Columns>
                                                 <PagerStyle Mode="NumericPages" CssClass="paping" PageButtonCount="9999" Visible="false"></PagerStyle>
                                             </asp:DataGrid>
+
+
                                         </div>
                                         <!-- /.card-body -->
                                     </div>
                                     <!-- /.card -->
+
                                 </div>
                                 <!-- /.container-fluid -->
                             </div>
@@ -581,9 +500,9 @@
                 </div>
                 <!-- /.container-fluid -->
                 <div class="form-tools">
-                    <asp:LinkButton ID="btnSua" Visible="true" OnClick="btnSua_Click" CausesValidation="true" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-ui-edit"></i>  Sửa</asp:LinkButton>
                     <asp:LinkButton ID="buttonThemmoi" runat="server" OnClick="buttonThemmoi_Click" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-plus"></i>  Thêm</asp:LinkButton>
                     <asp:LinkButton ID="btnCapNhat" OnClick="btnCapNhat_Click" Visible="false" runat="server" CausesValidation="false" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-save"></i> Lưu</asp:LinkButton>
+                    <asp:LinkButton ID="btnSua" Visible="true" OnClick="btnSua_Click" CausesValidation="true" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-ui-edit"></i>  Sửa</asp:LinkButton>
                      <asp:LinkButton ID="btnNhanBan" Visible="true" OnClick="btnNhanBan_Click" CausesValidation="true" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-plus"></i>  Nhân bản</asp:LinkButton>
                     <asp:LinkButton ID="btnBoQua" runat="server" CssClass="btn btn-md btn-default btn-flat text-primary tool-left" CausesValidation="false" OnClick="btnBoQua_Click"><i class='icofont-undo' ></i> Trở về</asp:LinkButton>
                 </div>
@@ -707,7 +626,7 @@
                                                             <asp:ListItem Text="Nhóm đông người" Value="2"></asp:ListItem>
                                                             <asp:ListItem Text="Cơ quan tổ chức" Value="3"></asp:ListItem>
                                                         </asp:DropDownList>
-                                                        <asp:LinkButton ID="btnChonNguoiDaiDien" runat="server" CssClass="btn btn-sm  btn-flat text-primary float-left" data-toggle="modal" data-target="#modal-default"><i class="icofont-maximize h4"></i></asp:LinkButton>
+                                                        <asp:LinkButton ID="btnChonNguoiDaiDien" runat="server" CssClass="btn btn-sm  btn-flat text-primary float-left" data-toggle="modal" data-target="#modal-default-doituong"><i class="icofont-maximize h4"></i></asp:LinkButton>
                                                     </div>
                                                 </div>
                                             </div>
@@ -790,7 +709,7 @@
                                                         <div class="form-group row">
                                                             <label for="inputPhone" class="col-lg-3 col-form-label">CMND/ Thẻ căn cước</label>
                                                             <div class="col-lg-9">
-                                                                <asp:TextBox ID="txtCMND" runat="server" CssClass="form-control" data-mask  data-inputmask="'mask':'[9][9][9][9][9][9][9][9][9][9][9][9]'" inputmode="numeric" MaxLength="500" Text='<%# Eval("CANHAN_CMDN")!=null?Eval("CANHAN_CMDN").ToString():""  %>' />
+                                                                <asp:TextBox ID="txtCMND" runat="server" CssClass="form-control " MaxLength="500" Text='<%# Eval("CANHAN_CMDN")!=null?Eval("CANHAN_CMDN").ToString():""  %>' />
 
                                                             </div>
                                                         </div>

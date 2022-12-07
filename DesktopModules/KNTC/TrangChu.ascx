@@ -80,7 +80,7 @@
                             <!-- /.col -->
                             <div class="col-md-12 pd-0">
                                 <ul class="chart-legend chart-legend-horizontal clearfix">
-                                    <li><i class="icofont-user-alt-7 text-primary icofont-2x"></i><span class="chart-legend-title" >Cá nhân </span><span class="total-td-cn-per char-per text-primary "></span><span class="total-td-cn char-num"></span></li>
+                                    <li><i class="icofont-user-alt-7 text-primary icofont-2x"></i> <span class="chart-legend-title" >Cá nhân </span><span class="total-td-cn-per char-per text-primary "></span> <span class="total-td-cn char-num"></span> </li>
                                     <li><i class="icofont-bank-alt text-danger icofont-2x"></i><span class="chart-legend-title" >Cơ quan tổ chức</span> <span class="total-td-cqtc-per char-per text-danger"></span><span class="total-td-cqtc char-num"></span></li>
                                     <li><i class="icofont-users-alt-3 text-warning icofont-2x"></i><span class="chart-legend-title" >Đoàn đông người </span><span class="total-td-ddn-per char-per text-danger"></span><span class="total-td-ddn char-num"></span></li>
                                 </ul>
@@ -287,15 +287,14 @@
                                     <asp:TemplateColumn HeaderText="Loại đối tượng" HeaderStyle-HorizontalAlign="Left"  HeaderStyle-CssClass="" HeaderStyle-Width="10%">
                                         <ItemStyle HorizontalAlign="Left" />
                                         <ItemTemplate>
-                                            <%#  Eval("DOITUONG_LOAI").ToString() == "1" ? "Cá Nhân" :
-                                                 Eval("DOITUONG_LOAI").ToString() == "2" ? "Nhóm đông người" : "Cơ quan tổ chức" %>
+                                            <%#  Eval("DOITUONG_LOAI").ToString()=="1"?"Cá Nhân":(Eval("DOITUONG_LOAI").ToString()=="2"?"Nhóm đông người":Eval("DOITUONG_TEN").ToString()) %>
                                         </ItemTemplate>
                                     </asp:TemplateColumn>
                                     <asp:TemplateColumn HeaderText="Nguồn đơn" HeaderStyle-HorizontalAlign="Left"  HeaderStyle-CssClass="" HeaderStyle-Width="8%">
                                         <ItemStyle HorizontalAlign="Left" />
                                         <ItemTemplate>
-                                       
-                                            <%#  Eval("NGUONDON_LOAI_CHITIET").ToString()=="0"?"Trực tiếp":(Eval("NGUONDON_LOAI_CHITIET").ToString()=="1"?"Bưu chính":Eval("NGUONDON_LOAI_CHITIET").ToString()=="2"?"Cơ quan khác chuyển tới":"HỘP THƯ GÓP Ý") %>
+                                           <%#  Eval("NGUONDON_LOAI").ToString()=="0"?"Trực tiếp":"Gián tiếp" %><br />
+                                            <%#  Eval("NGUONDON_LOAI").ToString()=="0"?"Ban tiếp công dân":(Eval("NGUONDON_LOAI_CHITIET").ToString()=="0"?"Trung ương":Eval("NGUONDON_LOAI_CHITIET").ToString()=="1"?"Địa phương":"Bưu chính") %>
                                         </ItemTemplate>
                                     </asp:TemplateColumn>
                                     <asp:TemplateColumn HeaderText="Loại đơn" HeaderStyle-HorizontalAlign="Left"  HeaderStyle-CssClass="" HeaderStyle-Width="8%">
@@ -393,7 +392,7 @@
     .char-num
     {
         font-size: 19px;
-        /*float: right;*/
+        float: right;
         font-weight: 500;
         min-width: 50px;
         text-align: center;

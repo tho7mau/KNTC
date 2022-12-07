@@ -17,11 +17,7 @@
 
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-<style type="text/css">
-    ul.nav.nav-pills.nav-sidebar.flex-column > li > a.nav-link > p {
-    white-space: nowrap;
-    }
-</style>
+
 
 <script runat="server">
     protected override void OnLoad(EventArgs e)

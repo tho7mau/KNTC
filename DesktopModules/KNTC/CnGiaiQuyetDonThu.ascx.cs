@@ -1031,7 +1031,7 @@ namespace KNTC
                 vDataContext.SubmitChanges();
                 ClassCommon.ShowToastr(Page, "Cập nhật giải quyết đơn thư thành công", "Thông báo", "success");
                 SetEnableForm(false);
-                buttonThemmoi.Visible = false;
+                buttonThemmoi.Visible = true;
                 btnCapNhat.Visible = false;
                 btnSua.Visible = true;
             }

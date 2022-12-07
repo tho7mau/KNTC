@@ -37,7 +37,7 @@
                             <!-- Text search -->
                             <div class="input-group input-group tool-right">
                                 <asp:Literal runat="server" ID="Literal_OptionSearch">
-                            <div class="float-right OptionSearch OptionSearchDisplay"  data-save="false"></div>
+                                    <div class="float-right OptionSearch OptionSearchDisplay"  data-save="false"></div>
                                 </asp:Literal>
                                 <asp:TextBox runat="server" ID="textSearchContent_HiddenField" CssClass="form-control float-right textSearchContent_HiddenField" placeholder="Nhập từ khóa tìm kiếm" Style="min-width: 100px;"></asp:TextBox>
                                 <asp:TextBox runat="server" ID="textSearchContent" CssClass="form-control float-right" placeholder="Nhập từ khóa tìm kiếm" Style="min-width: 100px;"></asp:TextBox>

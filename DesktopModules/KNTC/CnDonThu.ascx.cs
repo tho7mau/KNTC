@@ -63,9 +63,12 @@ namespace KNTC
                 {
                     vDonThuId = int.Parse(Request.QueryString["id"]);
                 }
+                
                 if (!IsPostBack)
                 {
+                    
                     loadHuongXuLy(0);
+                    
                     GetCoQuan();
                     Session["NhieuNoiDung" + _currentUser.UserID] = null;
 
@@ -81,6 +84,7 @@ namespace KNTC
                     {
                         XoaSessionFile_HoSoNguoiDaiDienUyQuyen();
                     }
+                    
                     hdfieldLayThongTin.Value = "true";
                     LoadDanhSachDonVi();
                     LoadDanhSachCanBo();
@@ -95,9 +99,11 @@ namespace KNTC
                     LoadDanhSach(1, vPageSize);
                     LoadBSModal();
                     EnableSoNguoi(vDonThuId);
-                    btn_ThemNguoiDaiDien.Visible = false;
-                    textSoNguoiDaiDien.Enabled = false;
-                    //textTenThietBi.Focus();                
+                    //textTenThietBi.Focus();
+                    if (ddlistHuongXuLy.SelectedValue == "")
+                    {
+                        btnGiaiQuyetDon.Visible = false;
+                    }
                 }
 
             }
@@ -138,7 +144,7 @@ namespace KNTC
             btnGiaiQuyetDon.Visible = false;
             btnCapNhat.Visible = true;
             buttonThemmoi.Visible = false;
-
+            
             SetEnableForm(true);
             Loadbtn_ThemNguoiDaiDien();
         }
@@ -153,8 +159,6 @@ namespace KNTC
             if (ValidateForm() == true)
             {
                 CapNhat(vDonThuId);
-                btn_ThemNguoiDaiDien.Visible = false;
-                textSoNguoiDaiDien.Enabled = false;
             }
         }
 
@@ -690,10 +694,10 @@ namespace KNTC
                 {
                     btn_XuatBienNhan.Visible = false;
                     btnSua.Visible = false;
-                    buttonThemmoi.Visible = false;
                     btnNhanBan.Visible = false;
                     btnGiaiQuyetDon.Visible = false;
                     btnCapNhat.Visible = true;
+                    buttonThemmoi.Visible = false;
                     btn_XuatPhieu.Visible = false;
                     List<CANHAN> cANHANs = new List<CANHAN>();
                     CANHAN cANHAN = new CANHAN();
@@ -748,7 +752,7 @@ namespace KNTC
                             Session["NhieuNoiDung" + _currentUser.UserID] = objDonThu_NhieuNoiDung;
                         }
                         // end
-                        textSoNguoiDaiDien.Text = vDonThuInfo.DOITUONG.DOITUONG_SONGUOIDAIDIEN.ToString() ?? "0";
+
                         ddlistNguon.SelectedValue = vDonThuInfo.NGUONDON_LOAI_CHITIET.ToString() ?? "0";
                         textNgayNhanDon.Text = DateTime.Parse(vDonThuInfo.NGAYTAO.ToString()).ToString("dd/MM/yyyy");
                         textNgayDeDon.Text = DateTime.Parse(vDonThuInfo.NGUONDON_NGAYDEDON.ToString()).ToString("dd/MM/yyyy");
@@ -765,10 +769,8 @@ namespace KNTC
                             divCoQuanChuyenDon.Visible = false;
                         }
 
-                        ddlistDoiTuong.SelectedValue = vDonThuInfo.DOITUONG.DOITUONG_LOAI.ToString() ?? "0";
-
-                        textSoNguoi.Text = vDonThuInfo.DOITUONG.DOITUONG_SONGUOI.ToString();
-                        ChonDoiTuong(ddlistDoiTuong, null);
+                        ddlistDoiTuong.SelectedValue = vDonThuInfo.DOITUONG_ID.ToString() ?? "0";
+                        textSoNguoi.Text = vDonThuInfo.DOITUONG.CANHANs.Count().ToString();
                         //Load đơn thư không đủ điều kiện
                         if (vDonThuInfo.TRANGTHAI_DONTHUKHONGDUDIEUKIEN ?? false)
                         {
@@ -818,6 +820,7 @@ namespace KNTC
 
                         textNgayNhanDon.Text = DateTime.Parse(vDonThuInfo.NGAYTAO.ToString()).ToString("dd/MM/yyyy");
                         ddlistNguon.SelectedValue = vDonThuInfo.NGUONDON_LOAI_CHITIET.ToString() ?? "0";
+                        textSoNguoi.Text = "1";
                         TitleBreadcrumb = "";
                         lblSTT.Text = (vDonThuInfo.DONTHU_STT) + "";
 
@@ -2155,65 +2158,55 @@ namespace KNTC
         {
             try
             {
-                int songuoiDD = Convert.ToInt32(textSoNguoiDaiDien.Text);
-                int songuoi = Convert.ToInt32(textSoNguoi.Text);
-                if ( songuoiDD >= songuoi )
+                List<CANHAN> cANHANs = new List<CANHAN>();
+                foreach (var item in ListViewDoiTuong.Items)
                 {
-                    ClassCommon.ShowToastr(Page, "Không thể thêm người đại diện khi số người nhỏ hơn hoặc bằng số người đại diện", "Thông báo", "error");
+                    CANHAN cANHAN = new CANHAN();
+                    cANHAN = GetThongTinCaNhan(item);
+                    cANHANs.Add(cANHAN);
+                }
+
+                CANHAN objCANHANAppend = new CANHAN();
+                long MinID = cANHANs.Min(x => x.CANHAN_ID);
+                if (MinID > 0)
+                {
+                    objCANHANAppend.CANHAN_ID = -1;
                 }
                 else
                 {
-                    List<CANHAN> cANHANs = new List<CANHAN>();
-                    foreach (var item in ListViewDoiTuong.Items)
+                    objCANHANAppend.CANHAN_ID = MinID - 1;
+                }
+                objCANHANAppend.DP_ID = ClassParameter.vDiaPhuongDefault;
+                objCANHANAppend.QUOCTICH_ID = ClassParameter.vQuocTichDefault;
+                objCANHANAppend.DANTOC_ID = ClassParameter.vDanTocDefault;
+
+                objCANHANAppend.CANHAN_GIOITINH = false;
+                cANHANs.Add(objCANHANAppend);
+
+
+                ListViewDoiTuong.DataSource = cANHANs;
+                ListViewDoiTuong.DataBind();
+
+                for (int i = 0; i < cANHANs.Count(); i++)
+                {
+                    ListViewDataItem listViewDataItem = ListViewDoiTuong.Items[i];
+                    TextBox txtCaNhanID = ((TextBox)ListViewDoiTuong.Items[i].FindControl("txtCaNhanID"));
+                    if (txtCaNhanID.Text != "")
                     {
-                        CANHAN cANHAN = new CANHAN();
-                        cANHAN = GetThongTinCaNhan(item);
-                        cANHANs.Add(cANHAN);
-                    }
+                        int vCANHAN_ID = Int32.Parse(txtCaNhanID.Text);
 
-                    CANHAN objCANHANAppend = new CANHAN();
-                    long MinID = cANHANs.Min(x => x.CANHAN_ID);
-                    if (MinID > 0)
-                    {
-                        objCANHANAppend.CANHAN_ID = -1;
-                    }
-                    else
-                    {
-                        objCANHANAppend.CANHAN_ID = MinID - 1;
-                    }
-                    objCANHANAppend.DP_ID = ClassParameter.vDiaPhuongDefault;
-                    objCANHANAppend.QUOCTICH_ID = ClassParameter.vQuocTichDefault;
-                    objCANHANAppend.DANTOC_ID = ClassParameter.vDanTocDefault;
+                        DropDownList pDropDownListXa = ((DropDownList)ListViewDoiTuong.Items[i].FindControl("drlXa"));
+                        DropDownList pDropDownListHuyen = ((DropDownList)listViewDataItem.FindControl("drlQuanHuyen"));
+                        DropDownList pDropDownListThanhpho = ((DropDownList)listViewDataItem.FindControl("drlTinhThanhPho"));
 
-                    objCANHANAppend.CANHAN_GIOITINH = false;
-                    cANHANs.Add(objCANHANAppend);
+                        DropDownList drlQuocTich = ((DropDownList)listViewDataItem.FindControl("drlQuocTich"));
+                        DropDownList drlDanToc = ((DropDownList)listViewDataItem.FindControl("drlDanToc"));
 
-
-                    ListViewDoiTuong.DataSource = cANHANs;
-                    ListViewDoiTuong.DataBind();
-
-                    for (int i = 0; i < cANHANs.Count(); i++)
-                    {
-                        ListViewDataItem listViewDataItem = ListViewDoiTuong.Items[i];
-                        TextBox txtCaNhanID = ((TextBox)ListViewDoiTuong.Items[i].FindControl("txtCaNhanID"));
-                        if (txtCaNhanID.Text != "")
-                        {
-                            int vCANHAN_ID = Int32.Parse(txtCaNhanID.Text);
-
-                            DropDownList pDropDownListXa = ((DropDownList)ListViewDoiTuong.Items[i].FindControl("drlXa"));
-                            DropDownList pDropDownListHuyen = ((DropDownList)listViewDataItem.FindControl("drlQuanHuyen"));
-                            DropDownList pDropDownListThanhpho = ((DropDownList)listViewDataItem.FindControl("drlTinhThanhPho"));
-
-                            DropDownList drlQuocTich = ((DropDownList)listViewDataItem.FindControl("drlQuocTich"));
-                            DropDownList drlDanToc = ((DropDownList)listViewDataItem.FindControl("drlDanToc"));
-
-                            LoadDiaPhuong((int)cANHANs[i].DP_ID, pDropDownListXa, pDropDownListHuyen, pDropDownListThanhpho);
-                            LoadDanToc((int)cANHANs[i].DANTOC_ID, drlDanToc);
-                            LoadQuocTich((int)cANHANs[i].QUOCTICH_ID, drlQuocTich);
-                        }
+                        LoadDiaPhuong((int)cANHANs[i].DP_ID, pDropDownListXa, pDropDownListHuyen, pDropDownListThanhpho);
+                        LoadDanToc((int)cANHANs[i].DANTOC_ID, drlDanToc);
+                        LoadQuocTich((int)cANHANs[i].QUOCTICH_ID, drlQuocTich);
                     }
                 }
-
             }
             catch (Exception Ex)
             {
@@ -2241,8 +2234,7 @@ namespace KNTC
             objCANHAN.CANHAN_ID = Int32.Parse(txtCaNhanID.Text);
             objCANHAN.CANHAN_HOTEN = txtHoTen.Text;
             //objCANHAN.lan = Int32.Parse(txtLanTiep.Text);
-             objCANHAN.CANHAN_CMDN = txtCMND.Text;
-
+            objCANHAN.CANHAN_CMDN = txtCMND.Text;
             if (txtNgayCap.Text != "")
             {
                 objCANHAN.CANHAN_CMDN_NGAYCAP = DateTime.Parse(txtNgayCap.Text);
@@ -2659,7 +2651,7 @@ namespace KNTC
                 {
                     divDoiTuong.Visible = false;
                 }
-                if (ddlistDoiTuong.SelectedValue == "2")
+                if (ddlistDoiTuong.SelectedValue == "1")
                 {
                     textSoNguoi.Enabled = true;
                     textSoNguoiDaiDien.Enabled = false;
@@ -3672,9 +3664,10 @@ namespace KNTC
                     vDP_ID = 0;
                 }
 
-
                 string vKeySort = "";
                 string vTypeSort = "";
+
+                
                 string vContentSearch = textSearchContent.Text.Trim();
                 if (ViewState["keysort"] != null && ViewState["typesort"] != null)
                 {
@@ -3683,84 +3676,104 @@ namespace KNTC
 
                 }
 
+
+
                 CommonController objCommonController = new CommonController();
                 string vSearchOption = textSearchContent_HiddenField.Text;
 
 
-                DataSet ds = new DataSet();
-                // trường hợp có đơn 
-                bool vFlag = true;
-                if (vFlag == true)
-                {
-                    if (vSearchOption == "")
-                    {
-                        vSearchOption = "|DONTHU.DONTHU_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DONTHU.DONTHU_NOIDUNG,normal,,";
-                    }
-                    if (vDP_ID != 0)
-                    {
-                        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
-                        if (objDIAPHUONG != null)
-                        {
-                            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
-                        }
-                    }
-                    ds = objCommonController.GetPage(PortalId, ModuleId, "DonThu_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
-                    dgDanhSach.DataKeyField = "DONTHU_ID";
-                    // Tiếp dân
-                    dgDanhSach.Columns[3].Visible = false;
-                    dgDanhSach.Columns[7].Visible = false;
-                    dgDanhSach.Columns[9].Visible = false;
 
-                    dgDanhSach.Columns[11].Visible = false;
-                    dgDanhSach.Columns[12].Visible = false;
-                    dgDanhSach.Columns[15].Visible = false;
-                    // Đơn thư
-                    dgDanhSach.Columns[4].Visible = true;
-                    dgDanhSach.Columns[8].Visible = true;
-                    dgDanhSach.Columns[10].Visible = true;
-                    dgDanhSach.Columns[13].Visible = true;
-                    dgDanhSach.Columns[14].Visible = true;
-                    dgDanhSach.Columns[16].Visible = true;
-                    //dgDanhSach.Columns[9].Visible = true;
-                    //dgDanhSach.Columns[10].Visible = true;
-                    //dgDanhSach.Columns[11].Visible = true;
-                }
-                // trường hợp không có đơn có đơn 
-                else
+                if (vSearchOption == "")
                 {
-                    if (vSearchOption == "")
-                    {
-                        vSearchOption = "|TIEPDAN.TIEPDAN_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|TIEPDAN.TIEPDAN_NOIDUNG,normal,,";
-                    }
-                    if (vDP_ID != 0)
-                    {
-                        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
-                        if (objDIAPHUONG != null)
-                        {
-                            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
-                        }
-                    }
-                    ds = objCommonController.GetPage(PortalId, ModuleId, "TiepDan_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
-                    dgDanhSach.DataKeyField = "TIEPDAN_ID";
-
-                    // Tiếp dân
-                    dgDanhSach.Columns[3].Visible = true;
-                    dgDanhSach.Columns[7].Visible = true;
-                    dgDanhSach.Columns[9].Visible = true;
-                    dgDanhSach.Columns[11].Visible = true;
-                    dgDanhSach.Columns[12].Visible = true;
-                    dgDanhSach.Columns[15].Visible = true;
-                    // Đơn thư
-                    dgDanhSach.Columns[4].Visible = false;
-                    dgDanhSach.Columns[8].Visible = false;
-                    dgDanhSach.Columns[10].Visible = false;
-                    dgDanhSach.Columns[13].Visible = false;
-                    dgDanhSach.Columns[14].Visible = false;
-                    dgDanhSach.Columns[16].Visible = false;
-                    //dgDanhSach.Columns[9].Visible = false;
-                    //dgDanhSach.Columns[10].Visible = false;
-                    //dgDanhSach.Columns[11].Visible = false;
+                    vSearchOption = "|DOITUONG.DOITUONG_ID,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DOITUONG.DOITUONG_DIACHI,normal,,";
                 }
+                if (vDP_ID != 0)
+                {
+                    DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
+                    if (objDIAPHUONG != null)
+                    {
+                        vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                    }
+                }
+
+                DataSet ds = objCommonController.GetPage(PortalId, ModuleId, "DoiTuong_GetPage", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
+                TiepDanController vTiepDanController = new TiepDanController();
+                List<TIEPDAN_DOITUONG> vTIEPDANs = vTiepDanController.getList(vContentSearch);
+
+                //DataSet ds = new DataSet();
+                //// trường hợp có đơn 
+                //bool vFlag = true;
+                //if (vFlag == true)
+                //{
+                //    if (vSearchOption == "")
+                //    {
+                //        vSearchOption = "|DONTHU.DONTHU_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DONTHU.DONTHU_NOIDUNG,normal,,";
+                //    }
+                //    if (vDP_ID != 0)
+                //    {
+                //        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
+                //        if (objDIAPHUONG != null)
+                //        {
+                //            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                //        }
+                //    }
+                //    ds = objCommonController.GetPage(PortalId, ModuleId, "DonThu_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
+                //    dgDanhSach.DataKeyField = "DONTHU_ID";
+                //    // Tiếp dân
+                //    dgDanhSach.Columns[3].Visible = false;
+                //    dgDanhSach.Columns[7].Visible = false;
+                //    dgDanhSach.Columns[9].Visible = false;
+
+                //    dgDanhSach.Columns[11].Visible = false;
+                //    dgDanhSach.Columns[12].Visible = false;
+                //    dgDanhSach.Columns[15].Visible = false;
+                //    // Đơn thư
+                //    dgDanhSach.Columns[4].Visible = false;
+                //    dgDanhSach.Columns[8].Visible = false;
+                //    dgDanhSach.Columns[10].Visible = false;
+                //    dgDanhSach.Columns[13].Visible = false;
+                //    dgDanhSach.Columns[14].Visible = false;
+                //    dgDanhSach.Columns[16].Visible = false;
+                //    //dgDanhSach.Columns[9].Visible = true;
+                //    //dgDanhSach.Columns[10].Visible = true;
+                //    //dgDanhSach.Columns[11].Visible = true;
+                //}
+                //// trường hợp không có đơn có đơn 
+                //else
+                //{
+                //    if (vSearchOption == "")
+                //    {
+                //        vSearchOption = "|TIEPDAN.TIEPDAN_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|TIEPDAN.TIEPDAN_NOIDUNG,normal,,";
+                //    }
+                //    if (vDP_ID != 0)
+                //    {
+                //        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
+                //        if (objDIAPHUONG != null)
+                //        {
+                //            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                //        }
+                //    }
+                //    ds = objCommonController.GetPage(PortalId, ModuleId, "TiepDan_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
+                //    dgDanhSach.DataKeyField = "TIEPDAN_ID";
+
+                //    // Tiếp dân
+                //    dgDanhSach.Columns[3].Visible = true;
+                //    dgDanhSach.Columns[7].Visible = false;
+                //    dgDanhSach.Columns[9].Visible = false;
+                //    dgDanhSach.Columns[11].Visible = false;
+                //    dgDanhSach.Columns[12].Visible = false;
+                //    dgDanhSach.Columns[15].Visible = false;
+                //    // Đơn thư
+                //    dgDanhSach.Columns[4].Visible = false;
+                //    dgDanhSach.Columns[8].Visible = false;
+                //    dgDanhSach.Columns[10].Visible = false;
+                //    dgDanhSach.Columns[13].Visible = false;
+                //    dgDanhSach.Columns[14].Visible = false;
+                //    dgDanhSach.Columns[16].Visible = false;
+                //    //dgDanhSach.Columns[9].Visible = false;
+                //    //dgDanhSach.Columns[10].Visible = false;
+                //    //dgDanhSach.Columns[11].Visible = false;
+                //}
                 int TotalRow = 0;
                 if (ds.Tables[0].Rows.Count > 0)
                 {
@@ -4108,8 +4121,12 @@ namespace KNTC
                     }
                 }
 
-                var vDoiTuongInfo = vDataContext.DONTHUs.Where(x => x.DONTHU_ID == vID).Select(x => x.DOITUONG).FirstOrDefault();
-                hdfieldDoiTuongId.Value = vDoiTuongInfo.DOITUONG_ID.ToString();
+                //var vDoiTuongInfo = vDataContext.DONTHUs.Where(x => x.DONTHU_ID == vID).Select(x => x.DOITUONG).FirstOrDefault();
+                //hdfieldDoiTuongId.Value = vDoiTuongInfo.DOITUONG_ID.ToString();
+
+                var vDoiTuongInfo = vDataContext.DOITUONGs.Where(x => x.DOITUONG_ID == vID).FirstOrDefault();
+                hdfieldDoiTuongId.Value = vID.ToString();
+
                 if (vDoiTuongInfo != null)
                 {
                     if (btn.CommandArgument == "ChonDoiTuong")

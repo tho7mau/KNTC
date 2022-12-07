@@ -654,9 +654,9 @@
                 </div>
                 <!-- /.container-fluid -->
                 <div class="form-tools">
-                    <asp:LinkButton ID="buttonThemmoi" Visible="false" OnClick="btn_ThemMoi_Click" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-plus"></i>  Thêm</asp:LinkButton>
+                    <asp:LinkButton ID="buttonThemmoi" OnClick="btn_ThemMoi_Click" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-plus"></i>  Thêm</asp:LinkButton>
                     <asp:LinkButton ID="btnCapNhat" Visible="false" runat="server" OnClick="btnCapNhat_Click" CausesValidation="false" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-save"></i> Lưu</asp:LinkButton>
-                    <asp:LinkButton ID="btnSua" Visible="true" OnClick="btnSua_Click" CausesValidation="true" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-edit"></i>  Cập nhật kết quả</asp:LinkButton>
+                    <asp:LinkButton ID="btnSua" Visible="true" OnClick="btnSua_Click" CausesValidation="true" runat="server" CssClass="btn  bg-gradient-primary btn-flat tool-left"><i class="icofont-ui-edit"></i>  Sửa</asp:LinkButton>
                     <asp:LinkButton ID="btn_XuatPhieu" runat="server" OnClick="btn_XuatPhieu_Click" CssClass="btn btn-default btn-flat tool-left text-primary"><i class="icofont-file-word"></i> Xuất phiếu </asp:LinkButton>
                     <asp:LinkButton ID="btnBoQua" runat="server" CssClass="btn btn-md btn-default btn-flat text-primary tool-left" CausesValidation="false" OnClick="btnBoQua_Click"><i class='icofont-undo' ></i> Trở về</asp:LinkButton>
                 </div>
@@ -718,9 +718,9 @@
                                 <!-- /.card-header -->
                                 <div class="form-horizontal">
                                     <div class="card-body">
-                                              <div class="row" style="padding-top: 15px">
+                                        <div class="row">
                                             <div class="col-lg-6">
-                                                <h4>Kết quả giải quyết</h4>
+                                                <h4>Thông tin nguồn đơn</h4>
                                             </div>
                                             <div class="col-lg-6 text-right">
                                                 <h1 class="mr-b0"><b>
@@ -730,106 +730,6 @@
                                                     <asp:Literal runat="server" ID="lblThoiHanGiaiQuyet"></asp:Literal></span>
 
                                                 <%--<h6><asp:Label runat="server" ID="lblNgayTiepDan" CssClass="text-primary"> </asp:Label></h6>--%>
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class="form-group row" runat="server" id="div1">
-                                                    <div class="col-lg-12">
-                                                        <asp:CheckBox runat="server" ID="cboxDaXuLy" CssClass="cbCustom" OnCheckedChanged="cboxDaXuLy_CheckedChanged" AutoPostBack="true" Text="Đã có kết quả" />
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div runat="server" id="divKetQuaXuLy">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group row">
-                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNoiDungBaoCao">Nội dung báo cáo</label>
-                                                        <div class="col-lg-9">
-                                                            <asp:TextBox ID="textNoiDungBaoCao" runat="server" TextMode="MultiLine" Rows="4" CssClass="form-control requirement ">
-                                                            </asp:TextBox>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group row">
-                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNgayCapNhatKetQuaXuly" >Ngày cập nhật</label>
-                                                        <div class="col-lg-9">
-                                                            <div class='input-group datecontrol date reservationdateNgayCapNhatKetQua' data-target-input="nearest">
-                                                                <asp:TextBox ID="dateNgayCapNhatKetQua" runat="server" CssClass="form-control datetimepicker-input requirement" placeholder="" />
-                                                                <div class="input-group-append" data-target='.reservationdateNgayCapNhatKetQua' data-toggle="datetimepicker">
-                                                                    <div class="input-group-text"><i class="icofont-ui-calendar h5 mb-0"></i></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="form-group row">
-                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNgayCoKetQua">Ngày có kết quả</label>
-                                                        <div class="col-lg-9">
-                                                            <div class='input-group datecontrol date reservationdateNgayCoKetQua' data-target-input="nearest">
-                                                                <asp:TextBox ID="dateNgayCoKetQua" runat="server" CssClass="form-control datetimepicker-input requirement" placeholder="" />
-                                                                <div class="input-group-append" data-target='.reservationdateNgayCoKetQua' data-toggle="datetimepicker">
-                                                                    <div class="input-group-text"><i class="icofont-ui-calendar h5 mb-0"></i></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <%--Hồ sơ kết quả giả quyết--%>
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="form-group row">
-                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="label18"></label>
-                                                        <div class="col-lg-9">
-                                                            <asp:LinkButton ID="buttonThemHoSoKetQuaXuLy" runat="server" CssClass="btn btn-default btn-flat" data-toggle="modal" data-target="#modal-default-hosoketqua"> <i class="icofont-plus"></i> Thêm tập tin đính kèm</asp:LinkButton>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <%--<div class="card-body p-0">
-                                            <div class="table-content p-0">--%>
-                                            <div class="row text-center">
-                                                <div class="col-lg-9" style="margin-left: auto; margin-right: auto;">
-                                                    <asp:DataGrid DataKeyField="HOSO_ID" runat="server" ID="dgDanhSach_File_KetQuaGiaiQuyet" AutoGenerateColumns="False" CssClass="table vertical-align-middle">
-                                                        <HeaderStyle CssClass="table-header" />
-                                                        <Columns>
-                                                            <asp:BoundColumn HeaderText="HOSO_ID" DataField="HOSO_ID" Visible="false"></asp:BoundColumn>
-                                                            <asp:BoundColumn HeaderText="Tên hồ sơ" HeaderStyle-HorizontalAlign="Left" DataField="HOSO_TEN" ItemStyle-HorizontalAlign="Left"></asp:BoundColumn>
-                                                            <asp:BoundColumn HeaderText="Nội dung tóm tắt" HeaderStyle-HorizontalAlign="Left" DataField="HOSO_TOMTAT" ItemStyle-HorizontalAlign="Left"></asp:BoundColumn>
-
-                                                            <asp:TemplateColumn HeaderText="Tải về" Visible="true">
-                                                                <HeaderStyle Width="10%" HorizontalAlign="Center" />
-                                                                <ItemStyle Width="10%" HorizontalAlign="Center" />
-                                                                <ItemTemplate>
-                                                                    <a oncontextmenu="return false" target="_blank" href='<%#vPathCommonUploadHoSo+"/" +Eval("HOSO_FILE")%>' runat="server"><i class="icofont-download"></i></a>
-                                                                </ItemTemplate>
-                                                            </asp:TemplateColumn>
-
-                                                            <asp:TemplateColumn HeaderText="Xóa" Visible="true">
-                                                                <HeaderStyle Width="10%" HorizontalAlign="Center" />
-                                                                <ItemStyle Width="10%" HorizontalAlign="Center" />
-                                                                <ItemTemplate>
-                                                                    <a onserverclick="XoaHoSoDonThu_KetQua" title="Xóa tài liệu" class="icon-xoa" onclick="return getConfirmation(this, 'THÔNG BÁO','Bạn muốn xóa hồ sơ đính kèm này?');" href='<%# Eval("HOSO_ID").ToString()%>' oncontextmenu="return false" runat="server">
-                                                                        <i class="icofont-ui-delete"></i>
-                                                                    </a>
-                                                                </ItemTemplate>
-                                                            </asp:TemplateColumn>
-                                                        </Columns>
-                                                    </asp:DataGrid>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <h4>Thông tin nguồn đơn</h4>
                                             </div>
                                         </div>
 
@@ -1866,7 +1766,105 @@
 
                                         <br />
                                         <br />
-                                  
+                                        <div class="row" style="padding-top: 15px">
+                                            <div class="col-lg-2">
+                                                <h4>Kết quả giải quyết</h4>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group row" runat="server" id="div1">
+                                                    <div class="col-lg-12">
+                                                        <asp:CheckBox runat="server" ID="cboxDaXuLy" CssClass="cbCustom" OnCheckedChanged="cboxDaXuLy_CheckedChanged" AutoPostBack="true" Text="Đã có kết quả" />
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div runat="server" id="divKetQuaXuLy">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNoiDungBaoCao">Nội dung báo cáo</label>
+                                                        <div class="col-lg-9">
+                                                            <asp:TextBox ID="textNoiDungBaoCao" runat="server" TextMode="MultiLine" Rows="4" CssClass="form-control requirement ">
+                                                            </asp:TextBox>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNgayCapNhatKetQuaXuly" >Ngày cập nhật</label>
+                                                        <div class="col-lg-9">
+                                                            <div class='input-group datecontrol date reservationdateNgayCapNhatKetQua' data-target-input="nearest">
+                                                                <asp:TextBox ID="dateNgayCapNhatKetQua" runat="server" CssClass="form-control datetimepicker-input requirement" placeholder="" />
+                                                                <div class="input-group-append" data-target='.reservationdateNgayCapNhatKetQua' data-toggle="datetimepicker">
+                                                                    <div class="input-group-text"><i class="icofont-ui-calendar h5 mb-0"></i></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="labelNgayCoKetQua">Ngày có kết quả</label>
+                                                        <div class="col-lg-9">
+                                                            <div class='input-group datecontrol date reservationdateNgayCoKetQua' data-target-input="nearest">
+                                                                <asp:TextBox ID="dateNgayCoKetQua" runat="server" CssClass="form-control datetimepicker-input requirement" placeholder="" />
+                                                                <div class="input-group-append" data-target='.reservationdateNgayCoKetQua' data-toggle="datetimepicker">
+                                                                    <div class="input-group-text"><i class="icofont-ui-calendar h5 mb-0"></i></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <%--Hồ sơ kết quả giả quyết--%>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="inputPhone" class="col-lg-3 col-form-label" runat="server" id="label18"></label>
+                                                        <div class="col-lg-9">
+                                                            <asp:LinkButton ID="buttonThemHoSoKetQuaXuLy" runat="server" CssClass="btn btn-default btn-flat" data-toggle="modal" data-target="#modal-default-hosoketqua"> <i class="icofont-plus"></i> Thêm tập tin đính kèm</asp:LinkButton>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <%--<div class="card-body p-0">
+                                            <div class="table-content p-0">--%>
+                                            <div class="row text-center">
+                                                <div class="col-lg-9" style="margin-left: auto; margin-right: auto;">
+                                                    <asp:DataGrid DataKeyField="HOSO_ID" runat="server" ID="dgDanhSach_File_KetQuaGiaiQuyet" AutoGenerateColumns="False" CssClass="table vertical-align-middle">
+                                                        <HeaderStyle CssClass="table-header" />
+                                                        <Columns>
+                                                            <asp:BoundColumn HeaderText="HOSO_ID" DataField="HOSO_ID" Visible="false"></asp:BoundColumn>
+                                                            <asp:BoundColumn HeaderText="Tên hồ sơ" HeaderStyle-HorizontalAlign="Left" DataField="HOSO_TEN" ItemStyle-HorizontalAlign="Left"></asp:BoundColumn>
+                                                            <asp:BoundColumn HeaderText="Nội dung tóm tắt" HeaderStyle-HorizontalAlign="Left" DataField="HOSO_TOMTAT" ItemStyle-HorizontalAlign="Left"></asp:BoundColumn>
+
+                                                            <asp:TemplateColumn HeaderText="Tải về" Visible="true">
+                                                                <HeaderStyle Width="10%" HorizontalAlign="Center" />
+                                                                <ItemStyle Width="10%" HorizontalAlign="Center" />
+                                                                <ItemTemplate>
+                                                                    <a oncontextmenu="return false" target="_blank" href='<%#vPathCommonUploadHoSo+"/" +Eval("HOSO_FILE")%>' runat="server"><i class="icofont-download"></i></a>
+                                                                </ItemTemplate>
+                                                            </asp:TemplateColumn>
+
+                                                            <asp:TemplateColumn HeaderText="Xóa" Visible="true">
+                                                                <HeaderStyle Width="10%" HorizontalAlign="Center" />
+                                                                <ItemStyle Width="10%" HorizontalAlign="Center" />
+                                                                <ItemTemplate>
+                                                                    <a onserverclick="XoaHoSoDonThu_KetQua" title="Xóa tài liệu" class="icon-xoa" onclick="return getConfirmation(this, 'THÔNG BÁO','Bạn muốn xóa hồ sơ đính kèm này?');" href='<%# Eval("HOSO_ID").ToString()%>' oncontextmenu="return false" runat="server">
+                                                                        <i class="icofont-ui-delete"></i>
+                                                                    </a>
+                                                                </ItemTemplate>
+                                                            </asp:TemplateColumn>
+                                                        </Columns>
+                                                    </asp:DataGrid>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <%--End hồ sơ kết quả giải quyết--%>
                                     </div>
