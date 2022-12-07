@@ -1,0 +1,25 @@
+2022-06-10 15:33:44.031+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-06-10 15:33:44.049+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-06-10 15:48:00.850+07:00 [DESKTOP-2PI45EV][D:2][T:5][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-06-10 15:48:00.931+07:00 [DESKTOP-2PI45EV][D:2][T:5][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-06-10 15:48:00.938+07:00 [DESKTOP-2PI45EV][D:2][T:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+2022-06-10 15:48:00.954+07:00 [DESKTOP-2PI45EV][D:2][T:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, LogInfo log, ExceptionLogType logType)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, ExceptionLogType logType)
+   at DotNetNuke.Services.Exceptions.Exceptions.LogException(Exception exc)
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsDictionaryCallBack(CacheItemArgs cacheItemArgs)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromDictionary(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+2022-06-10 15:48:01.314+07:00 [DESKTOP-2PI45EV][D:2][T:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Web.UI.Utilities.ApplySkin(Control telerikControl, String fallBackEmbeddedSkinName, String controlName, String webControlSkinSubFolderName)
+2022-06-10 15:51:18.254+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-06-10 15:51:18.271+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-06-10 15:54:17.559+07:00 [DESKTOP-2PI45EV][D:4][T:20][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-06-10 15:54:17.576+07:00 [DESKTOP-2PI45EV][D:4][T:20][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

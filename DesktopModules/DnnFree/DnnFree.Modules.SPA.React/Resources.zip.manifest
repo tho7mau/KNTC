@@ -1,0 +1,24 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path>dist/</path>
+      <name>handeptrai_bundle.js</name>
+    </file>
+    <file>
+      <path />
+      <name>License.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>package-lock.json</name>
+    </file>
+    <file>
+      <path />
+      <name>ReleaseNotes.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>View.html</name>
+    </file>
+  </files>
+</dotnetnuke>

@@ -1,0 +1,337 @@
+2022-07-01 08:01:13.281+07:00 [DESKTOP-2PI45EV][D:11][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2022-07-01 08:01:13.285+07:00 [DESKTOP-2PI45EV][D:11][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) ---> System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:70a66c96-869b-4eb4-b6f4-eae4ac0f3c65
+Error Number:64,State:0,Class:20
+2022-07-01 08:01:15.550+07:00 [DESKTOP-2PI45EV][D:11][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Cast[TResult](IEnumerable source)
+   at DotNetNuke.Services.Log.EventLog.LogController.GetLogTypeInfoDictionary()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-07-01 08:24:52.905+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 08:24:52.921+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 08:37:43.690+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddScheduleHistory @0, @1, @2
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.691+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddScheduleHistory @0, @1, @2
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.696+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddScheduleHistory(Int32 ScheduleID, DateTime StartDate, String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.AddScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.695+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddScheduleHistory(Int32 ScheduleID, DateTime StartDate, String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.AddScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.713+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.713+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.715+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.715+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.721+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetScheduleItemSettings @0
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.721+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.UpdateScheduleHistory @0, @1, @2, @3, @4
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.722+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.UpdateScheduleHistory(Int32 ScheduleHistoryID, DateTime EndDate, Boolean Succeeded, String LogNotes, DateTime NextStart)
+   at DotNetNuke.Services.Scheduling.SchedulingController.UpdateScheduleHistory(ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.UpdateScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.725+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.726+07:00 [DESKTOP-2PI45EV][D:2][T:51][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.726+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Scheduling.SchedulingController.GetScheduleItemSettings(Int32 ScheduleID)
+   at DotNetNuke.Services.Search.Internals.SearchHelperImpl.GetLastSuccessfulIndexingDateTime(Int32 scheduleId)
+   at DotNetNuke.Services.Search.SearchEngineScheduler.DoWork()
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.728+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.728+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.729+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.UpdateScheduleHistory @0, @1, @2, @3, @4
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.730+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.UpdateScheduleHistory(Int32 ScheduleHistoryID, DateTime EndDate, Boolean Succeeded, String LogNotes, DateTime NextStart)
+   at DotNetNuke.Services.Scheduling.SchedulingController.UpdateScheduleHistory(ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.UpdateScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.731+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.731+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.732+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddEventLog @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.733+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddEventLog @0, @1, @2, @3, @4, @5, @6, @7, @8, @9
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.733+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.734+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Scheduling.SchedulingController.GetScheduleItemSettings(Int32 ScheduleID)
+   at DotNetNuke.Services.Search.Internals.SearchHelperImpl.GetLastSuccessfulIndexingDateTime(Int32 scheduleId)
+   at DotNetNuke.Services.Search.SearchEngineScheduler.DoWork()
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:43.735+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:43.736+07:00 [DESKTOP-2PI45EV][D:2][T:42][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:46.059+07:00 [DESKTOP-2PI45EV][D:2][T:27][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetUserByUsername @0, @1
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:46.062+07:00 [DESKTOP-2PI45EV][D:2][T:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.GetUserByUserNameFromDataStore(Int32 portalId, String username)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:46.067+07:00 [DESKTOP-2PI45EV][D:2][T:27][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 08:37:46.069+07:00 [DESKTOP-2PI45EV][D:2][T:27][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b7e2cbff-72d5-41a3-83a9-9d8cb321a717
+Error Number:-2,State:0,Class:11
+2022-07-01 08:37:46.092+07:00 [DESKTOP-2PI45EV][D:2][T:27][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AuthCookies_Update @0, @1, @2
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=82; handshake=14984; 
+2022-07-01 10:40:27.399+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 10:40:27.415+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 10:53:08.283+07:00 [DESKTOP-2PI45EV][D:4][T:37][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 10:53:08.301+07:00 [DESKTOP-2PI45EV][D:4][T:37][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 10:54:11.714+07:00 [DESKTOP-2PI45EV][D:5][T:9][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 10:54:11.731+07:00 [DESKTOP-2PI45EV][D:5][T:9][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 13:59:21.906+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 13:59:21.923+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 14:24:01.073+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 14:24:01.077+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 14:51:34.489+07:00 [DESKTOP-2PI45EV][D:3][T:33][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 14:51:34.509+07:00 [DESKTOP-2PI45EV][D:3][T:33][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 15:02:24.189+07:00 [DESKTOP-2PI45EV][D:4][T:19][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 15:02:24.206+07:00 [DESKTOP-2PI45EV][D:4][T:19][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 15:05:58.665+07:00 [DESKTOP-2PI45EV][D:5][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 15:05:58.692+07:00 [DESKTOP-2PI45EV][D:5][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 15:06:22.053+07:00 [DESKTOP-2PI45EV][D:6][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 15:06:22.069+07:00 [DESKTOP-2PI45EV][D:6][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 15:08:43.403+07:00 [DESKTOP-2PI45EV][D:7][T:11][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 15:08:43.421+07:00 [DESKTOP-2PI45EV][D:7][T:11][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 15:12:10.327+07:00 [DESKTOP-2PI45EV][D:8][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 15:12:10.343+07:00 [DESKTOP-2PI45EV][D:8][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-01 17:23:01.805+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-01 17:23:01.822+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

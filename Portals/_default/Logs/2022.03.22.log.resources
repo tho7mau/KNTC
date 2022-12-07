@@ -1,0 +1,97 @@
+2022-03-22 08:11:37.661+07:00 [DESKTOP-2PI45EV][D:3][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 08:11:37.678+07:00 [DESKTOP-2PI45EV][D:3][T:31][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 09:05:47.950+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 09:05:47.969+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 09:38:23.118+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 09:38:23.134+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 09:42:09.526+07:00 [DESKTOP-2PI45EV][D:2][T:12][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at KNTC.CnDoiTuong.Loadbtn_ThemNguoiDaiDien() in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDoiTuong.ascx.cs:line 924
+   at KNTC.CnDoiTuong.txtSoNguoiDaiDien_TextChanged(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDoiTuong.ascx.cs:line 957
+   at System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   at System.Web.UI.Page.RaiseChangedEvents()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-03-22 09:42:09.547+07:00 [DESKTOP-2PI45EV][D:2][T:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=2055&error=Input+string+was+not+in+a+correct+format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at KNTC.CnDoiTuong.Loadbtn_ThemNguoiDaiDien() in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDoiTuong.ascx.cs:line 924
+   at KNTC.CnDoiTuong.txtSoNguoiDaiDien_TextChanged(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDoiTuong.ascx.cs:line 957
+   at System.Web.UI.WebControls.TextBox.OnTextChanged(EventArgs e)
+   at System.Web.UI.Page.RaiseChangedEvents()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-03-22 11:04:58.779+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 11:04:58.797+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 11:20:29.781+07:00 [DESKTOP-2PI45EV][D:3][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 11:20:29.797+07:00 [DESKTOP-2PI45EV][D:3][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 11:55:35.033+07:00 [DESKTOP-2PI45EV][D:3][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetSchedule @0
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=1432; handshake=13979; 
+2022-03-22 11:55:35.037+07:00 [DESKTOP-2PI45EV][D:3][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=1432; handshake=13979;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Scheduling.SchedulingController.GetSchedule(String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.LoadQueueFromTimer()
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.Start()
+ClientConnectionId:b070f85b-8792-4d77-8252-1c6a89540e36
+Error Number:-2,State:0,Class:11
+2022-03-22 11:55:35.072+07:00 [DESKTOP-2PI45EV][D:3][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=1432; handshake=13979; 
+2022-03-22 11:55:35.074+07:00 [DESKTOP-2PI45EV][D:3][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=1432; handshake=13979;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:b070f85b-8792-4d77-8252-1c6a89540e36
+Error Number:-2,State:0,Class:11
+2022-03-22 11:55:45.070+07:00 [DESKTOP-2PI45EV][D:3][T:18][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddScheduleHistory @0, @1, @2
+Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-03-22 11:55:45.072+07:00 [DESKTOP-2PI45EV][D:3][T:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddScheduleHistory(Int32 ScheduleID, DateTime StartDate, String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.AddScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:eccf9fa5-b7e5-4606-8a3e-0eb1fcda15c1
+Error Number:-2,State:0,Class:11
+2022-03-22 14:15:56.772+07:00 [DESKTOP-2PI45EV][D:4][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 14:15:56.802+07:00 [DESKTOP-2PI45EV][D:4][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 14:51:02.349+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 14:51:02.366+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 15:48:58.419+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 15:48:58.436+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 15:50:46.615+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 15:50:46.631+07:00 [DESKTOP-2PI45EV][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-22 15:53:31.010+07:00 [DESKTOP-2PI45EV][D:4][T:19][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-22 15:53:31.012+07:00 [DESKTOP-2PI45EV][D:4][T:19][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

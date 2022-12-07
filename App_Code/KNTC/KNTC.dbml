@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KNTC_DATA" EntityNamespace="KNTC" Class="KNTCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LIINK_SERVER\MSSQLSERVER_2014;Initial Catalog=KNTC_DATA;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SiteSqlServer_KNTC" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CHUCVU" Member="CHUCVUs">
+    <Type Name="CHUCVU">
+      <Column Name="CV_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENCHUCVU" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MOTA" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PB_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CHUCVU_CANBO" Member="CANBOs" ThisKey="CV_ID" OtherKey="CV_ID" Type="CANBO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Devices_App" Member="Devices_Apps">
+    <Type Name="Devices_App">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlayerId" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="PushToken" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LastLogin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EnableThongBao" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EnableAmTinNhan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIAPHUONG" Member="DIAPHUONGs">
+    <Type Name="DIAPHUONG">
+      <Column Name="DP_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DP_TEN" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DP_ID_CHA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_KHUVUC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TEN_KHUVUC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DP_NAME" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="INDEX_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CapDo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONTHU_HOSO" Member="DONTHU_HOSOs">
+    <Type Name="DONTHU_HOSO">
+      <Column Name="DTHS_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HOSO_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LOAI_HS_DONTHU" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="HOSO_DONTHU_HOSO" Member="HOSO" ThisKey="HOSO_ID" OtherKey="HOSO_ID" Type="HOSO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONVI" Member="DONVIs">
+    <Type Name="DONVI">
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENDONVI" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="TENVIETTAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MOTA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TRANGTHAI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="DONVI_PhongBan" Member="PhongBans" ThisKey="DONVI_ID" OtherKey="DONVI_ID" Type="PhongBan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HINHTHUCGIAIQUYET" Member="HINHTHUCGIAIQUYETs">
+    <Type Name="HINHTHUCGIAIQUYET">
+      <Column Name="HTGQ_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HTGQ_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HTGQ_MOTA" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KNTC_THONGBAO" Member="KNTC_THONGBAOs">
+    <Type Name="KNTC_THONGBAO">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Kind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SendDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlayerIds" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="PhienHop_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIHOSO" Member="LOAIHOSOs">
+    <Type Name="LOAIHOSO">
+      <Column Name="LOAIHOSO_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LOAIHOSO_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIHOSO_MOTA" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIDUNG_DEVICE" Member="NGUOIDUNG_DEVICEs">
+    <Type Name="NGUOIDUNG_DEVICE">
+      <Column Name="NGUOIDUNG_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlayerId" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="identifier" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="device_model" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="device_os" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="device_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ip" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EnableThongBao" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EnableAmTinNhan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THONGBAO_NGUOIDUNG" Member="THONGBAO_NGUOIDUNGs">
+    <Type Name="THONGBAO_NGUOIDUNG">
+      <Column Name="ThongBaoId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NguoiDungId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TrangThaiGuiThongBao" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DaXemNoiDung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THONGBAO_THIETLAP" Member="THONGBAO_THIETLAPs">
+    <Type Name="THONGBAO_THIETLAP">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TrangThaiGoiThongBao" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TrangThaiGoiSms" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SMS_ApiUsername" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SMS_ApiPassword" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SMS_ApiCode" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SMS_ApiRequestID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SMS_ApiServiceID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SMS_ApiCommandCode" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PUSH_OneSignalAppId" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PUSH_OneSignalRestAPIKey" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TIEPDAN_DOITUONG" Member="TIEPDAN_DOITUONGs">
+    <Type Name="TIEPDAN_DOITUONG">
+      <Column Name="TIEPDAN_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TIEPDAN_NOIDUNG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TIEPDAN_KETQUA" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TIEPDAN_STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TIEPDAN_THOGIAN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TIEPDAN_LANTIEP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_CANBO_TIEP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DANTOC" Member="DANTOCs">
+    <Type Name="DANTOC">
+      <Column Name="DANTOC_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DANTOC_TEN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DANTOC_MOTA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QUOCTICH" Member="QUOCTICHes">
+    <Type Name="QUOCTICH">
+      <Column Name="QUOCTICH_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QUOCTICH_TEN" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="QUOCTICH_MOTA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_DONTHU_DOITUONG_CANHAN" Member="V_DONTHU_DOITUONG_CANHANs">
+    <Type Name="V_DONTHU_DOITUONG_CANHAN">
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DONTHU_NOIDUNG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KETQUA_NOIDUNG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DONTHU_STT" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_LAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_DONTHU_DOITUONG" Member="V_DONTHU_DOITUONGs">
+    <Type Name="V_DONTHU_DOITUONG">
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DONTHU_NOIDUNG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KETQUA_NOIDUNG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DONTHU_STT" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_LAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_CANBO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DOITUONG" Member="DOITUONGs">
+    <Type Name="DOITUONG">
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOIDAIDIEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_BIKNTC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DOITUONG_CANHAN" Member="CANHANs" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="CANHAN" />
+      <Association Name="DOITUONG_DONTHU" Member="DONTHUs" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="DONTHU" />
+      <Association Name="DOITUONG_TIEPDAN" Member="TIEPDANs" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="TIEPDAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CANBO" Member="CANBOs">
+    <Type Name="CANBO">
+      <Column Name="CANBO_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CANBO_TEN" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CANBO_EMAIL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CANBO_SODIENTHOAI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CV_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PB_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRANGTHAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GHICHU" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LANHDAO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="CHUCVU_CANBO" Member="CHUCVU" ThisKey="CV_ID" OtherKey="CV_ID" Type="CHUCVU" IsForeignKey="true" />
+      <Association Name="PhongBan_CANBO" Member="PhongBan" ThisKey="PB_ID" OtherKey="PB_ID" Type="PhongBan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CANHAN" Member="CANHANs">
+    <Type Name="CANHAN">
+      <Column Name="CANHAN_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CANHAN_HOTEN" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="CANHAN_CMDN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CANHAN_CMDN_NGAYCAP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CANHAN_NOICAP" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANHAN_DIACHI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CANHAN_DIACHI_DAYDU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="QUOCTICH_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DANTOC_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANHAN_GIOITINH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NOICONGTAC" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CHUCVU" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CANHAN_DAIDIENUYQUYEN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DOITUONG_CANHAN" Member="DOITUONG" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="DOITUONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOSO" Member="HOSOs">
+    <Type Name="HOSO">
+      <Column Name="HOSO_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LOAIHOSO_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HOSO_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HOSO_FILE" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="HOSO_TOMTAT" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="HOSO_DONTHU_HOSO" Member="DONTHU_HOSOs" ThisKey="HOSO_ID" OtherKey="HOSO_ID" Type="DONTHU_HOSO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIDONTHU" Member="LOAIDONTHUs">
+    <Type Name="LOAIDONTHU">
+      <Column Name="LOAIDONTHU_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LOAIDONTHU_CAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_MA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_MOTA" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LOAIDONTHU_INDEX" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_COLOR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_COLOR_CLASS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ICONNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ICONFILE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HUONGXYLY" Member="HUONGXYLies">
+    <Type Name="HUONGXYLY">
+      <Column Name="HUONGXYLY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HUONGXYLY_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HUONGXYLY_MOTA" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="HUONGXULY_ICONNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HUONGXULY_COLOR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HUONGXULY_COLOR_CLASS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HUONGXULY_ICONFILE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONTHU" Member="DONTHUs">
+    <Type Name="DONTHU">
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DONTHU_STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI_CHITIET" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_SOVANBANCHUYEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NGUONDON_NGAYDEDON" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NGUONDON_NGAYCHUYEN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONTHU_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_DONTHU" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_LAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_HTGQ_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_NGAYBANHANH_QD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DAGIAIQUYET_KETQUA_CQ" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DONTHU_KHONGDUDDIEUKIEN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DOITUONG_BI_KNTC_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NGUOIUYQUYEN_CANHAN_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NGUOIUYQUYEN_LOAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DONTHU_TRANGTHAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_TEN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="HUONGXULY_THAMQUYENGIAIQUYET_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_THAMQUYENGIAIQUYET_TEN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="HUONGXULY_DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_CANBO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_NGAYCHUYEN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HUONGXULY_SOHIEUVB_DI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HUONGXULY_NGUOIDUYET_CANHAN_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXULY_YKIEN_XULY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DONTHU_GHICHU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="KETQUA_XYLY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KETQUA_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="KETQUA_NGAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KETQUA_NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRANGTHAI_DONTHUKHONGDUDIEUKIEN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRANGTHAI_THONGTINCOQUANDAGIAIQUYET" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRANGTHAI_BOSUNGTHONGTINNGUOIBIKHIEUNAITOCAO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRANGTHAI_BOSUNGTHONGTINNGUOIDAIDIENUYQUYEN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DONTHU_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HUONGXULY_CHUCVU_TEN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="HUONGXULY_THOIHANGIAIQUET" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DONTHU_CU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="DOITUONG_DONTHU" Member="DOITUONG" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="DOITUONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KNTC_DONTHU_DOITUONG_LOAI" Member="KNTC_DONTHU_DOITUONG_LOAIs">
+    <Type Name="KNTC_DONTHU_DOITUONG_LOAI">
+      <Column Name="DONTHU_STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI_CHITIET" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONTHU_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HUONGXULY_CANBO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Expr6" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LOAIDONTHU_CAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HUONGXYLY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXYLY_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DONTHU_TRANGTHAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TENDONVI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KNTC_TIEPDAN_DOITUONG_LOAI" Member="KNTC_TIEPDAN_DOITUONG_LOAIs">
+    <Type Name="KNTC_TIEPDAN_DOITUONG_LOAI">
+      <Column Name="TIEPDAN_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TIEPDAN_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TIEPDAN_KETQUA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TIEPDAN_STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TIEPDAN_THOGIAN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TIEPDAN_LANTIEP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_CANBO_TIEP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_LOAI_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DOITUONG_NACDANH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOIDAIDIEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LOAIDONTHU_CAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_INDEX" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DOITUONG_SONGUOI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KNTC_DONTHU_DOITUONG_LOAI_PORTAL" Member="KNTC_DONTHU_DOITUONG_LOAI_PORTALs">
+    <Type Name="KNTC_DONTHU_DOITUONG_LOAI_PORTAL">
+      <Column Name="DONTHU_STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NGUONDON_LOAI_CHITIET" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUONDON_DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONTHU_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HUONGXULY_CANBO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KETQUA_NGAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DOITUONG_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Expr6" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LOAIDONTHU_CAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expr7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_CHA_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LOAIDONTHU_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HUONGXYLY_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HUONGXYLY_TEN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="HUONGXULY_YKIEN_XULY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DONTHU_TRANGTHAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TENDONVI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DOITUONG_DIACHI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TIEPDAN" Member="TIEPDANs">
+    <Type Name="TIEPDAN">
+      <Column Name="TIEPDAN_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TIEPDAN_NOIDUNG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TIEPDAN_KETQUA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TIEPDAN_STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TIEPDAN_THOGIAN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DONTHU_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NGUOITAO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGUOICAPNHAT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NGAYTAO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NGAYCAPNHAT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TIEPDAN_LANTIEP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_CANBO_TIEP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOITUONG_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TIEPDAN_LOAI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_LOAI_CHA_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_BTD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIEPDAN_CU" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="DOITUONG_TIEPDAN" Member="DOITUONG" ThisKey="DOITUONG_ID" OtherKey="DOITUONG_ID" Type="DOITUONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONTHU_NHIEUNOIDUNG" Member="DONTHU_NHIEUNOIDUNGs">
+    <Type Name="DONTHU_NHIEUNOIDUNG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DONTHU_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOIDUNG" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENDONVI" Type="System.String" DbType="NVarChar(225)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhongBan" Member="PhongBans">
+    <Type Name="PhongBan">
+      <Column Name="PB_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DONVI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TENDONVI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TENPHONGBAN" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="PhongBan_CANBO" Member="CANBOs" ThisKey="PB_ID" OtherKey="PB_ID" Type="CANBO" />
+      <Association Name="DONVI_PhongBan" Member="DONVI" ThisKey="DONVI_ID" OtherKey="DONVI_ID" Type="DONVI" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

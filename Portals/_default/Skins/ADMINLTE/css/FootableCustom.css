@@ -1,0 +1,132 @@
+﻿.footable-row-detail-inner{
+    line-height:25px;
+}
+.footable2.breakpoint > tbody > tr > td.expand {
+    background: url(images/plus.png) no-repeat 0px center;
+    padding-left: 30px;
+
+}
+.footable2 {
+	border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: solid #ccc 1px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+  font-size: 14px;
+  color: #444;
+}
+.footable2.breakpoint > thead > tr > th[data-class="expand"]
+{
+    padding-left: 30px;
+}
+
+.footable2.breakpoint > tbody > tr:last-child > td.expand
+{
+     background: none;
+      padding-left: 0px;
+}
+
+.footable2.breakpoint > tbody > tr.footable2-detail-show > td.expand {
+  background: url('img/minus.png') no-repeat 5px center;
+}
+
+.footable2.breakpoint > tbody > tr.footable2-row-detail {
+  background: #eee;
+}
+
+.footable2 > tbody > tr:hover {
+  background: #fbf8e9;
+}
+
+.footable2.breakpoint > tbody > tr:hover:not(.footable2-row-detail) {
+  cursor: pointer;
+}
+
+.footable2 > tbody > tr > td, .footable2 > thead > tr > th {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.footable2 > tbody > tr > td.footable2-cell-detail {
+  border-left: none;
+}
+
+.footable2 > thead > tr > th, .footable2 > thead > tr > td {
+  background-color: #dce9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+  background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: linear-gradient(to bottom, #ebf3fc, #dce9f9);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  border-top: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.footable2 > thead > tr:first-child > th.footable2-first-column, .footable2 > thead > tr:first-child > td.footable2-first-column {
+  -moz-border-radius: 6px 0 0 0;
+  -webkit-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+
+.footable2 > thead > tr:first-child > th.footable2-last-column, .footable2 > thead > tr:first-child > td.footable2-last-column {
+  -moz-border-radius: 0 6px 0 0;
+  -webkit-border-radius: 0 6px 0 0;
+  border-radius: 0 6px 0 0;
+}
+
+.footable2 > thead > tr:first-child > th.footable2-first-column.footable2-last-column, .footable2 > thead > tr:first-child > td.footable2-first-column.footable2-last-column {
+  -moz-border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.footable2 > tbody > tr:last-child > td.footable2-first-column {
+  -moz-border-radius: 0 0 0 6px;
+  -webkit-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+}
+
+.footable2 > tbody > tr:last-child > td.footable2-last-column {
+  -moz-border-radius: 0 0 6px 0;
+  -webkit-border-radius: 0 0 6px 0;
+  border-radius: 0 0 6px 0;
+}
+
+.footable2 > tbody > tr:last-child > td.footable2-first-column.footable2-last-column {
+  -moz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+.footable2 > thead > tr > th.footable2-first-column, .footable2 > thead > tr > td.footable2-first-column,
+.footable2 > tbody > tr > td.footable2-first-column {
+  border-left: none;
+}
+
+.footable2 > tbody img {
+  vertical-align:middle;
+}
+
+.footable2 > tfoot > tr > th, .footable2 > tfoot > tr > td {
+  background-color: #dce9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+  background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+  background-image: linear-gradient(to bottom, #ebf3fc, #dce9f9);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  border-top: 1px solid #ccc;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  padding: 10px;
+}

@@ -1,0 +1,31 @@
+﻿.table th, .table td {
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+.table a, .table a:hover, .table a:active, .table a:focus{
+    color: #212529;
+}
+.table .table-header * {
+    font-weight:700;
+}
+.card-header > .card-tools .datetime-content .input-group {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.table.vertical-align-middle th,
+.table.vertical-align-middle td {
+    vertical-align: middle;
+}
+.textSearchContent_HiddenField {
+    display: none !important;
+}
+.btn-group.btn-group-search-option {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+    .btn-group.btn-group-search-option button
+    {
+        font-size:12px;
+    }

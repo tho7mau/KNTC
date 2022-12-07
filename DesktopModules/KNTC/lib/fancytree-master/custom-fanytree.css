@@ -1,0 +1,31 @@
+html .fancytree-ext-childcounter span.fancytree-childcounter,
+html .fancytree-ext-filter span.fancytree-childcounter {
+  background: #f60;
+  border: 1px solid #ff6600;
+  top: -6px;
+  right: -6px;
+  min-width: 14px;
+  height: 14px;
+}
+html span.fancytree-icon {
+  background-image: none;
+  width: 0px;
+}
+.fancytree-container.mark,
+.fancytree-container mark {
+  background-color: transparent;
+  padding: 0px;
+  font-weight: bold;
+  color: #f60;
+}
+
+html .btnResetSearch {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 34px !important;
+  min-width: 34px;
+  border-color: #ce3e3a !important;
+  height: 32px;
+  background-color: #d9534f !important;
+}

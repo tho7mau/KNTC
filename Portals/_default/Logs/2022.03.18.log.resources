@@ -1,0 +1,377 @@
+2022-03-18 08:19:16.642+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:19:16.662+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 08:42:48.146+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:42:48.166+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 08:47:46.274+07:00 [DESKTOP-2PI45EV][D:3][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:47:46.291+07:00 [DESKTOP-2PI45EV][D:3][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 08:48:51.117+07:00 [DESKTOP-2PI45EV][D:4][T:8][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:48:51.134+07:00 [DESKTOP-2PI45EV][D:4][T:8][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 08:50:58.592+07:00 [DESKTOP-2PI45EV][D:5][T:18][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:50:58.609+07:00 [DESKTOP-2PI45EV][D:5][T:18][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 08:58:16.279+07:00 [DESKTOP-2PI45EV][D:6][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 08:58:16.296+07:00 [DESKTOP-2PI45EV][D:6][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:09:43.481+07:00 [DESKTOP-2PI45EV][D:7][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:09:43.498+07:00 [DESKTOP-2PI45EV][D:7][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:12:37.127+07:00 [DESKTOP-2PI45EV][D:8][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:12:37.145+07:00 [DESKTOP-2PI45EV][D:8][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:20:28.175+07:00 [DESKTOP-2PI45EV][D:9][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:20:28.192+07:00 [DESKTOP-2PI45EV][D:9][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:21:56.371+07:00 [DESKTOP-2PI45EV][D:10][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:21:56.388+07:00 [DESKTOP-2PI45EV][D:10][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:24:33.012+07:00 [DESKTOP-2PI45EV][D:11][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:24:33.029+07:00 [DESKTOP-2PI45EV][D:11][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 09:27:15.423+07:00 [DESKTOP-2PI45EV][D:12][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 09:27:15.439+07:00 [DESKTOP-2PI45EV][D:12][T:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 10:06:51.830+07:00 [DESKTOP-2PI45EV][D:13][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 10:06:51.847+07:00 [DESKTOP-2PI45EV][D:13][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 10:13:02.527+07:00 [DESKTOP-2PI45EV][D:14][T:79][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 10:13:02.568+07:00 [DESKTOP-2PI45EV][D:14][T:79][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 11:06:44.773+07:00 [DESKTOP-2PI45EV][D:14][T:5][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetUserByUsername @0, @1
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.773+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.SearchDeletedItems_Select @0
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.773+07:00 [DESKTOP-2PI45EV][D:14][T:24][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.UpdateScheduleHistory @0, @1, @2, @3, @4
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.776+07:00 [DESKTOP-2PI45EV][D:14][T:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.UpdateScheduleHistory(Int32 ScheduleHistoryID, DateTime EndDate, Boolean Succeeded, String LogNotes, DateTime NextStart)
+   at DotNetNuke.Services.Scheduling.SchedulingController.UpdateScheduleHistory(ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.UpdateScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.778+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.GetSearchDeletedItems(DateTime cutoffTime)
+   at DotNetNuke.Services.Search.SearchEngine.DeleteRemovedObjects()
+   at DotNetNuke.Services.Search.SearchEngineScheduler.DoWork()
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.774+07:00 [DESKTOP-2PI45EV][D:14][T:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.GetUserByUserNameFromDataStore(Int32 portalId, String username)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.790+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.790+07:00 [DESKTOP-2PI45EV][D:14][T:24][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.791+07:00 [DESKTOP-2PI45EV][D:14][T:24][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.791+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.790+07:00 [DESKTOP-2PI45EV][D:14][T:5][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.808+07:00 [DESKTOP-2PI45EV][D:14][T:5][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.808+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.UpdateScheduleHistory @0, @1, @2, @3, @4
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.810+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.UpdateScheduleHistory(Int32 ScheduleHistoryID, DateTime EndDate, Boolean Succeeded, String LogNotes, DateTime NextStart)
+   at DotNetNuke.Services.Scheduling.SchedulingController.UpdateScheduleHistory(ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.UpdateScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.811+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.812+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.813+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddEventLog @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.814+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddEventLog @0, @1, @2, @3, @4, @5, @6, @7, @8, @9
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.814+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.815+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.GetSearchDeletedItems(DateTime cutoffTime)
+   at DotNetNuke.Services.Search.SearchEngine.DeleteRemovedObjects()
+   at DotNetNuke.Services.Search.SearchEngineScheduler.DoWork()
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.816+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.820+07:00 [DESKTOP-2PI45EV][D:14][T:98][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.825+07:00 [DESKTOP-2PI45EV][D:14][T:5][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteError(LogTypeConfigInfo logTypeConfigInfo, Exception exc, String header, String message)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.AddLog(LogInfo logInfo)
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-03-18 11:06:44.861+07:00 [DESKTOP-2PI45EV][D:14][T:46][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetUserByUsername @0, @1
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.862+07:00 [DESKTOP-2PI45EV][D:14][T:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.GetUserByUserNameFromDataStore(Int32 portalId, String username)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.863+07:00 [DESKTOP-2PI45EV][D:14][T:46][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2022-03-18 11:06:44.864+07:00 [DESKTOP-2PI45EV][D:14][T:46][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:839ab531-a6db-4121-a564-b41d693b468e
+Error Number:258,State:0,Class:20
+2022-03-18 11:06:44.866+07:00 [DESKTOP-2PI45EV][D:14][T:46][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteError(LogTypeConfigInfo logTypeConfigInfo, Exception exc, String header, String message)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.AddLog(LogInfo logInfo)
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-03-18 13:29:56.843+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 13:29:56.862+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 13:32:57.504+07:00 [DESKTOP-2PI45EV][D:2][T:14][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 57449
+	Referer: http://localhost:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+	ViewState: wUlUl/3HlaIaH9F2fFVRFMGsq3irE+WHwvo9cdSjyRuSTxv7sjYqzn9ChYFcI0FwL/3gsVslK2Q/7DJJVwbHrfvy1LEO822khnDZ0/jhnGrBnliByE4h/oRVNSKJItWZeo0cPsQ3/ro6azqanlyV1nkmVnCPeQXSu1Aq8z72s0XLvh2k3T13YyYpNJnF1N9rYoSYqDlHPwRFQxO7A+gBdu4VoazmurL09gyfm+bSulP/C1TeUenV6Hwvr6dAawwbqPj/6R3iqStln1YAp7weYuDH2V9UOia6yPF5nV8K8xrvDRvYk/uTuupcZ3zGTTxBAS7QJN8zPlmS8pd30LR2LEraRJWpBT99WNPRFZsPXWWgqysFatCDEAXL539Mr01f09Y/hNhyoNP4gV+FAOBZqqNZBjadVd6MLawIPeu3nmmLq40t32uXqo1iZKNS/CDp5xWff/Pj20xueWPSvuq7FD3IeEhxCYV0leeF2vK0Vy3J8EjC8MmYm91PS3HLITZmyjcePArinIBDpuXj9M1shWG6BF9KDtbocs0/IMV3aYSwX6Pih6fymkHAbNqfJJHxqRVgKMWWuVxhKH38ABU/drhroKZ8ZXkp8oEklt0LQndGiYeSJ9un1m+u/rrPi20nEM/j+ftoQicFSJ1uB7T4unlpgBM=
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-03-18 13:32:57.553+07:00 [DESKTOP-2PI45EV][D:2][T:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 57449
+	Referer: http://localhost:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+	ViewState: wUlUl/3HlaIaH9F2fFVRFMGsq3irE+WHwvo9cdSjyRuSTxv7sjYqzn9ChYFcI0FwL/3gsVslK2Q/7DJJVwbHrfvy1LEO822khnDZ0/jhnGrBnliByE4h/oRVNSKJItWZeo0cPsQ3/ro6azqanlyV1nkmVnCPeQXSu1Aq8z72s0XLvh2k3T13YyYpNJnF1N9rYoSYqDlHPwRFQxO7A+gBdu4VoazmurL09gyfm+bSulP/C1TeUenV6Hwvr6dAawwbqPj/6R3iqStln1YAp7weYuDH2V9UOia6yPF5nV8K8xrvDRvYk/uTuupcZ3zGTTxBAS7QJN8zPlmS8pd30LR2LEraRJWpBT99WNPRFZsPXWWgqysFatCDEAXL539Mr01f09Y/hNhyoNP4gV+FAOBZqqNZBjadVd6MLawIPeu3nmmLq40t32uXqo1iZKNS/CDp5xWff/Pj20xueWPSvuq7FD3IeEhxCYV0leeF2vK0Vy3J8EjC8MmYm91PS3HLITZmyjcePArinIBDpuXj9M1shWG6BF9KDtbocs0/IMV3aYSwX6Pih6fymkHAbNqfJJHxqRVgKMWWuVxhKH38ABU/drhroKZ8ZXkp8oEklt0LQndGiYeSJ9un1m+u/rrPi20nEM/j+ftoQicFSJ1uB7T4unlpgBM=
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2022-03-18 13:33:00.536+07:00 [DESKTOP-2PI45EV][D:2][T:14][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 57449
+	Referer: http://localhost:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+	ViewState: wUlUl/3HlaIaH9F2fFVRFMGsq3irE+WHwvo9cdSjyRuSTxv7sjYqzn9ChYFcI0FwL/3gsVslK2Q/7DJJVwbHrfvy1LEO822khnDZ0/jhnGrBnliByE4h/oRVNSKJItWZeo0cPsQ3/ro6azqanlyV1nkmVnCPeQXSu1Aq8z72s0XLvh2k3T13YyYpNJnF1N9rYoSYqDlHPwRFQxO7A+gBdu4VoazmurL09gyfm+bSulP/C1TeUenV6Hwvr6dAawwbqPj/6R3iqStln1YAp7weYuDH2V9UOia6yPF5nV8K8xrvDRvYk/uTuupcZ3zGTTxBAS7QJN8zPlmS8pd30LR2LEraRJWpBT99WNPRFZsPXWWgqysFatCDEAXL539Mr01f09Y/hNhyoNP4gV+FAOBZqqNZBjadVd6MLawIPeu3nmmLq40t32uXqo1iZKNS/CDp5xWff/Pj20xueWPSvuq7FD3IeEhxCYV0leeF2vK0Vy3J8EjC8MmYm91PS3HLITZmyjcePArinIBDpuXj9M1shWG6BF9KDtbocs0/IMV3aYSwX6Pih6fymkHAbNqfJJHxqRVgKMWWuVxhKH38ABU/drhroKZ8ZXkp8oEklt0LQndGiYeSJ9un1m+u/rrPi20nEM/j+ftoQicFSJ1uB7T4unlpgBM=
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-03-18 13:33:00.554+07:00 [DESKTOP-2PI45EV][D:2][T:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 57449
+	Referer: http://localhost:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+	ViewState: wUlUl/3HlaIaH9F2fFVRFMGsq3irE+WHwvo9cdSjyRuSTxv7sjYqzn9ChYFcI0FwL/3gsVslK2Q/7DJJVwbHrfvy1LEO822khnDZ0/jhnGrBnliByE4h/oRVNSKJItWZeo0cPsQ3/ro6azqanlyV1nkmVnCPeQXSu1Aq8z72s0XLvh2k3T13YyYpNJnF1N9rYoSYqDlHPwRFQxO7A+gBdu4VoazmurL09gyfm+bSulP/C1TeUenV6Hwvr6dAawwbqPj/6R3iqStln1YAp7weYuDH2V9UOia6yPF5nV8K8xrvDRvYk/uTuupcZ3zGTTxBAS7QJN8zPlmS8pd30LR2LEraRJWpBT99WNPRFZsPXWWgqysFatCDEAXL539Mr01f09Y/hNhyoNP4gV+FAOBZqqNZBjadVd6MLawIPeu3nmmLq40t32uXqo1iZKNS/CDp5xWff/Pj20xueWPSvuq7FD3IeEhxCYV0leeF2vK0Vy3J8EjC8MmYm91PS3HLITZmyjcePArinIBDpuXj9M1shWG6BF9KDtbocs0/IMV3aYSwX6Pih6fymkHAbNqfJJHxqRVgKMWWuVxhKH38ABU/drhroKZ8ZXkp8oEklt0LQndGiYeSJ9un1m+u/rrPi20nEM/j+ftoQicFSJ1uB7T4unlpgBM=
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2022-03-18 13:36:44.953+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 13:36:44.994+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 14:24:31.534+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 14:24:31.537+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 15:00:37.748+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 15:00:37.760+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 15:56:44.764+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 15:56:44.768+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 16:07:03.364+07:00 [DESKTOP-2PI45EV][D:3][T:24][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 16:07:03.382+07:00 [DESKTOP-2PI45EV][D:3][T:24][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 16:56:20.005+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 16:56:20.025+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-18 17:20:47.393+07:00 [DESKTOP-2PI45EV][D:5][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-18 17:20:47.411+07:00 [DESKTOP-2PI45EV][D:5][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

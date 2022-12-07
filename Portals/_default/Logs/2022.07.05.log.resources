@@ -1,0 +1,156 @@
+2022-07-05 08:08:34.974+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 08:08:34.995+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 09:29:30.568+07:00 [DESKTOP-2PI45EV][D:2][T:11][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(1060): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'XoaNoiDung' and no extension method 'XoaNoiDung' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-07-05 09:29:31.301+07:00 [DESKTOP-2PI45EV][D:2][T:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(1060): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'XoaNoiDung' and no extension method 'XoaNoiDung' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-07-05 09:48:08.798+07:00 [DESKTOP-2PI45EV][D:2][T:12][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(1050): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'btnThemNoiDung_Click' and no extension method 'btnThemNoiDung_Click' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-07-05 09:48:09.539+07:00 [DESKTOP-2PI45EV][D:2][T:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(1050): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'btnThemNoiDung_Click' and no extension method 'btnThemNoiDung_Click' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-07-05 10:12:49.927+07:00 [DESKTOP-2PI45EV][D:3][T:48][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 10:12:49.944+07:00 [DESKTOP-2PI45EV][D:3][T:48][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 10:13:47.386+07:00 [DESKTOP-2PI45EV][D:3][T:44][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4269
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 10:13:47.404+07:00 [DESKTOP-2PI45EV][D:3][T:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Input+string+was+not+in+a+correct+format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4269
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 10:17:01.103+07:00 [DESKTOP-2PI45EV][D:3][T:39][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4269
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 10:17:01.110+07:00 [DESKTOP-2PI45EV][D:3][T:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Input+string+was+not+in+a+correct+format.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4269
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 11:27:22.954+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 11:27:22.971+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 13:44:46.967+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 13:44:46.970+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 13:46:05.618+07:00 [DESKTOP-2PI45EV][D:2][T:13][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4338
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 13:46:05.653+07:00 [DESKTOP-2PI45EV][D:2][T:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4338
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 13:47:42.029+07:00 [DESKTOP-2PI45EV][D:2][T:9][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4338
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 13:47:42.030+07:00 [DESKTOP-2PI45EV][D:2][T:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at KNTC.CnDonThu.btnThemNoiDung_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4338
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-05 14:22:25.225+07:00 [DESKTOP-2PI45EV][D:2][T:52][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs(1707): error CS1501: No overload for method 'Them_NhieuNoidung' takes 0 arguments
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-07-05 14:22:25.801+07:00 [DESKTOP-2PI45EV][D:2][T:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs(1707): error CS1501: No overload for method 'Them_NhieuNoidung' takes 0 arguments
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-07-05 14:56:58.285+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 14:56:58.290+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 15:56:41.063+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 15:56:41.067+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 16:47:41.453+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 16:47:41.470+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 16:55:18.251+07:00 [DESKTOP-2PI45EV][D:3][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 16:55:18.268+07:00 [DESKTOP-2PI45EV][D:3][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 17:01:25.862+07:00 [DESKTOP-2PI45EV][D:4][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 17:01:25.879+07:00 [DESKTOP-2PI45EV][D:4][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-05 17:19:31.151+07:00 [DESKTOP-2PI45EV][D:5][T:43][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-05 17:19:31.168+07:00 [DESKTOP-2PI45EV][D:5][T:43][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

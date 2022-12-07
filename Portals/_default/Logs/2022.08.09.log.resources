@@ -1,0 +1,30 @@
+2022-08-09 08:31:11.822+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-08-09 08:31:11.825+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-08-09 10:14:25.217+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-08-09 10:14:25.235+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-08-09 10:55:42.082+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-08-09 10:55:42.099+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-08-09 11:17:36.676+07:00 [DESKTOP-2PI45EV][D:3][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-08-09 11:17:36.693+07:00 [DESKTOP-2PI45EV][D:3][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-08-09 13:42:00.463+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-08-09 13:42:00.480+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-08-09 14:08:15.627+07:00 [DESKTOP-2PI45EV][D:2][T:69][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\TK_TIEPDAN_NEW.ascx.cs(155): error CS0103: The name 'ddlistHuongXuLy' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-08-09 14:08:15.834+07:00 [DESKTOP-2PI45EV][D:2][T:69][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: TK_TiepDan_New is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\TK_TIEPDAN_NEW.ascx.cs(155): error CS0103: The name 'ddlistHuongXuLy' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"

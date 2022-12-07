@@ -1,0 +1,138 @@
+2022-03-29 08:07:30.991+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2022-03-29 08:07:30.996+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) ---> System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:3652fac8-46dc-4998-9fd8-ea50905d5fa3
+Error Number:64,State:0,Class:20
+2022-03-29 08:07:31.011+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2022-03-29 08:07:31.012+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) ---> System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:66449a94-ae17-445c-b627-2957a591746b
+Error Number:64,State:0,Class:20
+2022-03-29 08:07:31.014+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2022-03-29 08:07:31.015+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) ---> System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:a027eb65-9e35-4ff0-a8c0-604a70ccb47a
+Error Number:64,State:0,Class:20
+2022-03-29 08:07:32.217+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Cast[TResult](IEnumerable source)
+   at DotNetNuke.Services.Log.EventLog.LogController.GetLogTypeInfoDictionary()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-03-29 08:07:32.253+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Cast[TResult](IEnumerable source)
+   at DotNetNuke.Services.Log.EventLog.LogController.GetLogTypeInfoDictionary()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-03-29 08:07:32.254+07:00 [DESKTOP-2PI45EV][D:10][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Cast[TResult](IEnumerable source)
+   at DotNetNuke.Services.Log.EventLog.LogController.GetLogTypeInfoDictionary()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-03-29 09:21:14.551+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-29 09:21:14.568+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-29 09:25:03.791+07:00 [DESKTOP-2PI45EV][D:3][T:20][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-29 09:25:03.807+07:00 [DESKTOP-2PI45EV][D:3][T:20][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-29 10:48:40.449+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-29 10:48:40.472+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-29 13:48:15.892+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-03-29 13:48:15.919+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-03-29 13:49:26.353+07:00 [DESKTOP-2PI45EV][D:2][T:9][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnTiepDan.ascx.cs(820): error CS0029: Cannot implicitly convert type 'bool' to 'int?'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-03-29 13:49:26.580+07:00 [DESKTOP-2PI45EV][D:2][T:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnTiepDan.ascx.cs(820): error CS0029: Cannot implicitly convert type 'bool' to 'int?'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-03-29 13:50:44.162+07:00 [DESKTOP-2PI45EV][D:2][T:8][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnTiepDan.ascx.cs(820): error CS0029: Cannot implicitly convert type 'bool' to 'int?'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-03-29 13:50:44.172+07:00 [DESKTOP-2PI45EV][D:2][T:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnTiepDan.ascx.cs(820): error CS0029: Cannot implicitly convert type 'bool' to 'int?'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"

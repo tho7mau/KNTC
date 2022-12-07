@@ -1,0 +1,39 @@
+.panel{
+    border-radius:5px !important;
+}
+.panel-default {
+    border-color:#FFF;
+}
+.PSW {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: -2px 2px 4px rgba(0,0,0,.05);
+}
+.PSW .panel-heading 
+{
+	  background: #fff;
+	  padding: 0 10px 0 5px;
+}
+.PSW .panel-body {
+    padding: 0px;
+}
+    .PSW .panel-heading .panel-title .Head {
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: #ff6600;
+        font-size: 14px;
+        padding-left: 0px;
+        font-weight: normal;
+        text-overflow: ellipsis;
+    }
+@media only screen and (min-width: 320px) and (max-width: 979px)
+{
+	.new-event .panel-heading 
+	{
+		background:#fff;
+	}
+	
+}

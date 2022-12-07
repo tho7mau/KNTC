@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.625, 24.375" name="HopKhongGiay">
+  <DataContextMoniker Name="/KNTCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="68dfe8bd-cba3-42c9-916c-9149e27c4c65" absoluteBounds="3.5, 5.625, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/KNTCDataContext/CHUCVU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83ef2e0f-0e70-4fad-a31d-5d11654de359" absoluteBounds="3.515, 6.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67b79e86-ba8d-4b47-b067-483fe2e213a3" absoluteBounds="0.75, 8.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/KNTCDataContext/Devices_App" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36389062-b9ef-4293-89c1-cd59184bee0f" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="da320864-ac26-4e8b-9718-fbbc4c2cc383" absoluteBounds="0.75, 12.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/KNTCDataContext/DIAPHUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11bbe88a-6b3c-4ff5-9712-ff16567fe7ed" absoluteBounds="0.765, 13.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f74afbd0-db47-4982-9b62-ed5f7d2c9293" absoluteBounds="11.5, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/KNTCDataContext/DONTHU_HOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f399c4e-fd88-415d-b334-2a66998b6862" absoluteBounds="11.515, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0035499d-b20d-4921-b9d5-363bc82713b5" absoluteBounds="0.75, 1.625, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/KNTCDataContext/DONVI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="494f064d-4bdc-4b94-88da-5593c5ef433b" absoluteBounds="0.765, 2.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1e4af65-062f-4387-a8b4-f286b754d8e1" absoluteBounds="12.75, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/KNTCDataContext/HINHTHUCGIAIQUYET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9717319-24ff-4676-8552-2cdf47b86e4b" absoluteBounds="12.765, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a818785-4555-43d2-9960-c93c53c691a0" absoluteBounds="12.75, 10.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/KNTCDataContext/KNTC_THONGBAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6ff579b-fd02-49bc-a9f4-7db283887790" absoluteBounds="12.765, 11.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40e9df28-d2a6-479e-8c28-924817a4c21d" absoluteBounds="12.75, 14.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/KNTCDataContext/LOAIHOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80e496e6-9fb0-4120-8556-2dbd941b0dca" absoluteBounds="12.765, 15.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8411e07e-f062-4296-b143-31ed3a0e705f" absoluteBounds="15.75, 4.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/KNTCDataContext/NGUOIDUNG_DEVICE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8348c83a-befb-4d88-9472-8c2f6837d782" absoluteBounds="15.765, 5.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="140cf3a7-7fb7-417d-ba03-97c5ec9b8d23" absoluteBounds="6.75, 15.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/KNTCDataContext/THONGBAO_NGUOIDUNG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79bb7c8e-1dfd-43a8-9be6-1f1a9af9a881" absoluteBounds="6.765, 16.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d177900-f734-4fe8-8d69-aafa1762a0f8" absoluteBounds="15.75, 8.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/KNTCDataContext/THONGBAO_THIETLAP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b227b695-1018-4f44-8fb2-190394f77510" absoluteBounds="15.765, 9.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32597abe-ebb8-40e9-8516-827ddfcd0325" absoluteBounds="0.625, 4.125, 2, 4.2708154296875">
+      <DataClassMoniker Name="/KNTCDataContext/TIEPDAN_DOITUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3717d75a-c205-480e-bb2e-aa6fa55e4933" absoluteBounds="0.64, 4.585, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86e597c5-9708-40a5-a71e-90ad4a131f49" absoluteBounds="3.375, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/KNTCDataContext/DANTOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3deaee80-1f80-46d9-b1f2-a63952a6a0a2" absoluteBounds="3.39, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea692b15-8741-4fba-abab-4a6be6b23ed3" absoluteBounds="14.375, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/KNTCDataContext/QUOCTICH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f2adb0a-3b7c-4da6-9634-f2192f713ff7" absoluteBounds="14.39, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fda4a452-a54d-4723-b2ac-a723c6981b03" absoluteBounds="15.75, 12.75, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/KNTCDataContext/V_DONTHU_DOITUONG_CANHAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20e29c54-f553-434f-a3fc-3f7ecafeea4b" absoluteBounds="15.765, 13.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="111fad6b-d907-445d-a78d-6e95cddce38b" absoluteBounds="0.75, 16.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/KNTCDataContext/V_DONTHU_DOITUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1262ac11-0113-49e7-8ab8-1403b46c0885" absoluteBounds="0.765, 17.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3f76eb2-4c59-4003-a271-13f0fc8d22d7" absoluteBounds="7.5, 9.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/KNTCDataContext/DOITUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7a75d64-adf3-4421-a54c-862dd332ffe7" absoluteBounds="7.515, 9.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f842560-48b3-4c39-af9a-84db9c35a75b" absoluteBounds="6, 1.25, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/KNTCDataContext/CANBO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7424565a-ad6e-40d4-bc85-b47ac02cb0f4" absoluteBounds="6.015, 1.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.34375 : 5.625); (5.34375 : 3.91270182291667); (6 : 3.91270182291667)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/CHUCVU/CHUCVU_CANBO" />
+      <nodes>
+        <classShapeMoniker Id="68dfe8bd-cba3-42c9-916c-9149e27c4c65" />
+        <classShapeMoniker Id="5f842560-48b3-4c39-af9a-84db9c35a75b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="334fbe64-39b1-4568-af3f-45a050c7aa32" absoluteBounds="9.125, 16, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/KNTCDataContext/CANHAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bacf100-2bcd-4129-bbbd-bb6ad8e1ee7b" absoluteBounds="9.14, 16.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.5 : 11.9126611328125); (10.59375 : 11.9126611328125); (10.59375 : 16)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/DOITUONG/DOITUONG_CANHAN" />
+      <nodes>
+        <classShapeMoniker Id="e3f76eb2-4c59-4003-a271-13f0fc8d22d7" />
+        <classShapeMoniker Id="334fbe64-39b1-4568-af3f-45a050c7aa32" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ef6edc60-9bda-4509-938d-bff89eb45d2d" absoluteBounds="9, 0.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/KNTCDataContext/HOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3c17e9e-87c1-43b5-8d81-62ff5bb6c96e" absoluteBounds="9.015, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 2.16429768880208); (11.5 : 2.16429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/HOSO/HOSO_DONTHU_HOSO" />
+      <nodes>
+        <classShapeMoniker Id="ef6edc60-9bda-4509-938d-bff89eb45d2d" />
+        <classShapeMoniker Id="f74afbd0-db47-4982-9b62-ed5f7d2c9293" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4ccd9080-7667-41e3-9c7b-29523db73a46" absoluteBounds="18.375, 4.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/KNTCDataContext/LOAIDONTHU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc397660-3b0a-4f2a-91b9-3895842882c6" absoluteBounds="18.39, 4.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8edb40f4-1f4f-45ff-af46-86cca49829c3" absoluteBounds="12.25, 7.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/KNTCDataContext/HUONGXYLY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="000e6ebf-0f69-40aa-8f54-2776d5063659" absoluteBounds="12.265, 7.7100000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5cddf7e6-9535-468f-afa6-2c23cd1d8eab" absoluteBounds="4, 12, 2, 10.424461263020833">
+      <DataClassMoniker Name="/KNTCDataContext/DONTHU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65937f57-b478-4764-8f5f-339c6cf8798b" absoluteBounds="4.015, 12.46, 1.9700000000000002, 9.8644612630208321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.5 : 12.4046541341146); (6 : 12.4046541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/DOITUONG/DOITUONG_DONTHU" />
+      <nodes>
+        <classShapeMoniker Id="e3f76eb2-4c59-4003-a271-13f0fc8d22d7" />
+        <classShapeMoniker Id="5cddf7e6-9535-468f-afa6-2c23cd1d8eab" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1b8316d0-59a5-4020-9bbb-76927a9ed8bd" absoluteBounds="12.375, 17.75, 2.75, 6.0015283203125023">
+      <DataClassMoniker Name="/KNTCDataContext/KNTC_DONTHU_DOITUONG_LOAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be56d611-3aff-42eb-9bd2-12a9dfe77414" absoluteBounds="12.39, 18.21, 2.7199999999999998, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a99a4d0-d3c2-4f2a-b22b-4ff9b3f9b482" absoluteBounds="15.375, 17.75, 2.75, 5.6169254557291666">
+      <DataClassMoniker Name="/KNTCDataContext/KNTC_TIEPDAN_DOITUONG_LOAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69d00c34-d11d-4602-9a6a-b625ed3007df" absoluteBounds="15.39, 18.21, 2.7199999999999998, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2da34c4f-9c2c-4e20-85e9-ae0eec1b049c" absoluteBounds="6.625, 17.75, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/KNTCDataContext/KNTC_DONTHU_DOITUONG_LOAI_PORTAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe39a4c4-d9b9-49ce-b787-a82e96d5f734" absoluteBounds="6.64, 18.21, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99822816-d928-4b77-a967-21c498d4be4c" absoluteBounds="7.375, 4.875, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/KNTCDataContext/TIEPDAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b22890e-02ab-4ffa-8b7e-d677ad1e4eda" absoluteBounds="7.3900000000000006, 5.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.4375 : 9.5); (8.4375 : 8.95351399739583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/DOITUONG/DOITUONG_TIEPDAN" />
+      <nodes>
+        <classShapeMoniker Id="e3f76eb2-4c59-4003-a271-13f0fc8d22d7" />
+        <classShapeMoniker Id="99822816-d928-4b77-a967-21c498d4be4c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="01067be4-92c6-4d3a-bf7e-90f0b545dfc1" absoluteBounds="0.75, 21, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/KNTCDataContext/DONTHU_NHIEUNOIDUNG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0b94bb0-6dcb-44e6-81a0-c0fd34cee356" absoluteBounds="0.76499999999999968, 21.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5408e695-5b46-48be-aaca-f6085430c5b2" absoluteBounds="3.125, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/KNTCDataContext/PhongBan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a04ccafd-1723-4316-aa7a-ce31e08cf24b" absoluteBounds="3.1399999999999997, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.125 : 2.41429768880208); (6 : 2.41429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/PhongBan/PhongBan_CANBO" />
+      <nodes>
+        <classShapeMoniker Id="5408e695-5b46-48be-aaca-f6085430c5b2" />
+        <classShapeMoniker Id="5f842560-48b3-4c39-af9a-84db9c35a75b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.41429768880208); (3.125 : 2.41429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KNTCDataContext/DONVI/DONVI_PhongBan" />
+      <nodes>
+        <classShapeMoniker Id="0035499d-b20d-4921-b9d5-363bc82713b5" />
+        <classShapeMoniker Id="5408e695-5b46-48be-aaca-f6085430c5b2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

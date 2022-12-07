@@ -1,0 +1,503 @@
+2022-11-18 08:04:03.095+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.108+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.143+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.143+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.143+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.159+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.174+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.174+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.174+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:04:03.174+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2022-11-18 08:04:03.174+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:5,State:0,Class:20
+2022-11-18 08:23:40.226+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 08:23:40.231+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 08:48:56.534+07:00 [DESKTOP-NJBDNRM][D:2][T:43][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2022-11-18 08:48:56.664+07:00 [DESKTOP-NJBDNRM][D:2][T:43][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2022-11-18 09:07:46.707+07:00 [DESKTOP-NJBDNRM][D:2][T:56][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddScheduleHistory @0, @1, @2
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007; 
+2022-11-18 09:07:46.707+07:00 [DESKTOP-NJBDNRM][D:2][T:56][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddScheduleHistory(Int32 ScheduleID, DateTime StartDate, String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.AddScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+ClientConnectionId:634e82b7-d612-4b51-a715-4e66cef68186
+Error Number:-2,State:0,Class:11
+2022-11-18 09:07:47.850+07:00 [DESKTOP-NJBDNRM][D:2][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetSchedule @0
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007; 
+2022-11-18 09:07:47.851+07:00 [DESKTOP-NJBDNRM][D:2][T:Scheduler Thread][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Scheduling.SchedulingController.GetSchedule(String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.LoadQueueFromTimer()
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.Start()
+ClientConnectionId:634e82b7-d612-4b51-a715-4e66cef68186
+Error Number:-2,State:0,Class:11
+2022-11-18 09:07:47.853+07:00 [DESKTOP-NJBDNRM][D:2][T:Scheduler Thread][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [1] Error executing SQL: ;Exec dbo.AddException @0, @1, @2, @3, @4, @5
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007; 
+2022-11-18 09:07:47.854+07:00 [DESKTOP-NJBDNRM][D:2][T:Scheduler Thread][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=16; handshake=15007;  ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteInternal(CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteNonQuery(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteNonQuery(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID, ExceptionInfo exception, Boolean notificationActive)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:634e82b7-d612-4b51-a715-4e66cef68186
+Error Number:-2,State:0,Class:11
+2022-11-18 09:49:10.690+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 09:49:10.698+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 10:00:46.540+07:00 [DESKTOP-NJBDNRM][D:2][T:57][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-11-18 10:00:46.598+07:00 [DESKTOP-NJBDNRM][D:2][T:57][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-11-18 10:00:46.605+07:00 [DESKTOP-NJBDNRM][D:2][T:57][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+2022-11-18 10:00:46.623+07:00 [DESKTOP-NJBDNRM][D:2][T:57][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, LogInfo log, ExceptionLogType logType)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, ExceptionLogType logType)
+   at DotNetNuke.Services.Exceptions.Exceptions.LogException(Exception exc)
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsDictionaryCallBack(CacheItemArgs cacheItemArgs)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromDictionary(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+2022-11-18 10:21:00.127+07:00 [DESKTOP-NJBDNRM][D:2][T:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadUpdatePanel()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2022-11-18 10:21:00.198+07:00 [DESKTOP-NJBDNRM][D:2][T:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadUpdatePanel()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2022-11-18 10:21:00.292+07:00 [DESKTOP-NJBDNRM][D:2][T:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="An error has occurred." ctrl="ASP.admin_menus_moduleactions_moduleactions_ascx" exc="System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Admin.Containers.ModuleActions.OnLoad(EventArgs e)"
+2022-11-18 10:21:00.295+07:00 [DESKTOP-NJBDNRM][D:2][T:44][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 10:21:00.297+07:00 [DESKTOP-NJBDNRM][D:2][T:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1047&error=Object+reference+not+set+to+an+instance+of+an+object.&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 11:24:30.710+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 11:24:30.713+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 11:46:23.120+07:00 [DESKTOP-NJBDNRM][D:2][T:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at KNTC.TK_THEODONVICHUYEN_NEW.<>c__DisplayClassc.<LoadDanhSach>b__1(DONTHU x) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at KNTC.TK_THEODONVICHUYEN_NEW.LoadDanhSach(Int32 v_start, Int32 v_end) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at KNTC.TK_THEODONVICHUYEN_NEW.btnSearch_Click(Object sender, EventArgs e) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 393
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 11:46:23.141+07:00 [DESKTOP-NJBDNRM][D:2][T:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=3075&error=String+was+not+recognized+as+a+valid+DateTime.&content=0
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at KNTC.TK_THEODONVICHUYEN_NEW.<>c__DisplayClassc.<LoadDanhSach>b__1(DONTHU x) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at KNTC.TK_THEODONVICHUYEN_NEW.LoadDanhSach(Int32 v_start, Int32 v_end) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at KNTC.TK_THEODONVICHUYEN_NEW.btnSearch_Click(Object sender, EventArgs e) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 393
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 11:46:25.590+07:00 [DESKTOP-NJBDNRM][D:2][T:31][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at KNTC.TK_THEODONVICHUYEN_NEW.<>c__DisplayClassc.<LoadDanhSach>b__1(DONTHU x) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at KNTC.TK_THEODONVICHUYEN_NEW.LoadDanhSach(Int32 v_start, Int32 v_end) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at KNTC.TK_THEODONVICHUYEN_NEW.btnSearch_Click(Object sender, EventArgs e) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 393
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 11:46:25.591+07:00 [DESKTOP-NJBDNRM][D:2][T:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=3075&error=String+was+not+recognized+as+a+valid+DateTime.&content=0
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at KNTC.TK_THEODONVICHUYEN_NEW.<>c__DisplayClassc.<LoadDanhSach>b__1(DONTHU x) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at KNTC.TK_THEODONVICHUYEN_NEW.LoadDanhSach(Int32 v_start, Int32 v_end) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 250
+   at KNTC.TK_THEODONVICHUYEN_NEW.btnSearch_Click(Object sender, EventArgs e) in e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\TK_THEODONVICHUYEN_NEW.ascx.cs:line 393
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 12:01:23.635+07:00 [DESKTOP-NJBDNRM][D:3][T:58][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 12:01:23.651+07:00 [DESKTOP-NJBDNRM][D:3][T:58][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 13:31:48.685+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 13:31:48.701+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 13:32:01.255+07:00 [DESKTOP-NJBDNRM][D:2][T:9][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 16428
+	Referer: http://localhost:9971/login
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32
+	ViewState: Uj/U86ZfXgGG7e+pGxnTiLKmvhp0aWHu40/777aMp44MMVAzlknHYI7rEBmIcYmVPth5DUCyVxCpowvylK5RLy7o5/nNGtRjewQKMu3vyvMEgXAOD8gUfBMdCbNS9qXBJ8HGi0qjBdNa3HpGORfozlbAo8CzWrcfZgICPOQhNTnl7/DbjabQpUsL45k29n3FC7XNCxCmslnYVG8DagWiZmIOyfuYfQT5H/eFa/1d9W5n8pWNaBrmNZ/ZzYT3ge8rK3LJzBiq80iQ/rr6KvayDrXLod+zovWrlDFDrNjuYZsAIlCbqw8y02NdYmzJVgxyYEv3mL+Gpz1LO+kgd8zWi6+ZdPuWs5yqYtEMGtm9tKUluQR6SLjaibxvkXI69avyxzPxjyUUk0L7/jpR8NmYto5KN1NBoEnV2TFeut1ej9e9ITHNXCUB9d4t72g0fHe7N5ny6YxnmMXEvQh6D1u+73O3I63wygK167RG6qbc4VaBmIgg9owYUOt4CVcJQCFE8av223EkFTwE9vx/89RGibjumVooFbcce4Av6Fu69a1f3cOA5QSreT+h/+z0MsS6A6f+vERfc44ZzpH34aMcLn4dSdJAM81nREZeX48g9b+5Cx46M5C7LoVzQJhwG8kv6mFIFjc9XSFg8Usc0D8ZiKX+Fo1YAxzrZeWq+EewjJm9NAf5
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 13:32:01.260+07:00 [DESKTOP-NJBDNRM][D:2][T:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1047&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 16428
+	Referer: http://localhost:9971/login
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32
+	ViewState: Uj/U86ZfXgGG7e+pGxnTiLKmvhp0aWHu40/777aMp44MMVAzlknHYI7rEBmIcYmVPth5DUCyVxCpowvylK5RLy7o5/nNGtRjewQKMu3vyvMEgXAOD8gUfBMdCbNS9qXBJ8HGi0qjBdNa3HpGORfozlbAo8CzWrcfZgICPOQhNTnl7/DbjabQpUsL45k29n3FC7XNCxCmslnYVG8DagWiZmIOyfuYfQT5H/eFa/1d9W5n8pWNaBrmNZ/ZzYT3ge8rK3LJzBiq80iQ/rr6KvayDrXLod+zovWrlDFDrNjuYZsAIlCbqw8y02NdYmzJVgxyYEv3mL+Gpz1LO+kgd8zWi6+ZdPuWs5yqYtEMGtm9tKUluQR6SLjaibxvkXI69avyxzPxjyUUk0L7/jpR8NmYto5KN1NBoEnV2TFeut1ej9e9ITHNXCUB9d4t72g0fHe7N5ny6YxnmMXEvQh6D1u+73O3I63wygK167RG6qbc4VaBmIgg9owYUOt4CVcJQCFE8av223EkFTwE9vx/89RGibjumVooFbcce4Av6Fu69a1f3cOA5QSreT+h/+z0MsS6A6f+vERfc44ZzpH34aMcLn4dSdJAM81nREZeX48g9b+5Cx46M5C7LoVzQJhwG8kv6mFIFjc9XSFg8Usc0D8ZiKX+Fo1YAxzrZeWq+EewjJm9NAf5
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-18 13:39:07.215+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 13:39:07.231+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 13:41:54.761+07:00 [DESKTOP-NJBDNRM][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 13:41:54.778+07:00 [DESKTOP-NJBDNRM][D:3][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 13:46:34.083+07:00 [DESKTOP-NJBDNRM][D:4][T:34][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 13:46:34.099+07:00 [DESKTOP-NJBDNRM][D:4][T:34][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-18 14:22:09.693+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-18 14:22:09.709+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

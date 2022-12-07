@@ -1,0 +1,56 @@
+2022-11-21 09:07:16.113+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-21 09:07:16.116+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-11-21 09:26:37.149+07:00 [DESKTOP-NJBDNRM][D:2][T:15][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\DsDonThu.ascx.cs(123): error CS1026: ) expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-11-21 09:26:37.646+07:00 [DESKTOP-NJBDNRM][D:2][T:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Qu?n lý don thu is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\DsDonThu.ascx.cs(123): error CS1026: ) expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-11-21 09:26:38.247+07:00 [DESKTOP-NJBDNRM][D:2][T:37][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\DsDonThu.ascx.cs(123): error CS1026: ) expected
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-11-21 09:26:38.425+07:00 [DESKTOP-NJBDNRM][D:2][T:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Qu?n lý don thu is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): e:\KIEUNAITOCAO\kntc_vinhlong\3-Coding\Trunk\DesktopModules\KNTC\DsDonThu.ascx.cs(123): error CS1026: ) expected
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-11-21 09:27:06.312+07:00 [DESKTOP-NJBDNRM][D:2][T:28][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentException: Invalid postback or callback argument.  Event validation is enabled using <pages enableEventValidation="true"/> in configuration or <%@ Page EnableEventValidation="true" %> in a page.  For security purposes, this feature verifies that arguments to postback or callback events originate from the server control that originally rendered them.  If the data is valid and expected, use the ClientScriptManager.RegisterForEventValidation method in order to register the postback or callback data for validation.
+   at System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   at System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-21 09:27:06.315+07:00 [DESKTOP-NJBDNRM][D:2][T:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Invalid+postback+or+callback+argument.++Event+validation+is+enabled+using+%3cpages+enableEventValidation%3d%22true%22%2f%3e+in+configuration+or+%3c%25%40+Page+EnableEventValidation%3d%22true%22+%25%3e+in+a+page.++For+security+purposes%2c+this+feature+verifies+that+arguments+to+postback+or+callback+events+originate+from+the+server+control+that+originally+rendered+them.++If+the+data+is+valid+and+expected%2c+use+the+ClientScriptManager.RegisterForEventValidation+method+in+order+to+register+the+postback+or+callback+data+for+validation.&content=0
+System.ArgumentException: Invalid postback or callback argument.  Event validation is enabled using <pages enableEventValidation="true"/> in configuration or <%@ Page EnableEventValidation="true" %> in a page.  For security purposes, this feature verifies that arguments to postback or callback events originate from the server control that originally rendered them.  If the data is valid and expected, use the ClientScriptManager.RegisterForEventValidation method in order to register the postback or callback data for validation.
+   at System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   at System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-11-21 13:44:53.879+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-11-21 13:44:53.884+07:00 [DESKTOP-NJBDNRM][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

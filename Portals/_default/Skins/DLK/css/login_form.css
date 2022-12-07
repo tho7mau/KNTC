@@ -1,0 +1,109 @@
+body
+{
+	background-color: transparent !important;
+}
+body  .LoginTemplate .logo
+{
+	padding-top: 10px !important;
+	position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+}
+body  .LoginTemplate .logo h2
+{
+	font-size: 25px;
+    color: #3e3e3e;
+    text-shadow: 2px 2px 4px rgba(185, 185, 185, 0.78);
+}
+body  .LoginTemplate .logo h4
+{
+	padding-top: 5px;
+    color: #37393a;
+    text-shadow: 2px 2px 4px rgba(185, 185, 185, 0.78);
+}
+body  .LoginTemplate
+{
+	width: 350px !important;
+	border: 0px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	margin: 250px auto !important;
+}
+body  .LoginTemplate .dnnFormMessage.dnnFormError, 
+body  .LoginTemplate .dnnFormMessage.dnnFormValidationSummary
+{
+	padding: 8px 18px;
+	background-color: rgb(202, 0, 0);
+    border-color: rgb(202, 0, 0);
+}
+body  .LoginTemplate .dnnFormMessage.dnnFormError span,  
+body  .LoginTemplate .dnnFormMessage.dnnFormValidationSummary span
+{
+	color: #fff;
+}
+body .LoginTemplate .panel-heading
+{
+	border: 0px;
+}
+body .LoginTemplate .panel-heading .panel-title 
+{
+	box-shadow: 0 10px 30px -12px rgba(0, 69, 105, 0.42), 0 4px 25px 0px rgba(0, 69, 105, 0.12), 0 8px 10px -5px rgba(0, 69, 105, 0.2);
+    margin: -20px 15px 0;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: #0182c6;
+    position: relative;
+    display: inline-block;
+    top: -7px
+}
+body .LoginTemplate .panel-heading .panel-title:before
+{
+	content: "\e008";
+    position: relative;
+    font-size: 25px;
+    padding-left: 0px;
+    top: 5px;
+    padding-right: 10px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body .LoginTemplate .panel-heading .panel-title .Head
+{
+	font-weight: normal;
+    color: #fff;
+    padding-left: 0px;
+}
+body .LoginTemplate .panel-body
+{
+	padding: 0px 40px;
+}
+.LoginTemplate .LoginPanel .dnnFormItem > .dnnLabel
+{
+	display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    margin-right: 18px;
+    overflow: visible;
+    text-align: left;
+}
+.LoginTemplate .LoginPanel .LoginStyle .dnnFormItem:nth-child(6) .dnnLabel,
+.LoginTemplate .LoginPanel .LoginStyle .dnnFormItem:nth-child(6)
+{
+	display: none;
+}
+.LoginTemplate .panel-body .dnnLoginService input[type="text"], 
+.LoginTemplate .panel-body .dnnLoginService input[type="password"]
+{
+	width: 100%;
+}

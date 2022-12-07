@@ -1,0 +1,1332 @@
+﻿@import url('dist/css/AdminLTE.css');
+/*@import url('dist/css/skins/_all-skins.min.css');
+@import url('dist/css/skins/skin-green.css');*/
+@import url('dist/css/skins/skin-light.css');
+@import url("bootstrap/css/bootstrap.min.css");
+@import url("bootstrap/css/font-awesome.min.css");
+@import url('css/psw.css');
+@import url('font/iconfont/icofont.min.css');
+@import url('font/googlefont/import.css');
+/* Những css này đã đc bundle vào psw.css */
+/* @import url('css/waves.css'); */
+/* @import url("css/jquery.tabs.css"); */
+/* @import url('css/login_form.css'); */
+/* @import url("css/menu.css"); */
+/* @import url("css/custom.css"); */
+/* @import url("css/lib.css"); */
+/* @import url("css/toastr.css"); */
+/* @import url("css/module.css"); */
+/* @import url('css/styleAdmin.css'); */
+
+
+/* @import url('plugins/iCheck/flat/blue.css'); */
+/* @import url('plugins/morris/morris.css'); */
+/* @import url('plugins/jvectormap/jquery-jvectormap-1.2.2.css'); */
+/* @import url('plugins/datepicker/datepicker3.css'); */
+/* @import url('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css'); */
+/* @import url('lib/FooTable/css/footable-0.1.css'); */
+/* @import url('lib/FooTable/css/footable.sortable-0.1.css'); */
+/* @import url('lib/FooTable/css/footable.paginate.css'); */
+/* @import url("css/FootableCustom.css"); */
+
+/*  */
+/* Standard HTML Tag Settings 
+span,a
+{
+	white-space: nowrap;
+}*/
+*
+{
+    font-size: 13px;
+    font-family:'Roboto'
+}
+body {
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: normal;
+}
+.btn{
+    font-size: 13px !important;
+}
+#ControlBar a{
+    font-size:13px !important;
+    font-family:Roboto !important;
+}
+.PSW .panel-heading .panel-title .Head{
+        font-size: 18px !important;
+}
+.info_table{
+        padding: 5px 3px 5px 3px !important; 
+}
+input[type="text"]
+{
+    font-size: 13px;
+    font-family:'Roboto';
+}
+img
+{
+    border: solid 0px;
+}
+table, tr, td, p {}
+
+.DocItems
+{
+    border: solid 1px #ccc;
+}
+.AltDocItems
+{
+    border: solid 1px #ccc;
+    background: #eee;
+}
+/* Standard DotNetNuke Settings */
+.cssDatagrid_Paging span,.cssDatagrid_Paging a
+{
+    font-family:'Roboto';
+    font-size: 13px;
+    font-weight:bold;
+
+}
+.cssDatagrid_Paging span
+{
+    color:#484848;
+}
+
+.cssDatagrid_Paging a{
+    color:#398439;
+}
+.pagemaster 
+{
+	background-color: #cccccc;
+}
+.login-header
+{
+    float: right;
+    line-height: 38px;
+    padding-right: 10px;
+}
+#dnn_ctr_Login_Login_DNN_plPassword_imgHelp,#dnn_ctr_Login_Login_DNN_plUsername_imgHelp
+{
+    display:none;
+}
+.login-header a
+{
+    font-family:Roboto;
+    font-size: 13px;
+    color:#fff !important;
+    font-weight:normal;
+}
+.skinmaster {
+	height: 100%;
+	background-color: white;
+	border-right: #9A986A 1px solid; 
+	border-top: #9A986A 1px solid; 
+	border-left: #9A986A 1px solid; 
+	border-bottom: #9A986A 1px solid; 
+	moz-border-radius-bottomleft: 15px; 
+	moz-border-radius-bottomright: 15px; 
+	moz-border-radius-topleft: 3px; 
+	moz-border-radius-topright: 3px; 
+}
+.controlpanel {
+	/**/
+	text-align:left;
+	vertical-align:top;
+	/**/
+	background-color: #e8e8e8;
+}
+.toppane
+{
+	width: 100%;
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+.leftpane
+{
+	width: 175px;
+	background-color: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+.contentpane {
+    width: inherit;
+    background-color: transparent;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    /*padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;*/
+}
+.rightpane
+{
+	width: auto;
+	background-color: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+
+}
+.bottompane
+{
+	width: 100%;
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+.StandarSearch
+{
+	width:8px;
+	font-family: Verdana, Roboto, Arial;
+	font-size: 10px;
+	font-weight: bold;
+}
+.StandardButton {
+	border: 1px solid #4682b4;
+	width: auto;
+	color: #07519a;
+	background:  url(bgButton.gif) repeat-x;
+}
+.NormalTextBox
+{
+	
+}
+.TreeViewMenu {
+	width: 175px;
+	background-color: #dfe5f2;
+	border-right: #7994cb 1px solid; 
+	border-top: #7994cb 1px solid; 
+	border-left: #7994cb 1px solid; 
+	border-bottom: #7994cb 1px solid; 
+	moz-border-radius-bottomleft: 15px; 
+	moz-border-radius-bottomright: 15px; 
+	moz-border-radius-topleft: 3px; 
+	moz-border-radius-topright: 3px;
+}
+.TreeViewMenu_Header {
+	background-image: url(gradient_LtBlue.jpg);
+}
+.Head   {
+font-family: Roboto, arial, helvetica;
+font-size:  10px;
+font-weight:  bold;
+color: #467599; 
+line-height: 30px;
+}
+
+
+.dstoplink {
+	
+    font-family: Verdana, Roboto, Arial;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+.skinfoot
+{
+	font-family: Verdana, Roboto, Arial;
+    font-weight: bold;
+	color:White;
+}
+a.dstoplink:link {
+	font-weight: bold;
+	text-decoration: none;
+	color:White;
+}
+a.dstoplink:active {
+	font-weight: bold;
+	text-decoration: none;
+	color:White;
+}
+a.dstoplink:visited {
+	font-weight: bold;
+	text-decoration: none;	
+}
+a.dstoplink:hover {
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 1px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    background-color: rgb(250, 250, 191);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(132, 191, 233);
+    border-right-color: rgb(132, 191, 233);
+    border-bottom-color: rgb(132, 191, 233);
+    border-left-color: rgb(132, 191, 233);
+    
+}
+/* CAU HINH LAI CSS MAIN MENU*/
+/* Main Menu */
+.MainMenu_MenuContainer {
+	background-color: transparent; 
+	
+	/* THUỘC TÍNH MỚI THÊM*/
+	width: 210px;	
+}
+.MainMenu_MenuBar {
+	cursor: hand;
+	height: 23px; /* da thay doi value - defaut value: 16 */
+
+	background-color: Transparent;
+	
+	/* prop added*/
+	width: 175px;
+}
+.MainMenu_MenuItem {
+	cursor: pointer; 
+	cursor: hand; 
+
+	color: #3C7B1E; /* da thay doi value - Giá trị cũ: black */
+	width: 175px; /* thuoc tinh them vao */
+	
+	font-family: Roboto, Arial, Helvetica; 
+	font-size: 11px; 		/* Giá trị cũ: 9pt */ 
+	font-weight: bold; 	/* Giá trị cũ: bold */
+	font-style: normal; 
+	
+	border-left: white 0px solid; 
+	border-bottom: #cccccc 1px solid; 	/* Giá trị cũ: 1px*/
+	border-top: white 0px solid; 		/* Giá trị cũ: 1px*/
+	border-right: white 0px solid;
+	
+	background-color: #e8e8e8; /* Giá trị cũ: black */	
+
+}
+
+.MainMenu_MenuItem td
+{
+    border-bottom: solid 1px #FFF;
+}
+.MainMenu_SubMenu td
+{
+    border-bottom: solid 1px #ccc;
+}
+/* TÁC ĐỘNG ĐẾN ICON TRƯỚC MỖI ITEM CỦA SUB MENU */
+.MainMenu_MenuIcon {
+	/* cấu hình con trỏ chuột */
+	cursor: pointer; 
+	cursor: hand; 
+	
+	/* cấu hình các đường viền */
+	background-color: #cc0000;
+	border-left: #cc0000 1px solid;
+	border-bottom: #cc0000 1px solid;
+	border-top: #cc0000 1px solid;
+	
+	/* cấu hình kích thước */
+	width: 5px;
+	height: 23px;
+}
+.MainMenu_SubMenu {
+	z-index: 1000; 
+	cursor: pointer; 
+	cursor: hand; 
+	background-color: #FFFFFF; 
+
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='DimGray', Direction=135, Strength=2);
+	
+	border-bottom: #cc0000 1px solid; 	/* Giá trị cũ: 0px */
+	border-left: #ffffff 1px solid; 	/* Giá trị cũ: 0px */
+	border-top: #cc0000 1px solid; 		/* Giá trị cũ: 0px */
+	border-right: #ffffff 1px solid;	/* Giá trị cũ: 0px */
+	
+	/* THUỘC TÍNH MỚI THÊM */
+	width: 175px;
+	height:auto;
+}
+.MainMenu_MenuBreak {
+	border-bottom: #EEEEEE 1px solid;	/* Giá trị cũ: 1*/
+	border-left: #EEEEEE 0px solid; 
+	border-top: #EEEEEE 1px solid;  	/* Giá trị cũ: 1*/
+	border-right: #EEEEEE 0px solid; 
+	background-color:#FFFF00; 			/* Giá trị cũ: #EEEEEE */
+	height: 23px; 						/* Giá trị cũ: 1px */
+}
+.MainMenu_MenuItemSel {
+	cursor: pointer; 
+	cursor: hand; 
+	color: #E8E8E8; 
+	font-family: Roboto, Arial, Helvetica; 
+	font-size: 11px;  						/* Giá trị cũ: 9pt*/
+	font-weight: bold	;  					/* Giá trị cũ: bold*/
+	font-style: normal;
+	background-color: #3C7B1E; 				/* Giá trị cũ: #C1D2EE */
+
+	/* THUỘC TÍNH MỚI THÊM */
+	color: #FFFFFF;
+	height: 23px;
+	
+	border-left: white 0px solid; 	
+	border-bottom: white 1px solid;	/* Giá trị ban đầu: white*/
+	border-top: white 1px solid;
+	border-right: white 0px solid; 	/* Giá trị ban đầu: white*/
+}
+/* TÁC ĐỘNG ĐẾN VIỀN SAU MỖI ITEM CỦA SUB MENU */
+.MainMenu_MenuArrow {
+	/* THUỘC TÍNH MỚI THÊM */
+	width: 5px;
+	background-color: #cc0000;
+}
+/* tac dong den item ma co sub item*/
+.MainMenu_RootMenuArrow {
+	/* THUỘC TÍNH MỚI THÊM */
+	width: 5px;
+}
+/* PRIVATE CSS REGION - SETTING */
+/*-------------------------------------------
+	dinh nghia - boby bg
+-------------------------------------------*/
+.iBoby{
+	background-color:#fff;
+	/**/
+	width:1150px;
+	height:169px;
+	margin: 0 auto;
+
+}
+/*----------------------------------------------------------
+	30.10.2007
+	DINH NGHIA BANNER & BOTTOM
+----------------------------------------------------------*/
+.iBanner{
+	background-repeat:no-repeat;
+	background-position:left;	
+	/**/
+	width:100%;
+	height:155px;
+	
+}
+.iBanner_{
+	background-repeat:repeat;
+	background-position:left right;	
+	/**/
+	width:100%;
+	height:159px;
+}
+.iBottom_Left{
+	background-repeat: no-repeat;
+	background-position:left;
+	/**/
+	width: 70px;
+	height: 21px;
+	/**/
+	padding-left:70px;
+}
+.iBottom_Right{
+	background-repeat: no-repeat;
+	background-position:left;
+	background-color:#CC0000;
+	/**/	
+	height: 21px;
+	/**/
+	padding-left:70px;
+}
+.iBottom_Copyright{
+	background-repeat: repeat;
+	/**/
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	/**/
+	text-align:center;
+	vertical-align:middle;
+	color:#000000;
+	/**/
+	height: 21px;
+}
+.iText_Copyright{
+		/**/
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	/**/
+	text-align:center;
+	vertical-align:middle;
+	color:Red;
+}
+.iBottom{
+	background-repeat: repeat;
+	/**/
+	height: 21px;	
+}
+/* txt current date */
+.iCurrentDate{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#CC0000;
+}
+/* txt login info */
+.iLogin {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	/**/
+	padding-right:3px;
+	
+	/**/
+	text-align:right;
+	vertical-align:middle;
+	/**/
+	
+}
+a.iLogin:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.iLogin:visited {	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.iLogin:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a.iLogin:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.cmdTim
+{ 
+background-image: url(images/tim.jpg); 
+background-repeat:no-repeat; 
+color: #fff;  
+width:47px;
+height:27px;  
+}
+.cmdGo
+{
+    background: url(images/cmdGo.jpg) no-repeat;
+    width: 55px;
+    height: 23px;
+}
+
+
+.iLogin_ {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	/*background-image:url(btm_bg.jpg) left 1px;*/
+	/**/
+	padding-top:5px;
+	padding-right:3px;
+	/**/
+	text-align:right;
+	vertical-align:middle;
+	/**/
+	
+}
+#dnn_ctr_Login_pnlLogin
+{
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:15px;
+    padding-bottom:30px;
+}
+#dnn_ctr_Login_Login_DNN_plUsername_lblLabel,#dnn_ctr_Login_Login_DNN_plPassword_lblLabel,#dnn_ctr_Login_cmdPassword
+{
+    font-family:'Roboto';
+    font-weight:normal;
+    color:#000;
+    font-size: 13px;
+    line-height:20px;
+}
+.module-form-control
+{
+    background:#fff;
+}
+
+/*this is for NN, FF, MOZ/WIN*/
+.module-form-control input[type="text"],.module-form-control textarea,.module-form-control select,.module-form-control input[type="password"] {
+    padding: 3px 12px;
+    font-size: 13px !important;
+    font-family:'Roboto';
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.module-form-control input[type="text"]
+{
+    height: 28px;
+    width:280px
+}
+.module-form-control textarea
+{
+    height: 62px;
+    width:280px;
+}
+.module-form-control select
+{
+    height: 28px;
+    width:200px
+}
+.note
+{
+    text-align:center;
+}
+.module-form-control tr
+{
+	height:33px;
+}
+
+.module-form-control input[type="button"],.module-form-control Button, .module-form-control input[type="submit"], .module-form-control input[type="reset"] { 
+	display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.module-form-control input[disabled],.module-form-control select[disabled], .module-form-control Button[disabled], .module-form-control input[disabled]{
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+    box-shadow: none;
+    opacity: .65;
+}
+.module-form-control input[type=submit]:hover,.module-form-control Button:hover, .module-form-control input[type="button"]:hover,.module-form-control input[type="reset"]:hover{
+	color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-bootstrap-default
+{
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-bootstrap-default:hover
+{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.module-form-control .validate ul
+{
+    padding-left:0px !important;
+}
+.module-form-control .validate li
+{
+    list-style-type:none;
+}
+label[for="dnn_ctr_Login_chkCookie"]
+{
+    font-family:'Roboto';
+    font-weight:normal;
+    color:#000;
+    font-size: 13px;
+    line-height:20px;
+    padding-left: 5px;
+}
+.dnnRibbonBarHeader
+{
+    background:#fff !important;
+}
+.dnnRibbonBarHeader .SubHead
+{
+    font-family:13px;
+    font-family:'Roboto';
+    font-weight:normal;
+    color:#000;
+}
+.rtsUL .rtsLink .rtsOut .rtsIn .rtsTxt
+{
+    font-size: 13px;
+    font-family:'Roboto';
+    font-weight:normal;
+    color:#000;
+    line-height:27px;
+}
+.rtsLI .rtsLink
+{
+    height:27px !important;
+}
+.RadTabStrip .rtsLI
+{
+    height:27px !important;
+}
+.RadTabStrip .rtsUL, .RadTabStripVertical .rtsUL
+{
+    height:27px;
+}
+.dnnRibbonBarHeader .dnnRibbonBarCol3 a
+{
+    font-size: 13px;
+    font-family:'Roboto';
+    font-weight:normal;
+    color:#000;
+}
+
+div#header a
+{
+    color:#fff;
+}
+.banner-image
+{
+    background-image:url(images/banner.png);
+    vertical-align: bottom;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+.cssPopup_top_left
+{
+	background-image:url(images_popup/cssPopup_top_left.jpg);
+	height:25px;
+	width:3px;
+	
+}
+.cssPopup_top_mid
+{
+	/*background-image:url(images_popup/cssPopup_top_mid.jpg);*/
+	height:40px;
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	
+}
+.cssPopup_top_mid div
+{
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    font-weight:bold;
+    font-size: 13px;
+    
+}
+.cssPopup_top_right
+{
+	background-image:url(images_popup/cssPopup_top_right.jpg);
+	height:25px;
+	width:9px;
+	
+}
+
+.cssPopup_mid_left
+{
+	background-image:url(images_popup/cssPopup_mid_left.jpg);
+	
+	width:3px;
+	
+}
+.cssPopup_mid_right
+{
+	background-image:url(images_popup/cssPopup_mid_right.jpg);	
+	width:9px;
+	
+}
+.cssPopup_bot_left
+{
+	background-image:url(images_popup/cssPopup_bot_left.jpg);
+	height:10px;
+	width:3px;	
+}
+.cssPopup_bot_mid
+{
+	background-image:url(images_popup/cssPopup_bot_mid.jpg);
+	height:10px;
+	
+}
+.cssPopup_bot_right
+{
+	background-image:url(images_popup/cssPopup_bot_right.jpg);	
+	width:9px;
+	
+}
+.cssButton_Dong
+{
+	background-image:url(images/dong.jpg);	
+	width:13px;
+	height:13px;
+	background-repeat: no-repeat;
+	
+}
+table.Popup 
+{
+	border-right: #e1e1e1  1px solid;
+	border-top: #e1e1e1 1px solid;	
+	border-left: #e1e1e1 1px solid;
+	border-bottom: #e1e1e1 1px solid;
+	border-collapse: collapse;
+	background-color: white;
+	display:table;
+	
+}
+table.Popup td {
+	/*border-width: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: #e1e1e1 #e1e1e1 #e1e1e1 #e1e1e1;*/
+	height:35px;
+	
+}
+
+table.Popup td1 {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: #e1e1e1 #e1e1e1 #e1e1e1 #e1e1e1;
+	height: 0px;
+}
+table.table2
+{
+	border-right: #7d8d9f  1px solid;
+	border-top: #7d8d9f 1px solid;	
+	border-left: #7d8d9f 1px solid;
+	border-bottom: #7d8d9f 1px solid;
+	border-collapse: collapse;
+	background-color: white;
+	display:table;	
+}
+table.table2 td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: #e1e1e1 #e1e1e1 #e1e1e1 #e1e1e1;
+	
+}
+
+table.table1 td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: #e1e1e1 #e1e1e1 #e1e1e1 #e1e1e1;
+	
+}
+
+table.table1 td1 {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: #e1e1e1 #e1e1e1 #e1e1e1 #e1e1e1;
+	height: 0px;
+}
+.NormalTextBox1
+{
+	border: 1px solid #4682b4;
+}
+span.ThongBao
+{
+	color: Red;		
+}
+span.chuy
+{
+	color:Red;
+}
+.a
+{	
+	border-spacing:0;
+	border:inherit !important;
+	border-width:  0px 0px 0px 0px;
+}
+table.table1 
+{
+	border-right: #e1e1e1  1px solid;
+	border-top: #e1e1e1 1px solid;	
+	border-left: #e1e1e1 1px solid;
+	border-bottom: #e1e1e1 1px solid;
+	border-collapse: collapse;
+	background-color: white;
+	display:table;
+}
+
+.modalBackground
+{
+	
+	background-position:top;
+	background-color:Gray;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	margin:0px 0px 0px 0px;
+    margin-top:0px;
+	margin-left:0px;
+	z-index:1000;
+}
+
+.modalBackgroundChild
+{
+	
+	background-position:top;
+	background-color:Gray;
+	filter:alpha(opacity=0.7);
+	opacity:0.7;
+	margin:0px 0px 0px 0px;
+    margin-top:0px;
+	margin-left:0px;
+	z-index:1001;
+}
+
+.modalPopup
+{
+	background-color:White;
+	padding:0px;
+	width:150px;	
+}
+/*group-container*/
+.group-container
+{
+	text-align:left;
+	
+}
+.group-container legend
+{
+	font-size: 13px;
+	font-family:'Roboto';
+	color:#585858;
+	font-weight:bold;
+    margin-left:20px;
+}
+.group-container fieldset
+{
+	border: solid 1px #eeeeee;
+	border-radius:2px;
+	box-shadow:0px 0px 1px #eeeeee;
+}
+.TopControl
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 95%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: table;
+}
+.TopControl .TopControlItemRight
+{
+    float:right;
+}
+.TopControl .TopControlItemLeft
+{
+    float:left;
+    padding-left:20px;
+}
+.SearchControl
+{
+    width:300px;
+}
+.noneborderrightleft tr td
+{
+    border-right: 0px !important;
+    border-left: 0px !important;
+}
+.tab-control
+{
+	float:left;
+	margin-left:20px;
+}
+.nav-pills li a{
+    font-family:'Roboto';
+    font-size: 13px;
+    cursor:pointer!important;
+    color:#398439;
+    
+}
+.nav-pills li.select a{
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.nav-pills 
+{
+}
+a.tab-control-item
+{
+    font-weight: normal;
+    text-decoration: none;
+    border-style: none;
+    /**/
+    font-family: 'Roboto';
+    font-size: 13px;
+    cursor: pointer!important;
+    color: #398439;
+    position: relative;
+    border-radius: 4px;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    margin-left:10px;
+}
+a.tab-control-item-active
+{
+    background-color: #eee;
+}
+a.tab-control-item:hover
+{
+    text-decoration:none;
+    color: #398439;
+    background-color: #eee;
+}
+
+select.NumRecordPager
+{
+    padding:2px 6px;
+    height:28px;
+}
+.cssDatagrid_Paging.form-inline span
+{
+    font-weight:normal;
+    color:#000;
+}
+.mr-r20
+{
+    margin-right:20px;
+}
+.numpager
+{
+    background:#fff !important;
+}
+.export-word-item-right
+{
+  height: 30px;
+  line-height: 0px;
+  vertical-align: bottom;
+  padding: 4px 5px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+
+
+.css-checkbox input[type=checkbox],
+.css-radio input[type=radio],
+.form_checkboxlist input[type=checkbox],.form_radiobuttonlist input[type=radio]
+ {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.css-checkbox input[type=checkbox] + label ,
+.css-radio input[type=radio] + label ,
+.form_checkboxlist input[type=checkbox] + label,
+.form_radiobuttonlist input[type=radio] + label
+    {
+        padding-left: 20px;
+        height: 15px;
+        display: inline-block;
+        line-height: 15px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+.css-checkbox input[type=checkbox][disabled="disabled"] + label ,
+.form_checkboxlist input[type=checkbox][disabled="disabled"] + label
+
+{
+    background-position: 0 -44px;
+}
+
+
+.css-radio input[type=radio][disabled="disabled"] + label ,
+.form_radiobuttonlist input[type=radio][disabled="disabled"] + label
+{
+    background-position: 0 -44px;
+}
+
+
+.css-checkbox input[type=checkbox]:checked + label,
+.form_checkboxlist input[type=checkbox]:checked  + label
+    {
+        background-position: 0 -22px;
+    }
+.css-radio input[type=radio]:checked + label,
+.form_radiobuttonlist input[type=radio]:checked  + label
+    {
+        background-position: 0 -15px;
+    }
+
+.css-checkbox input[type=checkbox][disabled="disabled"]:checked + label,
+.form_checkboxlist input[type=checkbox][disabled="disabled"]:checked  + label
+    {
+        background-position: 0 -66px;
+    }
+.css-radio input[type=radio][disabled="disabled"]:checked + label,
+.form_radiobuttonlist input[type=radio][disabled="disabled"]:checked  + label
+    {
+        background-position: 0 -66px;
+    }
+
+.form_checkboxlist label,
+.css-checkbox label {
+    background-image: url(images/checkbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form_radiobuttonlist label,
+.css-radio label {
+    background-image: url(images/radio.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-size: 15px;
+}
+.default_date{
+    border: 1px solid #6f6f6f;
+    border-color: #868686 !important;
+    background: #ffffff 0 -1700px repeat-x url(/WebResource.axd?d=LT-dxexLHvbfrXJTgDjlq0kGp4J6REeuDs59v7XuRkJnX5Gw7qOFQK4H…SBahamt-913P5YIBpqqJqSqzrBV9g6lozNfN5aYgndnP5kc408-U1&t=636101349539190604);
+
+}
+.default_date a {
+        color: #333 !important;
+}
+/*Loading Ajax css*/
+#overlay {
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    filter: Alpha(Opacity=90);
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+}
+
+#theprogress {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+
+#modalprogress {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+}
+
+    #modalprogress img {
+        width: 100px;
+    }
+/*Css Custom Hận*/
+.row > .dnnLeft {
+    width:100%;
+}
+.icon-red {
+	font-size: 17px;
+	color: #bb1616;
+}
+.icon-green {
+	font-size: 17px;
+	color: #0a960a
+}
+.heading-chitiet {
+    padding: 0px 10px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.block_chitiet {
+    box-shadow: 0 2px 8px -2px black;
+    margin-bottom: 20px;
+    box-shadow: -2px 2px 4px #eaeaea;
+    padding: 15px !important;
+    border-radius: 4px;
+    background-color: white;
+    padding-bottom: 15px !important;
+}
+
+
+
+
+/*End*/
+
+/*Color CSS*/
+.color-thamdu {
+	color: #00d400 !important;
+}
+.color-vangmat {
+	color: #e41414 !important;
+}
+/*End Color*/
+.heading_wrapper a.title-link,
+.heading_wrapper a.title-link:visited {
+    color: rgb(255, 102, 0);
+}
+.heading_wrapper {
+    /*padding-top: 95px;*/
+}
+    .heading_wrapper > h4 {
+        background: #fff;
+        margin: 0px;
+        padding: 12px;
+        position: sticky;
+        width: 100%;
+        top: 0px;
+        z-index: 99;
+        border-top: 1px solid #ffeadc;
+    }
+.box-body
+{
+
+}
+    .box-body .nav.nav-tabs {
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 0px;
+        margin-left: 0px;
+        display: inline-block;
+        background: #fff;
+        padding: 0px;
+        box-shadow: -2px 2px 4px #eaeaea;
+    }
+    .box-body .nav.nav-tabs li:first-child  {
+    }
+        .box-body .nav.nav-tabs li:first-child a {
+            /*border-radius: 20px 0px 0px 20px;*/
+        }
+
+        .box-body .nav.nav-tabs li a {
+            
+            border: 0px;
+            color: #3a3a3a;
+        }
+    .box-body .nav-tabs > li.active > a,
+    .box-body .nav-tabs > li.active > a:focus,
+    .box-body .nav-tabs > li.active > a:hover {
+        background: #f60;
+        color: #fff;
+        box-shadow: -4px 4px 8px rgba(220, 105, 28, 0.4);
+    }
+    .box-body .nav > li > a:focus, .box-body .nav > li > a:hover {
+        background: #fff;
+        color: #f60;
+    }
+
+.box-body .nav.nav-tabs li {
+    margin-bottom: 0px;
+}
+
+    .box-body .nav.nav-tabs li a {
+        border-radius: 20px;
+    }
+
+        .box-body .nav.nav-tabs li:last-child {
+        }
+
+            .box-body .nav.nav-tabs li:last-child a {
+                /*border-radius: 0px 20px 20px 0px ;*/
+            }
+    .box-body .nav.nav-tabs li a i {
+        font-size: 18px;
+        position: relative;
+        top: 0px;
+        color: #f60;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .box-body .nav-tabs > li.active > a i,
+    .box-body .nav-tabs > li.active > a:focus i,
+    .box-body .nav-tabs > li.active > a:hover i {
+        color: #ffffff;
+    }
+.contentPane .modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f60;
+    font-size: 15px;
+}
+    .contentPane .modal-header h4 {
+        font-size: 15px;
+        color: #fff;
+    }
+.contentPane .modal-content button.close {
+    opacity: 1;
+    color: #fff;
+    font-weight: normal;
+}
+html .activeTrangThai {
+    color: #ff6600 !important;
+    font-weight: bold;
+}

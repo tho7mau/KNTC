@@ -1,0 +1,25 @@
+.Cont_Table_Scroling
+{
+    width:100%;
+    display:block;
+    position:relative;
+}
+.Cont_Table_Scroling .Header
+{
+    height: 35px;
+    background: #f5f5f5;
+    border:none;
+    line-height: 35px;
+    padding-left: 10px;
+    border-radius:0px;
+    margin:1px;
+}
+.Cont_Table_Scroling .Header .Header_Title
+{
+    font-size: 15px;
+    text-align: left;
+    color: #078544;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    

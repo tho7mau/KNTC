@@ -1,0 +1,21 @@
+﻿
+/*breadcrumb*/
+.content-header ol.breadcrumb {
+    margin-left: 0px;
+}
+/* end breadcrumb*/
+.custom-control-input:[checked="checked"] ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #007bff;
+    background-color: #007bff;
+    box-shadow: none;
+}
+.custom-control-input:has(> .custom-control-input) {
+    color: #ff0000;
+}
+.select2-container {
+    max-width: 100%;
+}
+span.col-form-label {
+    font-weight: 700;
+}

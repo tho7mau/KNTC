@@ -1,0 +1,131 @@
+//
+// Component: Breadcrumb Step
+//
+
+.breadcrumb-step {
+  border-left: 1px solid #ddd;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+
+.breadcrumb-step li {
+  display: flex;
+}
+
+.breadcrumb-step a {
+  position: relative;
+  display: block;
+  padding: 8px 20px 8px 30px;
+  font-size: ($font-size-base * .9);
+  text-align: center;
+  cursor: pointer;
+}
+
+.breadcrumb-step a:hover {
+  background: #eee;
+}
+
+.breadcrumb-step a.active {
+  color: $primary;
+  background-color: #fafafa;
+}
+
+.breadcrumb-step a span:first-child {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  margin-right: 5px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.breadcrumb-step a.active span:first-child {
+  color: #fff;
+  border-color: #777;
+  background-color: #777;
+}
+
+.breadcrumb-step a:before,
+.breadcrumb-step a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  display: block;
+  width: 0;
+  height: 0;
+      border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.breadcrumb-step a:before {
+  margin-left: 1px;
+  border-left-color: #d5d5d5;
+}
+
+.breadcrumb-step a:after {
+  border-left-color: white;
+}
+
+.breadcrumb-step a:hover:after {
+  border-left-color: #eee;
+}
+
+.breadcrumb-step a.active:after {
+  border-left-color: #fafafa;
+}
+
+.breadcrumb-step li:last-child a:before,
+.breadcrumb-step li:last-child a:after {
+  display: none;
+}
+
+@media (max-width: 720px) { 
+  .breadcrumb-step a {
+    padding: 15px;
+  }
+  .breadcrumb-step a:before,
+  .breadcrumb-step a:after {
+    border-top-width: 26px;
+    border-bottom-width: 26px;
+    border-left-width: 13px;
+  }
+}
+
+@media (max-width: 620px) { 
+  .breadcrumb-step a {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .breadcrumb-step a:before,
+  .breadcrumb-step a:after {
+    border-top-width: 22px;
+    border-bottom-width: 22px;
+    border-left-width: 11px;
+  }
+}
+
+@media (max-width: 520px) {
+  .breadcrumb-step a {
+    padding: 5px;
+  }
+  .breadcrumb-step a:before,
+  .breadcrumb-step a:after {
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 8px;
+  }
+  .breadcrumb-step li a span:first-child {
+    display: block;
+    margin: 0 auto;
+  }
+  .breadcrumb-step li a span:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+2022-07-20 08:01:38.802+07:00 [DESKTOP-2PI45EV][D:2][T:7][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [3] Error executing SQL: ;Exec dbo.GetEventLogType
+A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2022-07-20 08:01:38.847+07:00 [DESKTOP-2PI45EV][D:2][T:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) ---> System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteReader(String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.<>c.<GetLogTypeInfo>b__25_0(CacheItemArgs c)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromRuntimeCache(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+ClientConnectionId:6f1e7bbd-1540-4429-be6e-b6e371a78c80
+Error Number:64,State:0,Class:20
+2022-07-20 08:01:42.016+07:00 [DESKTOP-2PI45EV][D:2][T:7][ERROR] DotNetNuke.Services.Log.EventLog.LogController - System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Cast[TResult](IEnumerable source)
+   at DotNetNuke.Services.Log.EventLog.LogController.GetLogTypeInfoDictionary()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+2022-07-20 08:22:34.119+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-20 08:22:34.139+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-20 08:27:07.787+07:00 [DESKTOP-2PI45EV][D:2][T:12][ERROR] DotNetNuke.UI.Modules.ModuleHost - System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(570): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'btnGiaiQuyetDon_Click' and no extension method 'btnGiaiQuyetDon_Click' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()
+2022-07-20 08:27:08.042+07:00 [DESKTOP-2PI45EV][D:2][T:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.UI.Modules.ModuleControlBase" exc="System.Web.HttpCompileException (0x80004005): d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx(570): error CS1061: 'ASP.desktopmodules_kntc_cndonthu_ascx' does not contain a definition for 'btnGiaiQuyetDon_Click' and no extension method 'btnGiaiQuyetDon_Click' accepting a first argument of type 'ASP.desktopmodules_kntc_cndonthu_ascx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.ModulePipeline.ModuleControlPipeline.LoadModuleControl(TemplateControl containerControl, ModuleInfo moduleConfiguration)
+   at DotNetNuke.UI.Modules.ModuleHost.LoadModuleControl()"
+2022-07-20 08:43:21.140+07:00 [DESKTOP-2PI45EV][D:2][T:35][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidCastException: Unable to cast object of type 'System.Web.UI.WebControls.LinkButton' to type 'System.Web.UI.HtmlControls.HtmlAnchor'.
+   at KNTC.CnDonThu.btnGiaiQuyetDon_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4476
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-20 08:43:21.156+07:00 [DESKTOP-2PI45EV][D:2][T:35][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Unable+to+cast+object+of+type+%27System.Web.UI.WebControls.LinkButton%27+to+type+%27System.Web.UI.HtmlControls.HtmlAnchor%27.
+System.InvalidCastException: Unable to cast object of type 'System.Web.UI.WebControls.LinkButton' to type 'System.Web.UI.HtmlControls.HtmlAnchor'.
+   at KNTC.CnDonThu.btnGiaiQuyetDon_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4476
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-20 08:43:26.352+07:00 [DESKTOP-2PI45EV][D:2][T:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidCastException: Unable to cast object of type 'System.Web.UI.WebControls.LinkButton' to type 'System.Web.UI.HtmlControls.HtmlAnchor'.
+   at KNTC.CnDonThu.btnGiaiQuyetDon_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4476
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-20 08:43:26.352+07:00 [DESKTOP-2PI45EV][D:2][T:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=Unable+to+cast+object+of+type+%27System.Web.UI.WebControls.LinkButton%27+to+type+%27System.Web.UI.HtmlControls.HtmlAnchor%27.
+System.InvalidCastException: Unable to cast object of type 'System.Web.UI.WebControls.LinkButton' to type 'System.Web.UI.HtmlControls.HtmlAnchor'.
+   at KNTC.CnDonThu.btnGiaiQuyetDon_Click(Object sender, EventArgs e) in d:\KNTC_BITBUCKET\3-Coding\Trunk\DesktopModules\KNTC\CnDonThu.ascx.cs:line 4476
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-20 10:00:56.079+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-20 10:00:56.123+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-20 10:26:43.959+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-20 10:26:43.976+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-20 14:20:46.639+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-20 14:20:46.655+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-20 15:03:31.345+07:00 [DESKTOP-2PI45EV][D:3][T:11][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-20 15:03:31.362+07:00 [DESKTOP-2PI45EV][D:3][T:11][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

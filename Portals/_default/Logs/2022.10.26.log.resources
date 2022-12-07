@@ -1,0 +1,60 @@
+2022-10-26 08:24:51.908+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 08:24:51.927+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-10-26 08:49:32.807+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 08:49:32.811+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-10-26 11:21:58.403+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 11:21:58.415+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-10-26 11:58:24.940+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 11:58:24.945+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-10-26 14:34:02.106+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 14:34:02.113+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-10-26 14:34:05.864+07:00 [DESKTOP-2PI45EV][D:2][T:13][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.8
+	Port: 51103
+	Referer: http://192.168.1.29:9971/%C4%91on-thu/ctl/edit/mid/4429/title/c%E1%BA%ADp%20nh%E1%BA%ADt%20th%C3%B4ng%20tin%20%C4%91%C6%A1n%20th%C6%B0/id/110076
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+	ViewState: e2rJlQhjqAs+rYO3jg84xOWZozbZBQo/qeFabJ6q77C1/8M8v4YPVD5acfRY6iGt7yro8awcP6OYFv25IV3k1P8ri5GF5rnQSFl7vOYn/s5sv3VEaS3R6YFEGK32Pm4zo14Kkg0JjTioajmd2ZCpt1tU8ilTuQ4oApUS6WOvfN6KyLdHjBPBKRarGKeGYwaYPj63inAplrqARPDud1yo/vvz+Xb9fRshS4rHqvD/tLF44zmDvXAi0WTenGMwHC9omgNv/gaAqbJiijnItTWTtrJU/H9Ec5ykbBenzENNuWqEa58uHpYf2S51t4UYrc4OmaVgXPrhOG+gCm6YTQ0Z4yHFd/vrs8vq1j5tbZ7i56xtdAsMjsL3eruwOpQRD2FESpV01vQKzgMEnQh+WrHgFQFRc+J61yg+VXJYD4r3z02X2EZ3VKBZuOUL+qZSRfS7wyW304jjfB9Y4KDA5Y8hH4g7yief2t2CcrCmWWIYNtClJJLRHSpDvzOyWHT33rvvT4oGGI3KvYvlKOo/RpDX3e7U+eIWkgl3QQjgsR5q1eS5pUyCunzH/1BHW9eUyL+JvOiIuQ+iSkxDCRXi30rWc9AwTSus1uemCyKqB7buGa8/ZOEyySWDX+/DZ+JY06h8EL9mYVyh/y4CWzsYBpsJz9NF...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-10-26 14:34:05.873+07:00 [DESKTOP-2PI45EV][D:2][T:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=43&error=An unexpected error has occurred
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.8
+	Port: 51103
+	Referer: http://192.168.1.29:9971/%C4%91on-thu/ctl/edit/mid/4429/title/c%E1%BA%ADp%20nh%E1%BA%ADt%20th%C3%B4ng%20tin%20%C4%91%C6%A1n%20th%C6%B0/id/110076
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+	ViewState: e2rJlQhjqAs+rYO3jg84xOWZozbZBQo/qeFabJ6q77C1/8M8v4YPVD5acfRY6iGt7yro8awcP6OYFv25IV3k1P8ri5GF5rnQSFl7vOYn/s5sv3VEaS3R6YFEGK32Pm4zo14Kkg0JjTioajmd2ZCpt1tU8ilTuQ4oApUS6WOvfN6KyLdHjBPBKRarGKeGYwaYPj63inAplrqARPDud1yo/vvz+Xb9fRshS4rHqvD/tLF44zmDvXAi0WTenGMwHC9omgNv/gaAqbJiijnItTWTtrJU/H9Ec5ykbBenzENNuWqEa58uHpYf2S51t4UYrc4OmaVgXPrhOG+gCm6YTQ0Z4yHFd/vrs8vq1j5tbZ7i56xtdAsMjsL3eruwOpQRD2FESpV01vQKzgMEnQh+WrHgFQFRc+J61yg+VXJYD4r3z02X2EZ3VKBZuOUL+qZSRfS7wyW304jjfB9Y4KDA5Y8hH4g7yief2t2CcrCmWWIYNtClJJLRHSpDvzOyWHT33rvvT4oGGI3KvYvlKOo/RpDX3e7U+eIWkgl3QQjgsR5q1eS5pUyCunzH/1BHW9eUyL+JvOiIuQ+iSkxDCRXi30rWc9AwTSus1uemCyKqB7buGa8/ZOEyySWDX+/DZ+JY06h8EL9mYVyh/y4CWzsYBpsJz9NF...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-10-26 14:56:22.210+07:00 [DESKTOP-2PI45EV][D:2][T:62][ERROR] DotNetNuke.Data.PetaPoco.PetaPocoHelper - [4] Error executing SQL: ;Exec dbo.AddScheduleHistory @0, @1, @2
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+2022-10-26 14:56:22.214+07:00 [DESKTOP-2PI45EV][D:2][T:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at PetaPoco.Database.OpenSharedConnection()
+   at PetaPoco.Database.ExecuteScalarInternal[T](CommandType commandType, String sql, Object[] args)
+   at DotNetNuke.Data.PetaPoco.PetaPocoHelper.ExecuteScalar[T](String connectionString, CommandType type, Int32 timeoutSec, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddScheduleHistory(Int32 ScheduleID, DateTime StartDate, String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.AddScheduleHistory(ScheduleHistoryItem scheduleHistoryItem)
+2022-10-26 14:57:38.260+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-10-26 14:57:38.264+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider

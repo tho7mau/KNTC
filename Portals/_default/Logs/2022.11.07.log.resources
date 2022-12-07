@@ -1,0 +1,19 @@
+2022-11-07 15:07:20.636+07:00 [DESKTOP-2PI45EV][D:2][T:4][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-11-07 15:07:20.743+07:00 [DESKTOP-2PI45EV][D:2][T:4][ERROR] DotNetNuke.Services.Localization.LocalizationProvider - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Localization.LocalizationProvider.TryGetStringInternal(String key, String userLanguage, String resourceFile, PortalSettings portalSettings, String& resourceValue)
+2022-11-07 15:07:20.752+07:00 [DESKTOP-2PI45EV][D:2][T:4][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+2022-11-07 15:07:20.770+07:00 [DESKTOP-2PI45EV][D:2][T:4][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Common.Globals.get_Status()
+   at DotNetNuke.Services.Log.EventLog.LogController.AddLog(LogInfo logInfo)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, LogInfo log, ExceptionLogType logType)
+   at DotNetNuke.Services.Log.EventLog.ExceptionLogController.AddLog(Exception objException, ExceptionLogType logType)
+   at DotNetNuke.Services.Exceptions.Exceptions.LogException(Exception exc)
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsFromDatabase()
+   at DotNetNuke.Entities.Controllers.HostController.GetSettingsDictionaryCallBack(CacheItemArgs cacheItemArgs)
+   at DotNetNuke.Common.Utilities.DataCache.GetCachedDataFromDictionary(CacheItemArgs cacheItemArgs, CacheItemExpiredCallback cacheItemExpired)
+2022-11-07 15:07:21.114+07:00 [DESKTOP-2PI45EV][D:2][T:4][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Web.UI.Utilities.ApplySkin(Control telerikControl, String fallBackEmbeddedSkinName, String controlName, String webControlSkinSubFolderName)

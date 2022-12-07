@@ -1,0 +1,112 @@
+2022-07-08 08:12:39.038+07:00 [DESKTOP-2PI45EV][D:4][T:32][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:12:39.058+07:00 [DESKTOP-2PI45EV][D:4][T:32][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:15:40.122+07:00 [DESKTOP-2PI45EV][D:5][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:15:40.141+07:00 [DESKTOP-2PI45EV][D:5][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:17:13.243+07:00 [DESKTOP-2PI45EV][D:6][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:17:13.259+07:00 [DESKTOP-2PI45EV][D:6][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:18:26.319+07:00 [DESKTOP-2PI45EV][D:7][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:18:26.336+07:00 [DESKTOP-2PI45EV][D:7][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:22:07.987+07:00 [DESKTOP-2PI45EV][D:8][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:22:08.004+07:00 [DESKTOP-2PI45EV][D:8][T:68][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:24:15.699+07:00 [DESKTOP-2PI45EV][D:9][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:24:15.715+07:00 [DESKTOP-2PI45EV][D:9][T:29][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:28:31.593+07:00 [DESKTOP-2PI45EV][D:10][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:28:31.609+07:00 [DESKTOP-2PI45EV][D:10][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:33:47.321+07:00 [DESKTOP-2PI45EV][D:11][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:33:47.338+07:00 [DESKTOP-2PI45EV][D:11][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:35:56.875+07:00 [DESKTOP-2PI45EV][D:12][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:35:56.892+07:00 [DESKTOP-2PI45EV][D:12][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:38:31.532+07:00 [DESKTOP-2PI45EV][D:13][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:38:31.549+07:00 [DESKTOP-2PI45EV][D:13][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:43:34.667+07:00 [DESKTOP-2PI45EV][D:14][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:43:34.684+07:00 [DESKTOP-2PI45EV][D:14][T:27][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:48:01.702+07:00 [DESKTOP-2PI45EV][D:15][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:48:01.719+07:00 [DESKTOP-2PI45EV][D:15][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:50:17.418+07:00 [DESKTOP-2PI45EV][D:16][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:50:17.435+07:00 [DESKTOP-2PI45EV][D:16][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 08:59:19.666+07:00 [DESKTOP-2PI45EV][D:17][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 08:59:19.683+07:00 [DESKTOP-2PI45EV][D:17][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 09:01:37.433+07:00 [DESKTOP-2PI45EV][D:18][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 09:01:37.450+07:00 [DESKTOP-2PI45EV][D:18][T:62][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 09:14:05.388+07:00 [DESKTOP-2PI45EV][D:19][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 09:14:05.407+07:00 [DESKTOP-2PI45EV][D:19][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 09:19:42.226+07:00 [DESKTOP-2PI45EV][D:19][T:69][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.55
+	Port: 50266
+	Referer: http://192.168.1.29:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+	ViewState: m81iXZ6DTjKLG0gpx5cSdyLd0cUPDUFf433lMXsH70qaeDaZpZ8858/jqZmy9py/nW4vqkNAGJuuRVEuRLiMjdfpLbpGzDtECwrZOQ1AL2gvLPbvaNDhA4UpS0W52/bX9bSSTHAJPiRLyoa9XhBNS/Sj5+pBlRMSSGpejVGYYldYyimlEDOzSWuvbPdwXAhcKkkkzVuQhEU7wjBuIYSTtJcgd0kuZzYOX2cdi3yW8pGi/aVxM7ZxQf279sYLZQFll3azwKNhVBoYs1evTj5iO3iBforo9FJRaJy+LbOItwqiiYLm6CI4nQu1wt6LF7RzNZP2wdfg2CBwST9+hN4rfPvBG+jVyE4F709sSp8iN6GDyq5tEnlFngktXarh3WiMpTTRPvqvyFkuGmcE6ZCX/SPEQYG70J2UlQ3WMUf7FxzD2QVBWLyYMp9sgvJfadd3KpnVoBCDbBq+caVlS/97agFn7IJGcUcVptZVZzhCruWLyMeMakC1VZ4y6lcBhInVO47GrGJT33Nx89mcmwqy4LjaZFfB+EfPpADWJhHhSX5xf/Au6QUwaKknW/3VOtrcCBsaDnvMxr+Zjz+Zv5QvHLACWgwEr6vDEVLcET/cSX57CDM+iiDXCxoHvvIc6XoUCZPNc18J6e4Oq1GSO/K9tEESASM=
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-08 09:19:42.379+07:00 [DESKTOP-2PI45EV][D:19][T:69][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.55
+	Port: 50266
+	Referer: http://192.168.1.29:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+	ViewState: m81iXZ6DTjKLG0gpx5cSdyLd0cUPDUFf433lMXsH70qaeDaZpZ8858/jqZmy9py/nW4vqkNAGJuuRVEuRLiMjdfpLbpGzDtECwrZOQ1AL2gvLPbvaNDhA4UpS0W52/bX9bSSTHAJPiRLyoa9XhBNS/Sj5+pBlRMSSGpejVGYYldYyimlEDOzSWuvbPdwXAhcKkkkzVuQhEU7wjBuIYSTtJcgd0kuZzYOX2cdi3yW8pGi/aVxM7ZxQf279sYLZQFll3azwKNhVBoYs1evTj5iO3iBforo9FJRaJy+LbOItwqiiYLm6CI4nQu1wt6LF7RzNZP2wdfg2CBwST9+hN4rfPvBG+jVyE4F709sSp8iN6GDyq5tEnlFngktXarh3WiMpTTRPvqvyFkuGmcE6ZCX/SPEQYG70J2UlQ3WMUf7FxzD2QVBWLyYMp9sgvJfadd3KpnVoBCDbBq+caVlS/97agFn7IJGcUcVptZVZzhCruWLyMeMakC1VZ4y6lcBhInVO47GrGJT33Nx89mcmwqy4LjaZFfB+EfPpADWJhHhSX5xf/Au6QUwaKknW/3VOtrcCBsaDnvMxr+Zjz+Zv5QvHLACWgwEr6vDEVLcET/cSX57CDM+iiDXCxoHvvIc6XoUCZPNc18J6e4Oq1GSO/K9tEESASM=
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2022-07-08 09:20:45.694+07:00 [DESKTOP-2PI45EV][D:19][T:30][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.55
+	Port: 50266
+	Referer: http://192.168.1.29:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+	ViewState: m81iXZ6DTjKLG0gpx5cSdyLd0cUPDUFf433lMXsH70qaeDaZpZ8858/jqZmy9py/nW4vqkNAGJuuRVEuRLiMjdfpLbpGzDtECwrZOQ1AL2gvLPbvaNDhA4UpS0W52/bX9bSSTHAJPiRLyoa9XhBNS/Sj5+pBlRMSSGpejVGYYldYyimlEDOzSWuvbPdwXAhcKkkkzVuQhEU7wjBuIYSTtJcgd0kuZzYOX2cdi3yW8pGi/aVxM7ZxQf279sYLZQFll3azwKNhVBoYs1evTj5iO3iBforo9FJRaJy+LbOItwqiiYLm6CI4nQu1wt6LF7RzNZP2wdfg2CBwST9+hN4rfPvBG+jVyE4F709sSp8iN6GDyq5tEnlFngktXarh3WiMpTTRPvqvyFkuGmcE6ZCX/SPEQYG70J2UlQ3WMUf7FxzD2QVBWLyYMp9sgvJfadd3KpnVoBCDbBq+caVlS/97agFn7IJGcUcVptZVZzhCruWLyMeMakC1VZ4y6lcBhInVO47GrGJT33Nx89mcmwqy4LjaZFfB+EfPpADWJhHhSX5xf/Au6QUwaKknW/3VOtrcCBsaDnvMxr+Zjz+Zv5QvHLACWgwEr6vDEVLcET/cSX57CDM+iiDXCxoHvvIc6XoUCZPNc18J6e4Oq1GSO/K9tEESASM=
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2022-07-08 09:20:45.710+07:00 [DESKTOP-2PI45EV][D:19][T:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 192.168.1.55
+	Port: 50266
+	Referer: http://192.168.1.29:9971/%C4%91ang-nhap?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+	ViewState: m81iXZ6DTjKLG0gpx5cSdyLd0cUPDUFf433lMXsH70qaeDaZpZ8858/jqZmy9py/nW4vqkNAGJuuRVEuRLiMjdfpLbpGzDtECwrZOQ1AL2gvLPbvaNDhA4UpS0W52/bX9bSSTHAJPiRLyoa9XhBNS/Sj5+pBlRMSSGpejVGYYldYyimlEDOzSWuvbPdwXAhcKkkkzVuQhEU7wjBuIYSTtJcgd0kuZzYOX2cdi3yW8pGi/aVxM7ZxQf279sYLZQFll3azwKNhVBoYs1evTj5iO3iBforo9FJRaJy+LbOItwqiiYLm6CI4nQu1wt6LF7RzNZP2wdfg2CBwST9+hN4rfPvBG+jVyE4F709sSp8iN6GDyq5tEnlFngktXarh3WiMpTTRPvqvyFkuGmcE6ZCX/SPEQYG70J2UlQ3WMUf7FxzD2QVBWLyYMp9sgvJfadd3KpnVoBCDbBq+caVlS/97agFn7IJGcUcVptZVZzhCruWLyMeMakC1VZ4y6lcBhInVO47GrGJT33Nx89mcmwqy4LjaZFfB+EfPpADWJhHhSX5xf/Au6QUwaKknW/3VOtrcCBsaDnvMxr+Zjz+Zv5QvHLACWgwEr6vDEVLcET/cSX57CDM+iiDXCxoHvvIc6XoUCZPNc18J6e4Oq1GSO/K9tEESASM=
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2022-07-08 10:15:32.766+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 10:15:32.783+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 11:53:11.226+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 11:53:11.230+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
+2022-07-08 13:59:57.580+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders
+2022-07-08 13:59:57.597+07:00 [DESKTOP-2PI45EV][D:2][T:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider DotNetNuke.Providers.AspNetClientCapabilityProvider.AspNetClientCapabilityProvider, DotNetNuke.Providers.AspNetClientCapabilityProvider
