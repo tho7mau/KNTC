@@ -9,6 +9,7 @@ using DotNetNuke.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -126,6 +127,10 @@ namespace KNTC
             string vToastrMessage = "Vui lòng ";
             string vToastrMessagePassword = "";
             string oErrorMessage = "";
+            string format = "dd/MM/yyyy";
+            int returnval;
+
+            DateTime dateTime;
             if (txtNgayTiepDan.Text == "")
             {
                 txtNgayTiepDan.CssClass += " vld";
@@ -134,11 +139,26 @@ namespace KNTC
                 vToastrMessage += "nhập Ngày tiếp dân, ";
                 vResult = false;
             }
+            else if (DateTime.TryParseExact(txtNgayTiepDan.Text, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime) == false)
+            {
+                ClassCommon.ShowToastr(Page, "Vui lòng nhập đúng định dạng ngày", "Thông báo", "error");
+            }
             else
             {
                 txtNgayTiepDan.CssClass = txtNgayTiepDan.CssClass.Replace("vld", "").Trim();
                 lbltxtNgayTiepDan.Attributes.Add("class", lbltxtNgayTiepDan.Attributes["class"].ToString().Replace("vld", ""));
 
+            }
+
+            if (txtLanTiep.Text == "")
+            {
+                txtLanTiep.CssClass += " vld";
+                txtLanTiep.Focus();
+                vToastrMessage += "nhập Lần tiếp, ";
+                vResult = false;
+            }else if (int.TryParse(txtLanTiep.Text, out returnval) == false)
+            {
+                ClassCommon.ShowToastr(Page, "Lần tiếp phải là kiểu số", "Thông báo", "error");
             }
             foreach (var item in ListViewDoiTuong.Items)
             {
@@ -373,7 +393,7 @@ namespace KNTC
         ///  Set thông tin cho form
         /// </summary>
         /// <param name="pTIEPDAN_ID"></param>
-        public void SetFormInfo(int pTIEPDAN_ID,bool IsChonDoiTuong)
+        public void SetFormInfo(int pTIEPDAN_ID, bool IsChonDoiTuong)
         {
             try
             {
@@ -698,7 +718,7 @@ namespace KNTC
             txtLanTiep.Enabled = pEnableStatus;
             txtTenCoQuanToChuc.Enabled = pEnableStatus;
             txtDiaChiDoiTuong.Enabled = pEnableStatus;
-
+            
             //txtSoNguoi.Enabled = pEnableStatus;
             if (drpDOITUONG.SelectedValue != "1")
             {
@@ -851,7 +871,7 @@ namespace KNTC
                     {
                         TIEPDANInfo.TIEPDAN_STT = 1;
                     }
-
+                    
 
                     TIEPDANInfo.TIEPDAN_LANTIEP = Int32.Parse(txtLanTiep.Text.Trim());
                     // Đối tượng
@@ -2057,20 +2077,29 @@ namespace KNTC
             DropDownList drlQuocTich = ((DropDownList)listViewDataItem_CaNhan.FindControl("drlQuocTich"));
             DropDownList drlDanToc = ((DropDownList)listViewDataItem_CaNhan.FindControl("drlDanToc"));
             CANHAN objCANHAN = new CANHAN();
+            objCANHAN.CANHAN_CMDN = txtCMND.Text;
             objCANHAN.CANHAN_ID = Int32.Parse(txtCaNhanID.Text);
             objCANHAN.CANHAN_HOTEN = txtHoTen.Text;
             //objCANHAN.lan = Int32.Parse(txtLanTiep.Text);
-            objCANHAN.CANHAN_CMDN = txtCMND.Text;
+            string format = "dd/MM/yyyy";
+            DateTime dateTime;
+
+
+            if (txtNgayCap.Text != "" && DateTime.TryParseExact(txtNgayCap.Text, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime) == false)
+            {
+                ClassCommon.ShowToastr(Page, "Vui lòng nhập đúng định dạng ngày", "Thông báo", "error");
+            }
+           
             if (txtNgayCap.Text != "")
             {
                 objCANHAN.CANHAN_CMDN_NGAYCAP = DateTime.Parse(txtNgayCap.Text);
-            }
-            else
+            }           
+            else if (txtNgayCap.Text == "")
             {
                 objCANHAN.CANHAN_CMDN_NGAYCAP = null;
             }
 
-            objCANHAN.CANHAN_NOICAP = txtNoiCap.Text;
+                objCANHAN.CANHAN_NOICAP = txtNoiCap.Text;
             objCANHAN.CANHAN_DIACHI = txtDiaChi.Text;
             objCANHAN.CANHAN_GIOITINH = !rdoNam.Checked;
             if (pDropDownListXa.SelectedValue != "" && pDropDownListXa.SelectedValue != "-1")
@@ -2618,114 +2647,88 @@ namespace KNTC
 
                 string vKeySort = "";
                 string vTypeSort = "";
-
-
                 string vContentSearch = textSearchContent.Text.Trim();
                 if (ViewState["keysort"] != null && ViewState["typesort"] != null)
                 {
                     vKeySort = ViewState["keysort"].ToString();
                     vTypeSort = ViewState["typesort"].ToString();
-
                 }
-
-
-
                 CommonController objCommonController = new CommonController();
                 string vSearchOption = textSearchContent_HiddenField.Text;
 
-
-
-                if (vSearchOption == "")
+                DataSet ds = new DataSet();
+                // trường hợp có đơn 
+                if (rdoCoDon.Checked)
                 {
-                    vSearchOption = "|DOITUONG.DOITUONG_ID,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DOITUONG.DOITUONG_DIACHI,normal,,";
-                }
-                if (vDP_ID != 0)
-                {
-                    DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
-                    if (objDIAPHUONG != null)
+                    if (vSearchOption == "")
                     {
-                        vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                        vSearchOption = "|DONTHU.DONTHU_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DONTHU.DONTHU_NOIDUNG,normal,,";
                     }
+                    if (vDP_ID != 0)
+                    {
+                        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
+                        if (objDIAPHUONG != null)
+                        {
+                            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                        }
+                    }
+                    ds = objCommonController.GetPage(PortalId, ModuleId, "DonThu_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
+                    dgDanhSach.DataKeyField = "DONTHU_ID";
+                    // Tiếp dân
+                    dgDanhSach.Columns[3].Visible = false;
+                    dgDanhSach.Columns[7].Visible = false;
+                    dgDanhSach.Columns[9].Visible = false;
+
+                    dgDanhSach.Columns[11].Visible = false;
+                    dgDanhSach.Columns[12].Visible = false;
+                    dgDanhSach.Columns[15].Visible = false;
+                    // Đơn thư
+                    dgDanhSach.Columns[4].Visible = true;
+                    dgDanhSach.Columns[8].Visible = true;
+                    dgDanhSach.Columns[10].Visible = true;
+                    dgDanhSach.Columns[13].Visible = true;
+                    dgDanhSach.Columns[14].Visible = true;
+                    dgDanhSach.Columns[16].Visible = true;
+                    //dgDanhSach.Columns[9].Visible = true;
+                    //dgDanhSach.Columns[10].Visible = true;
+                    //dgDanhSach.Columns[11].Visible = true;
                 }
+                // trường hợp không có đơn có đơn 
+                else
+                {
+                    if (vSearchOption == "")
+                    {
+                        vSearchOption = "|TIEPDAN.TIEPDAN_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|TIEPDAN.TIEPDAN_NOIDUNG,normal,,";
+                    }
+                    if (vDP_ID != 0)
+                    {
+                        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
+                        if (objDIAPHUONG != null)
+                        {
+                            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
+                        }
+                    }
+                    ds = objCommonController.GetPage(PortalId, ModuleId, "TiepDan_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
+                    dgDanhSach.DataKeyField = "TIEPDAN_ID";
 
-                DataSet ds = objCommonController.GetPage(PortalId, ModuleId, "DoiTuong_GetPage", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
-                TiepDanController vTiepDanController = new TiepDanController();
-                List<TIEPDAN_DOITUONG> vTIEPDANs = vTiepDanController.getList(vContentSearch);
-
-                //DataSet ds = new DataSet();
-                //// trường hợp có đơn 
-                //bool vFlag = true;
-                //if (vFlag == true)
-                //{
-                //    if (vSearchOption == "")
-                //    {
-                //        vSearchOption = "|DONTHU.DONTHU_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DONTHU.DONTHU_NOIDUNG,normal,,";
-                //    }
-                //    if (vDP_ID != 0)
-                //    {
-                //        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
-                //        if (objDIAPHUONG != null)
-                //        {
-                //            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
-                //        }
-                //    }
-                //    ds = objCommonController.GetPage(PortalId, ModuleId, "DonThu_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
-                //    dgDanhSach.DataKeyField = "DONTHU_ID";
-                //    // Tiếp dân
-                //    dgDanhSach.Columns[3].Visible = false;
-                //    dgDanhSach.Columns[7].Visible = false;
-                //    dgDanhSach.Columns[9].Visible = false;
-
-                //    dgDanhSach.Columns[11].Visible = false;
-                //    dgDanhSach.Columns[12].Visible = false;
-                //    dgDanhSach.Columns[15].Visible = false;
-                //    // Đơn thư
-                //    dgDanhSach.Columns[4].Visible = false;
-                //    dgDanhSach.Columns[8].Visible = false;
-                //    dgDanhSach.Columns[10].Visible = false;
-                //    dgDanhSach.Columns[13].Visible = false;
-                //    dgDanhSach.Columns[14].Visible = false;
-                //    dgDanhSach.Columns[16].Visible = false;
-                //    //dgDanhSach.Columns[9].Visible = true;
-                //    //dgDanhSach.Columns[10].Visible = true;
-                //    //dgDanhSach.Columns[11].Visible = true;
-                //}
-                //// trường hợp không có đơn có đơn 
-                //else
-                //{
-                //    if (vSearchOption == "")
-                //    {
-                //        vSearchOption = "|TIEPDAN.TIEPDAN_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|TIEPDAN.TIEPDAN_NOIDUNG,normal,,";
-                //    }
-                //    if (vDP_ID != 0)
-                //    {
-                //        DIAPHUONG objDIAPHUONG = vDataContext.DIAPHUONGs.Where(x => x.DP_ID == vDP_ID).FirstOrDefault();
-                //        if (objDIAPHUONG != null)
-                //        {
-                //            vSearchOption = vSearchOption + "|DIAPHUONG.INDEX_ID,equal,like '" + objDIAPHUONG.INDEX_ID + "%' ,";
-                //        }
-                //    }
-                //    ds = objCommonController.GetPage(PortalId, ModuleId, "TiepDan_GetPage_Popup", vSearchOption, textSearchContent.Text, vKeySort + " " + vTypeSort, v_start - 1, v_end);
-                //    dgDanhSach.DataKeyField = "TIEPDAN_ID";
-
-                //    // Tiếp dân
-                //    dgDanhSach.Columns[3].Visible = true;
-                //    dgDanhSach.Columns[7].Visible = false;
-                //    dgDanhSach.Columns[9].Visible = false;
-                //    dgDanhSach.Columns[11].Visible = false;
-                //    dgDanhSach.Columns[12].Visible = false;
-                //    dgDanhSach.Columns[15].Visible = false;
-                //    // Đơn thư
-                //    dgDanhSach.Columns[4].Visible = false;
-                //    dgDanhSach.Columns[8].Visible = false;
-                //    dgDanhSach.Columns[10].Visible = false;
-                //    dgDanhSach.Columns[13].Visible = false;
-                //    dgDanhSach.Columns[14].Visible = false;
-                //    dgDanhSach.Columns[16].Visible = false;
-                //    //dgDanhSach.Columns[9].Visible = false;
-                //    //dgDanhSach.Columns[10].Visible = false;
-                //    //dgDanhSach.Columns[11].Visible = false;
-                //}
+                    // Tiếp dân
+                    dgDanhSach.Columns[3].Visible = true;
+                    dgDanhSach.Columns[7].Visible = true;
+                    dgDanhSach.Columns[9].Visible = true;
+                    dgDanhSach.Columns[11].Visible = true;
+                    dgDanhSach.Columns[12].Visible = true;
+                    dgDanhSach.Columns[15].Visible = true;
+                    // Đơn thư
+                    dgDanhSach.Columns[4].Visible = false;
+                    dgDanhSach.Columns[8].Visible = false;
+                    dgDanhSach.Columns[10].Visible = false;
+                    dgDanhSach.Columns[13].Visible = false;
+                    dgDanhSach.Columns[14].Visible = false;
+                    dgDanhSach.Columns[16].Visible = false;
+                    //dgDanhSach.Columns[9].Visible = false;
+                    //dgDanhSach.Columns[10].Visible = false;
+                    //dgDanhSach.Columns[11].Visible = false;
+                }
                 int TotalRow = 0;
                 if (ds.Tables[0].Rows.Count > 0)
                 {
@@ -3073,104 +3076,29 @@ namespace KNTC
                         vID = ((int.Parse(dgDanhSach.DataKeys[GridItem.ItemIndex].ToString())));
                     }
                 }
-
-                var vDoiTuongInfo = vDataContext.DOITUONGs.Where(x => x.DOITUONG_ID == vID).FirstOrDefault();
-                
-                ListViewDoiTuong.DataSource = vDoiTuongInfo.CANHANs;
-                ListViewDoiTuong.DataBind();
-
-                for (int i = 0; i < vDoiTuongInfo.CANHANs.Count(); i++)
+                if (rdoCoDon.Checked)
                 {
-                    //TitleBreadcrumb = TitleBreadcrumb + "-" + vDonThuInfo.DOITUONG.CANHANs[i].CANHAN_HOTEN;
-                    ListViewDataItem listViewDataItem = ListViewDoiTuong.Items[i];
-                    TextBox txtCaNhanID = ((TextBox)ListViewDoiTuong.Items[i].FindControl("txtCaNhanID"));
-                    if (txtCaNhanID.Text != "")
-                    {
-                        int vCANHAN_ID = Int32.Parse(txtCaNhanID.Text);
-                        CANHAN cANHAN = vDoiTuongInfo.CANHANs.Where(x => x.CANHAN_ID == vCANHAN_ID).FirstOrDefault();
-                        if (cANHAN != null)
-                        {
-                            DropDownList pDropDownListXa = ((DropDownList)ListViewDoiTuong.Items[i].FindControl("drlXa"));
-                            DropDownList pDropDownListHuyen = ((DropDownList)listViewDataItem.FindControl("drlQuanHuyen"));
-                            DropDownList pDropDownListThanhpho = ((DropDownList)listViewDataItem.FindControl("drlTinhThanhPho"));
-                            DropDownList drlQuocTich = ((DropDownList)listViewDataItem.FindControl("drlQuocTich"));
-                            DropDownList drlDanToc = ((DropDownList)listViewDataItem.FindControl("drlDanToc"));
-
-                            LoadDiaPhuong((int)cANHAN.DP_ID, pDropDownListXa, pDropDownListHuyen, pDropDownListThanhpho);
-                            LoadDanToc((int)cANHAN.DANTOC_ID, drlDanToc);
-                            LoadQuocTich((int)cANHAN.QUOCTICH_ID, drlQuocTich);
-                        }
-                    }
+                    SetFormInfo(vID, true);
                 }
-                foreach (var item in ListViewDoiTuong.Items)
+                else
                 {
-
-                    TextBox txtHoTen = ((TextBox)item.FindControl("txtHoTen"));
-                    //TextBox txtLanTiep = ((TextBox)item.FindControl("txtLanTiep"));
-                    TextBox txtCMND = ((TextBox)item.FindControl("txtCMND"));
-                    HtmlInputRadioButton rdoNam = ((HtmlInputRadioButton)item.FindControl("rdoNam"));
-                    HtmlInputRadioButton rdoNu = ((HtmlInputRadioButton)item.FindControl("rdoNu"));
-                    TextBox txtNgayCap = ((TextBox)item.FindControl("txtNgayCap"));
-                    TextBox txtNoiCap = ((TextBox)item.FindControl("txtNoiCap"));
-                    TextBox txtDiaChi = ((TextBox)item.FindControl("txtDiaChi"));
-
-                    DropDownList pDropDownListXa = ((DropDownList)item.FindControl("drlXa"));
-                    DropDownList pDropDownListHuyen = ((DropDownList)item.FindControl("drlQuanHuyen"));
-                    DropDownList pDropDownListThanhpho = ((DropDownList)item.FindControl("drlTinhThanhPho"));
-                    DropDownList drlQuocTich = ((DropDownList)item.FindControl("drlQuocTich"));
-                    DropDownList drlDanToc = ((DropDownList)item.FindControl("drlDanToc"));
-                    if (btn.CommandArgument == "ChonDoiTuong")
-                    {
-                        txtHoTen.Enabled = false;
-                        //txtLanTiep.Enabled = pEnableStatus;
-                        txtCMND.Enabled = false;
-                        rdoNam.Disabled = true;
-                        rdoNu.Disabled = true;
-
-                        txtNgayCap.Enabled = false;
-                        txtNoiCap.Enabled = false;
-                        txtDiaChi.Enabled = false;
-                        pDropDownListThanhpho.Enabled = false;
-                        pDropDownListHuyen.Enabled = false;
-                        pDropDownListXa.Enabled = false;
-                        drlQuocTich.Enabled = false;
-                        drlDanToc.Enabled = false;
-                    }
-                    else
-                    {
-                        txtHoTen.Enabled = true;
-                        txtCMND.Enabled = true;
-                        rdoNam.Disabled = false;
-                        rdoNu.Disabled = false;
-
-                        txtNgayCap.Enabled = true;
-                        txtNoiCap.Enabled = true;
-                        txtDiaChi.Enabled = true;
-                        pDropDownListThanhpho.Enabled = true;
-                        pDropDownListHuyen.Enabled = true;
-                        pDropDownListXa.Enabled = true;
-                        drlQuocTich.Enabled = true;
-                        drlDanToc.Enabled = true;
-                    }
+                    SetFormInfo(vID, true);
                 }
-
-                //if (btn.CommandArgument == "ChonDoiTuong")
-                //{
-                //    //hdfIsCoppy.Value = "false";
-                //    //txtLanTiep.Enabled = true;
-                //    //txtLanTiep.Text = (Int32.Parse(txtLanTiep.Text) + 1).ToString();
-                //    //txtNoiDungTiepDan.Enabled = true;
-                //    //txtKetQua.Enabled = true;
-                //    //btnChonNguoiDaiDien.Visible = true;
-                //    //txtNgayTiepDan.Enabled = true;
-                //    SetEnableForm(false);
-                //}
-                //else
-                //{
-                //    hdfIsCoppy.Value = "true";
-                //    SetEnableForm(true);
-                //}
-
+                if (btn.CommandArgument == "ChonDoiTuong")
+                {
+                    hdfIsCoppy.Value = "false";
+                    txtLanTiep.Enabled = true;
+                    txtLanTiep.Text = (Int32.Parse(txtLanTiep.Text) + 1).ToString();
+                    txtNoiDungTiepDan.Enabled = true;
+                    txtKetQua.Enabled = true;
+                    btnChonNguoiDaiDien.Visible = true;
+                    txtNgayTiepDan.Enabled = true;
+                }
+                else
+                {
+                    hdfIsCoppy.Value = "true";
+                    SetEnableForm(true);
+                }
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "hideModal()", true);
 
             }
@@ -3186,7 +3114,7 @@ namespace KNTC
         protected void bsdrpDOITUONG_SelectedIndexChanged(object sender, EventArgs e)
         {
             //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "ModelScript", "alert('AAAAA');", true);
-            updatePN.Update();
+            UpdatePanel1.Update();
 
         }
         protected void rdoKhongDon_ServerChange(object sender, EventArgs e)
@@ -3197,8 +3125,8 @@ namespace KNTC
         {
             if (rdoCoDon.Checked)
             {
-            //    FilterTiepDan.Visible = false;
-            //    FilterDonThu.Visible = true;
+                FilterTiepDan.Visible = false;
+                FilterDonThu.Visible = true;
                 contentTiepDan.Visible = false;
                 contentDonThu.Visible = true;
                 if (ddlistLoaDonThu.Items.Count <= 1)
@@ -3215,8 +3143,8 @@ namespace KNTC
             }
             else
             {
-                //FilterTiepDan.Visible = true;
-                //FilterDonThu.Visible = false;
+                FilterTiepDan.Visible = true;
+                FilterDonThu.Visible = false;
                 contentTiepDan.Visible = true;
                 contentDonThu.Visible = false;
             }

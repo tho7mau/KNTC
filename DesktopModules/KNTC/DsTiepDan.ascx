@@ -131,7 +131,7 @@
                             <asp:DataGrid DataKeyField="TIEPDAN_ID" runat="server" ID="dgDanhSach" AutoGenerateColumns="False" BorderWidth="0"
                                 AllowSorting="True" OnSortCommand="dgDanhSach_SortCommand" OnItemDataBound="dgDanhSach_ItemDataBound" CssClass="table vertical-align-middle">
                                 <%--text-nowrap--%>
-                                <HeaderStyle CssClass="table-header" />
+                                <HeaderStyle CssClass="table-header sticky" />
                                 <Columns>
                                     <asp:TemplateColumn Visible="true" HeaderStyle-CssClass="sticky">
                                         <HeaderTemplate>
@@ -225,12 +225,25 @@
     .form .form-inline .col-left {
         float: left;
     }
+/*      td.sticky.active {
+        box-shadow: 0px 1px 2px grey;
+        }*/
 
     .danhsach table tbody tr.paping td select {
         float: right;
     }
 </style>
 <script type="text/javascript">
+    //$(window).scroll(function () {
+    //    var scroll = $(window).scrollTop();
+    //    if (scroll > 0) {
+    //        $(".sticky").addClass("active");
+    //    }
+    //    else {
+    //        $(".sticky").removeClass("active");
+    //    }
+    //});
+
     function getConfirmation(sender, title, message) {
         $("#spnTitle").text(title);
         $("#spnMsg").text(message);

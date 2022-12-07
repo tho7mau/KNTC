@@ -219,7 +219,7 @@ namespace KNTC
             try
             {
                 LoadDanhSach(1, vPageSize);
-
+                SessionDefault();
 
             }
             catch (Exception Ex)
@@ -230,7 +230,7 @@ namespace KNTC
 
         #endregion
 
-        //#region Methods
+        #region Methods
         ///// <summary>
         ///// Set thong tin Search
         ///// </summary>
@@ -276,7 +276,12 @@ namespace KNTC
                     vTypeSort = "DESC";
                 }
                 CommonController objCommonController = new CommonController();
-                string vSearchOption = textSearchContent_HiddenField.Text;
+                string vSearchOption = "|DONTHU.DONTHU_STT,normal,,|CANHAN.CANHAN_HOTEN,normal,,|CANHAN.CANHAN_DIACHI_DAYDU,normal,,|DONTHU.DONTHU_NOIDUNG,normal,,";
+                //string vSearchOption = textSearchContent_HiddenField.Text;
+                if (textSearchContent_HiddenField.Text != "")
+                {
+                    vSearchOption = textSearchContent_HiddenField.Text;
+                }
                 if (vSearchOption == "")
                 {
                     vSearchOption = "DONTHU.HUONGXULY_ID,equal,is null,";
@@ -306,11 +311,16 @@ namespace KNTC
             }
             catch (Exception ex)
             {
-                ClassCommon.ShowToastr(Page, "Có lỗi xãy ra vui lòng liên hệ trị", "Thông báo lỗi", "error");
+                ClassCommon.ShowToastr(Page, "Có lỗi xảy ra vui lòng liên hệ trị", "Thông báo lỗi", "error");
             }
         }
 
-
+        public void SessionDefault()
+        {
+            Session[PortalSettings.ActiveTab.TabID + _currentUser.UserID + "_PageSize"] = 10;
+            Session[PortalSettings.ActiveTab.TabID + _currentUser.UserID + "_StartPage"] = 1;
+            Session[PortalSettings.ActiveTab.TabID + _currentUser.UserID + "_EndPage"] = 10;
+        }
         ///// <summary>
         ///// Check Account Login
         ///// </summary>
@@ -600,6 +610,7 @@ namespace KNTC
                 return false;
             }
         }
+        #endregion
     }
 }
 
